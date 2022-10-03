@@ -1,5 +1,12 @@
 .navigation {
+  max-width: 3xl;
+}
+
+.stack {
+  padding: xs;
   background: gray.1;
   height: screen;
-  max-width: 3xl;
+  outline-style: dashed;
+  outline-width: 1px;
+  outline-color: gray.3;
 }
