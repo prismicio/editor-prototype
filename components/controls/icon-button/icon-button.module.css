@@ -1,10 +1,7 @@
 .root {
-  height: 2xl;
-  width: 2xl;
-  transition: all 200ms ease-in-out;
+  background: rgb(128, 128, 0);
 }
 
 .root:hover {
-  background: gray.2;
-  border-radius: sm;
+  background: green;
 }
