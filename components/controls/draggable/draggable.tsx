@@ -40,6 +40,7 @@ export const Draggable = ({
 
   return (
     <div
+      key={idx}
       ref={ref}
       draggable
       className={clsx(styles.root, className)}

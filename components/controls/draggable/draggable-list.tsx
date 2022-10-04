@@ -71,16 +71,14 @@ export const DraggableList = <T extends IdObj>({
     >
       {data.map((item, idx) => {
         return (
-          <Fragment>
-            <Draggable
-              key={item.id}
-              idx={idx}
-              onStarting={(idx: number) => onDragStart(idx)}
-              onDropping={(idx: number) => onDrop(idx)}
-            >
-              {children(item, idx)}
-            </Draggable>
-          </Fragment>
+          <Draggable
+            key={idx}
+            idx={idx}
+            onStarting={(idx: number) => onDragStart(idx)}
+            onDropping={(idx: number) => onDrop(idx)}
+          >
+            {children(item, idx)}
+          </Draggable>
         )
       })}
     </Box>
