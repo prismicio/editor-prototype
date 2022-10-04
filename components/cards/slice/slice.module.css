@@ -1,4 +1,6 @@
 .root {
   background: white;
   padding: xs;
+  border: 1px solid #dcdbdd;
+  border-radius: 8px;
 }

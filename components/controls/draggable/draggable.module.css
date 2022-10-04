@@ -1,6 +1,6 @@
 .root {
-  border-top: 4px solid transparent;
-  padding: lg;
+  border-top: 2px solid transparent;
+  margin-inline: lg;
 }
 
 .dragover {

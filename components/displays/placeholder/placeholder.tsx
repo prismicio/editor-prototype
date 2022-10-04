@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import clsx from 'clsx'
 import { Box } from 'components/layouts/box'
-import styles from './icon-button.module.css'
+import styles from './placeholder.module.css'
 
 interface PlaceholderProps {
   children?: ReactNode

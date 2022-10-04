@@ -1,22 +1,27 @@
 [
   {
     "id": "0",
-    "name": "Slice A"
+    "name": "Slice A",
+    "image": "/slices-thumbnails/a.png"
   },
   {
     "id": "1",
-    "name": "Slice B"
+    "name": "Slice A",
+    "image": "/slices-thumbnails/b.png"
   },
   {
     "id": "2",
-    "name": "Slice C"
+    "name": "Slice A",
+    "image": "/slices-thumbnails/c.png"
   },
   {
     "id": "3",
-    "name": "Slice D"
+    "name": "Slice A",
+    "image": "/slices-thumbnails/d.png"
   },
   {
     "id": "4",
-    "name": "Slice E"
+    "name": "Slice A",
+    "image": "/slices-thumbnails/d.png"
   }
 ]

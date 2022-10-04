@@ -4,19 +4,20 @@ import styles from './slice.module.css'
 import NextImage from 'next/image'
 
 interface SliceProps {
-  preview?: ReactNode
+  preview: string
   name: string
   id: string
 }
 
 export default function Slice({
+  preview,
   name,
   id,
   ...restProps
 }: SliceProps): JSX.Element {
   return (
     <Box as="div" className={styles.root} {...restProps}>
-      <NextImage height="126" width="232" src="/slices-thumbnails/hero.png" />
+      <NextImage height="126" width="232" src={preview} />
     </Box>
   )
 }

@@ -10,13 +10,13 @@ const Home: NextPage = () => {
   console.log(styles)
   return (
     <Byside as="div" space="xs">
-      <Byside.Sidebar width="8xl" as="aside">
-        <Box as="div" className={styles['slices-droppable']}>
-          <DraggableList
-            items={slices}
-            children={(item) => <Slice name={item.name} id={item.id} />}
-          />
-        </Box>
+      <Byside.Sidebar width="8xl" as="aside" className={styles.slices}>
+        <DraggableList
+          items={slices}
+          children={(item) => (
+            <Slice preview={item.image} name={item.name} id={item.id} />
+          )}
+        />
       </Byside.Sidebar>
       <Byside.Primary breakAT="9xl" as="main">
         Hello

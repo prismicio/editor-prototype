@@ -1,8 +1,4 @@
 .slices {
-  height: screen;
-  background: gray.2;
-  max-width: 8xl;
-}
-
-.slices-droppable {
+  border-right: 1px solid #dcdbdd;
+  background: #f9f8f9;
 }
