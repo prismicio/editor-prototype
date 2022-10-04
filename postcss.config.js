@@ -1,6 +1,5 @@
 module.exports = {
   plugins: {
-    "@tokencss/postcss": {},
     "postcss-flexbugs-fixes": {},
     "postcss-preset-env": {
       autoprefixer: {
@@ -10,6 +9,7 @@ module.exports = {
       features: {
         "custom-properties": false,
       },
-    }
+    },
+    "@tokencss/postcss": {},
   },
 };

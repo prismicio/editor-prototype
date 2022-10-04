@@ -1,3 +1,5 @@
+@inject "tokencss:base";
+
 body {
-  background: cyan;
+  background: gray.2;
 }
