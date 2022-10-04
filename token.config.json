@@ -16,6 +16,7 @@
     }
   },
   "space": {
+    "null": { "value": "0rem" },
     "2xs": { "value": ".25rem" },
     "xs": { "value": ".5rem" },
     "sm": { "value": "1rem" },
@@ -33,6 +34,7 @@
     "10xl": { "value": "30rem" }
   },
   "size": {
+    "none": { "value": "0rem" },
     "full": { "value": "100%" },
     "2xs": { "value": ".25rem" },
     "xs": { "value": ".5rem" },

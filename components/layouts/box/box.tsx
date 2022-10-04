@@ -1,25 +1,46 @@
-import React from "react";
+import React from 'react'
+import tokens from 'token.config.json'
+export type BoxProps = {
+  width?: keyof typeof tokens.size | undefined
+  flexGrow?: string | undefined
+  minInlineSize?: keyof typeof tokens.size | undefined
+}
 
 type AsProp<C extends React.ElementType> = {
-  as?: C;
-};
+  as?: C
+}
 
-type PropsToOmit<C extends React.ElementType, P> = keyof (AsProp<C> & P);
+type PropsToOmit<C extends React.ElementType, P> = keyof (AsProp<C> & P)
 
 type PolymorphicComponentProp<
   C extends React.ElementType,
   Props = {}
 > = React.PropsWithChildren<Props & AsProp<C>> &
-  Omit<React.ComponentPropsWithoutRef<C>, PropsToOmit<C, Props>>;
+  Omit<React.ComponentPropsWithoutRef<C>, PropsToOmit<C, Props>>
 
 export const Box = <C extends React.ElementType>({
+  width,
+  flexGrow,
+  gap,
+  minInlineSize,
   children,
   as,
   ...restProps
-}: PolymorphicComponentProp<C>) => {
-  const Component = as || "span";
+}: PolymorphicComponentProp<C, BoxProps>) => {
+  const Component = as || 'span'
 
-  return <Component {...restProps}>{children}</Component>;
-};
+  const sheet: React.CSSProperties = {
+    width: width ? `var(--size-${width})` : undefined,
+    gap: gap ? `var(--size-${gap})` : undefined,
+    flexGrow: flexGrow ? flexGrow : undefined,
+    minInlineSize: minInlineSize ? `var(--size-${minInlineSize})` : undefined,
+  }
 
-export type UseBoxProps = typeof Box;
+  return (
+    <Component style={sheet} {...restProps}>
+      {children}
+    </Component>
+  )
+}
+
+export type UseBoxProps = typeof Box

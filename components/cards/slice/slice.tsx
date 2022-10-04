@@ -1,12 +1,15 @@
-import React from 'react'
+import { Box } from 'components/layouts/box'
+import React, { ReactNode } from 'react'
 import styles from './slice.module.css'
 
-
-export default function Slice() {
-    return (
-        <div className={styles.root}>
-        <div>Slicename</div>
-       </div>
-    )
+interface SliceProps {
+  preview?: ReactNode
 }
-    
+
+export default function Slice({ ...restProps }: SliceProps): JSX.Element {
+  return (
+    <Box className={styles.root} {...restProps}>
+      <div>Slicename</div>
+    </Box>
+  )
+}

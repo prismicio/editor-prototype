@@ -4,7 +4,6 @@ import { Box } from 'components/layouts/box'
 import tokens from 'token.config.json'
 import clsx from 'clsx'
 
-
 interface BysideProps {
   children: React.ReactNode
   space?: keyof typeof tokens.space | undefined
@@ -14,7 +13,7 @@ interface BysideProps {
 
 export const Byside = ({
   as,
-  space = "xs",
+  space = 'lg',
   children,
   className,
   ...restProps
@@ -45,7 +44,6 @@ const Sidebar = ({
   children,
   ...restProps
 }: SidebarProps) => {
-
   return (
     <Box
       as={as}
@@ -76,7 +74,7 @@ const Primary = ({
   return (
     <Box
       as={as}
-      width="0"
+      width="none"
       flexGrow="999"
       minInlineSize={breakAT}
       className={className}

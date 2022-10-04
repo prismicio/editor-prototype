@@ -1,3 +1,4 @@
 .root {
-    background: pink;
+  display: flex;
+  flex-wrap: wrap;
 }
