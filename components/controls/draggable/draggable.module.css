@@ -1,0 +1,12 @@
+.root {
+  border-top: 4px solid transparent;
+  padding: lg;
+}
+
+.dragover {
+  border-top-color: green;
+}
+
+.dragstart {
+  opacity: 0.5;
+}

@@ -3,6 +3,7 @@ import tokens from 'token.config.json'
 export type BoxProps = {
   width?: keyof typeof tokens.size | undefined
   flexGrow?: string | undefined
+  padding?: keyof typeof tokens.space | undefined
   minInlineSize?: keyof typeof tokens.size | undefined
 }
 
@@ -21,6 +22,7 @@ type PolymorphicComponentProp<
 export const Box = <C extends React.ElementType>({
   width,
   flexGrow,
+  padding,
   gap,
   minInlineSize,
   children,
@@ -33,6 +35,7 @@ export const Box = <C extends React.ElementType>({
     width: width ? `var(--size-${width})` : undefined,
     gap: gap ? `var(--size-${gap})` : undefined,
     flexGrow: flexGrow ? flexGrow : undefined,
+    padding: padding ? `var(--space-${padding})` : undefined,
     minInlineSize: minInlineSize ? `var(--size-${minInlineSize})` : undefined,
   }
 

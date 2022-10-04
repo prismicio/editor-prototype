@@ -1,0 +1,7 @@
+.root {
+  background: rgb(128, 128, 0);
+}
+
+.root:hover {
+  background: green;
+}

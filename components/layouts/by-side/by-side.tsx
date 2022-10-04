@@ -74,7 +74,7 @@ const Primary = ({
   return (
     <Box
       as={as}
-      width="none"
+      width="nil"
       flexGrow="999"
       minInlineSize={breakAT}
       className={className}

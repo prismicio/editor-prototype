@@ -16,7 +16,7 @@
     }
   },
   "space": {
-    "null": { "value": "0rem" },
+    "nil": { "value": "0rem" },
     "2xs": { "value": ".25rem" },
     "xs": { "value": ".5rem" },
     "sm": { "value": "1rem" },
@@ -34,7 +34,7 @@
     "10xl": { "value": "30rem" }
   },
   "size": {
-    "none": { "value": "0rem" },
+    "nil": { "value": "0rem" },
     "full": { "value": "100%" },
     "2xs": { "value": ".25rem" },
     "xs": { "value": ".5rem" },
@@ -48,7 +48,7 @@
     "5xl": { "value": "5rem" },
     "6xl": { "value": "7.5rem" },
     "7xl": { "value": "10rem" },
-    "8xl": { "value": "15rem" },
+    "8xl": { "value": "18.75rem" },
     "9xl": { "value": "20rem" },
     "10xl": { "value": "30rem" }
   },
