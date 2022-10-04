@@ -1,7 +1,7 @@
 .slices {
-  height: screen;
+  height: 100vh;
   padding: sm;
-  max-width: 8xl;
+  max-width: 200px;
   background: red;
 }
 
