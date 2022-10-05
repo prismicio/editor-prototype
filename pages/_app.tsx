@@ -2,6 +2,7 @@ import 'styles/reset.css'
 import 'styles/globals.css'
 import type { AppProps } from 'next/app'
 import loadingPlugin, { ExtraModelsFromLoading } from '@rematch/loading'
+import immerPlugin from '@rematch/immer'
 import { Provider } from 'react-redux'
 import { init, RematchDispatch, RematchRootState } from '@rematch/core'
 import { models, RootModel } from 'models'
@@ -10,7 +11,7 @@ type FullModel = ExtraModelsFromLoading<RootModel>
 
 const store = init<RootModel, FullModel>({
   models,
-  plugins: [loadingPlugin()],
+  plugins: [immerPlugin(), loadingPlugin()],
 })
 
 function MyApp({ Component, pageProps }: AppProps) {

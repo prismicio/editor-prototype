@@ -6,7 +6,7 @@ import NextImage from 'next/image'
 interface SliceProps {
   preview: string
   name: string
-  id: string
+  id: number
 }
 
 export default function Slice({

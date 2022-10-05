@@ -3,27 +3,29 @@ import type { NextPage } from 'next'
 import styles from 'styles/home.module.css'
 import Slice from 'components/cards/slice/slice'
 import { Byside } from 'components/layouts/by-side'
-import slices from 'mocks/slices.json'
 import { DraggableList } from 'components/controls/draggable'
-import { useDispatch, useSelector } from 'react-redux'
-import { RootModel } from 'models'
+import { useSelector } from 'react-redux'
 import { RootState } from './_app'
 
 const Home: NextPage = () => {
-  const state = useSelector((state: RootState) => state.editor)
+  const slices = useSelector((state: RootState) => state.editor.slices)
 
   return (
     <Byside as="div" space="xs">
       <Byside.Sidebar width="8xl" as="aside" className={styles.slices}>
         <DraggableList
-          items={state}
+          items={slices}
           children={(item) => (
             <Slice preview={item.image} name={item.name} id={item.id} />
           )}
         />
       </Byside.Sidebar>
       <Byside.Primary breakAT="9xl" as="main">
-        Hello
+        <Box>
+          {slices.map((item) => (
+            <div>{item.name}</div>
+          ))}
+        </Box>
       </Byside.Primary>
       <Byside.Sidebar width="8xl" as="aside">
         Hello

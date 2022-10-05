@@ -1,26 +1,26 @@
 [
   {
-    "id": "0",
+    "id": 0,
     "name": "Slice A",
     "image": "/slices-thumbnails/a.png"
   },
   {
-    "id": "1",
+    "id": 1,
     "name": "Slice A",
     "image": "/slices-thumbnails/b.png"
   },
   {
-    "id": "2",
+    "id": 2,
     "name": "Slice A",
     "image": "/slices-thumbnails/c.png"
   },
   {
-    "id": "3",
+    "id": 3,
     "name": "Slice A",
     "image": "/slices-thumbnails/d.png"
   },
   {
-    "id": "4",
+    "id": 4,
     "name": "Slice A",
     "image": "/slices-thumbnails/d.png"
   }
