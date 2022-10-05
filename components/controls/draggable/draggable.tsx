@@ -1,6 +1,5 @@
-import { ReactNode, SyntheticEvent, useRef, DragEvent } from 'react'
+import { ReactNode, SyntheticEvent, useRef } from 'react'
 import clsx from 'clsx'
-import { Box } from 'components/layouts/box'
 import styles from './draggable.module.css'
 
 interface DraggableProps {
@@ -40,9 +39,9 @@ export const Draggable = ({
 
   return (
     <li
+      draggable
       key={idx}
       ref={ref}
-      draggable
       className={clsx(styles.root, className)}
       onDragLeave={onDragLeave}
       onDragEnd={onDragEnd}
