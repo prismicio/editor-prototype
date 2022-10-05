@@ -5,14 +5,18 @@ import Slice from 'components/cards/slice/slice'
 import { Byside } from 'components/layouts/by-side'
 import slices from 'mocks/slices.json'
 import { DraggableList } from 'components/controls/draggable'
+import { useDispatch, useSelector } from 'react-redux'
+import { RootModel } from 'models'
+import { RootState } from './_app'
 
 const Home: NextPage = () => {
-  console.log(styles)
+  const state = useSelector((state: RootState) => state.editor)
+
   return (
     <Byside as="div" space="xs">
       <Byside.Sidebar width="8xl" as="aside" className={styles.slices}>
         <DraggableList
-          items={slices}
+          items={state}
           children={(item) => (
             <Slice preview={item.image} name={item.name} id={item.id} />
           )}

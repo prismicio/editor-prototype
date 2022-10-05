@@ -3,7 +3,7 @@ import { Box } from 'components/layouts/box'
 import styles from './draggable-list.module.css'
 import { Draggable } from './draggable'
 import tokens from 'token.config.json'
-import { Fragment, useState } from 'react'
+import { useState } from 'react'
 
 interface DraggableList<T> {
   children: (item: T, index: number) => React.ReactNode
@@ -69,7 +69,7 @@ export const DraggableList = <T extends IdObj>({
       as={as}
       {...restProps}
     >
-      {data.map((item, idx) => {
+      {data?.map((item, idx) => {
         return (
           <Draggable
             key={idx}

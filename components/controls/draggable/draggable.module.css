@@ -1,10 +1,9 @@
 .root {
   border-top: 2px solid transparent;
-  margin-inline: lg;
 }
 
 .dragover {
-  border-top-color: green;
+  border-top-color: blue;
 }
 
 .dragstart {

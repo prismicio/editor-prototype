@@ -19,7 +19,7 @@ export const Draggable = ({
   className,
   ...restProps
 }: DraggableProps) => {
-  const ref = useRef<HTMLDivElement>(null)
+  const ref = useRef<HTMLLIElement>(null)
   const onDragEnter = () => ref.current?.classList.add(styles.dragover)
   const onDragLeave = () => ref.current?.classList.remove(styles.dragover)
   const onDragOver = (e: SyntheticEvent) => e.preventDefault()
@@ -39,7 +39,7 @@ export const Draggable = ({
   }
 
   return (
-    <div
+    <li
       key={idx}
       ref={ref}
       draggable
@@ -53,6 +53,6 @@ export const Draggable = ({
       {...restProps}
     >
       {children}
-    </div>
+    </li>
   )
 }
