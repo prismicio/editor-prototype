@@ -1,6 +1,6 @@
 import { Box } from 'components/layouts/box'
 import type { NextPage } from 'next'
-import styles from 'styles/home.module.css'
+import styles from 'styles/Home.module.css'
 import Slice from 'components/cards/slice/slice'
 import { Byside } from 'components/layouts/by-side'
 import { DraggableList } from 'components/controls/draggable'
@@ -15,19 +15,19 @@ const Home: NextPage = () => {
       <Byside.Sidebar width="8xl" as="aside" className={styles.slices}>
         <DraggableList
           items={slices}
-          children={(item) => (
+          children={(item, idx) => (
             <Slice preview={item.image} name={item.name} id={item.id} />
           )}
         />
       </Byside.Sidebar>
       <Byside.Primary breakAT="9xl" as="main">
         <Box>
-          {slices.map((item) => (
-            <div>{item.name}</div>
+          {slices.map((item, idx) => (
+            <div key={idx}>{item.name}</div>
           ))}
         </Box>
       </Byside.Primary>
-      <Byside.Sidebar width="8xl" as="aside">
+      <Byside.Sidebar width="8xl" as="aside" className={styles.rightPanel}>
         <VersionPanel />
       </Byside.Sidebar>
     </Byside>

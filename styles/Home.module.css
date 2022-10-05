@@ -1,4 +1,6 @@
 .slices {
   border-right: 1px solid #dcdbdd;
-  background: #f9f8f9;
+}
+.rightPanel{
+  border-left: 1px solid #dcdbdd;
 }
