@@ -8,7 +8,7 @@ import { DraggableList } from 'components/controls/draggable'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootModel } from 'models'
 import { RootState } from './_app'
-
+import VersionPanel from 'components/versionPanel/versionPanel'
 const Home: NextPage = () => {
   const state = useSelector((state: RootState) => state.editor)
 
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         Hello
       </Byside.Primary>
       <Byside.Sidebar width="8xl" as="aside">
-        Hello
+        <VersionPanel />
       </Byside.Sidebar>
     </Byside>
   )
