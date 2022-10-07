@@ -1,6 +1,8 @@
 .root{
     padding: 16px 24px;
     border-bottom: 1px solid #DCDBDD;
+    display: flex;
+    gap: sm;
 }
 .buttonSecondary {
     color: #1A1523;

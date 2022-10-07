@@ -11,7 +11,7 @@ export default function DocumentName({
   return (
     <div className={styles.root}>
       <button className={clsx(styles.buttonSecondary, styles.icon)}><ArrowBackTwoToneIcon /></button>
-
+      <div ><span></span> Improve Your Prismic editing experience</div>
     </div>
   )
 }
