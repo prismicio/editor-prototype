@@ -9,6 +9,7 @@ import { RootState } from './_app'
 import VersionPanel from 'components/versionPanel/versionPanel'
 import PublishOptions from 'components/publishOptions/publishOptions'
 import EditorTabs from 'components/editorTabs/editorTabs'
+import DocumentName from 'components/documentName/documentName'
 
 const Home: NextPage = () => {
   const slices = useSelector((state: RootState) => state.editor.slices)
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
   return (
     <Byside as="div">
       <Byside.Sidebar width="8xl" as="aside" className={styles.slices}>
+        <DocumentName />
         <DraggableList
           items={slices}
           children={(item, idx) => (
