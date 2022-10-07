@@ -1,1 +1,1 @@
-export * from "./publishOptions";
+export * from './editorTabs'
