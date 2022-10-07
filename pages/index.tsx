@@ -27,7 +27,7 @@ const Home: NextPage = () => {
       </Byside.Sidebar>
       <Byside.Primary breakAT="9xl" as="main">
         <EditorTabs />
-        <Box>
+        <Box className={styles.wrapper}>
           {slices.map((item, idx) => (
             <div className={styles.toto} key={idx}>{item.name}</div>
           ))}

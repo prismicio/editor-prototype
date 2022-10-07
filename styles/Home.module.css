@@ -4,9 +4,12 @@
 .rightPanel{
   border-left: 1px solid #dcdbdd;
 }
+.wrapper{
+  padding: lg 0;
+}
 .toto{
   padding: 24px;
-  margin: 8px;
+  margin-bottom: 16px;
   background: #FFFFFF;
   border: 1px solid #DCDBDD;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05);

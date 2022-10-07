@@ -25,3 +25,33 @@
     width: 20px;
     height: 20px;
 }
+.name{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-size: sm;
+    font-weight: semibold;
+}
+.name span{
+    display: inline-block;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    margin-right: 2xs;
+    background: #F5B043;
+    border: 1px solid #CB943C;
+}
+.name .truncate{
+    overflow: hidden;
+    min-width: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.name .history{
+    color: #9A9A9A;
+    font-weight: normal;
+    font-size: xs;
+}
+.name .history a{
+    color:#1A1523;
+}

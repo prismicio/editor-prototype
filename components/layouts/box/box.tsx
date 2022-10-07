@@ -29,7 +29,7 @@ export const Box = <C extends React.ElementType>({
   as,
   ...restProps
 }: PolymorphicComponentProp<C, BoxProps>) => {
-  const Component = as || 'span'
+  const Component = as || 'section'
 
   const sheet: React.CSSProperties = {
     width: width ? `var(--size-${width})` : undefined,

@@ -1,9 +1,11 @@
 .root {
-  border-top: 2px solid transparent;
+  border-bottom: 2px solid #E9E8EA;
+  padding-top: sm;
+  padding-bottom: sm;
 }
 
 .dragover {
-  border-top-color: blue;
+  border-bottom-color: #7C66DC;
 }
 
 .dragstart {
