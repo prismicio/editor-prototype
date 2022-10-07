@@ -7,11 +7,14 @@ import { DraggableList } from 'components/controls/draggable'
 import { useSelector } from 'react-redux'
 import { RootState } from './_app'
 import VersionPanel from 'components/versionPanel/versionPanel'
+import PublishOptions from 'components/publishOptions/publishOptions'
+import EditorTabs from 'components/editorTabs/editorTabs'
+
 const Home: NextPage = () => {
   const slices = useSelector((state: RootState) => state.editor.slices)
 
   return (
-    <Byside as="div" space="xs">
+    <Byside as="div">
       <Byside.Sidebar width="8xl" as="aside" className={styles.slices}>
         <DraggableList
           items={slices}
@@ -21,13 +24,15 @@ const Home: NextPage = () => {
         />
       </Byside.Sidebar>
       <Byside.Primary breakAT="9xl" as="main">
+        <EditorTabs />
         <Box>
           {slices.map((item, idx) => (
-            <div key={idx}>{item.name}</div>
+            <div className={styles.toto} key={idx}>{item.name}</div>
           ))}
         </Box>
       </Byside.Primary>
       <Byside.Sidebar width="8xl" as="aside" className={styles.rightPanel}>
+        <PublishOptions />
         <VersionPanel />
       </Byside.Sidebar>
     </Byside>
