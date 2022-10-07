@@ -1,0 +1,49 @@
+.root {
+    padding: 16px 24px;
+    border-bottom: 1px solid #dcdbdd;
+    display: flex;
+    justify-content: space-between;
+}
+.buttonSecondary{
+    color: #1A1523;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #DCDBDD;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+    font-size: sm;
+    letter-spacing: -0.15px;
+    font-weight: semibold;
+    line-height: 1.5rem;
+}
+.buttonGroup{
+    display: flex;
+}
+.buttonGroupPrimary{
+    color: #F1EEFE;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    background: #6E56CF;
+    border: 1px solid #5842C3;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+    font-size: sm;
+    letter-spacing: -0.15px;
+    font-weight: semibold;
+    line-height: 1.5rem;
+}
+.icon{
+    line-height: 0;
+    padding: 10px;
+}
+.icon svg{
+    width: 20px;
+    height: 20px;
+}
+.buttonGroupPrimaryLeft{
+    border-radius: 6px 0px 0px 6px;
+}
+.buttonGroupPrimaryRight {
+    border-radius: 0px 6px 6px 0px;
+}
