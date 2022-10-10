@@ -29,7 +29,10 @@ const Home: NextPage = () => {
         <EditorTabs />
         <Box className={styles.wrapper}>
           {slices.map((item, idx) => (
-            <div className={styles.toto} key={idx}>{item.name}</div>
+            <article className={styles.slice} key={idx}>
+              <header>{item.name}</header>
+              <section>toto</section>
+            </article>
           ))}
         </Box>
       </Byside.Primary>

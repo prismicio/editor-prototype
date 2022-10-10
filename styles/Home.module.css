@@ -7,11 +7,21 @@
 .wrapper{
   padding: lg 0;
 }
-.toto{
-  padding: 24px;
+.slice{
   margin-bottom: 16px;
   background: #FFFFFF;
   border: 1px solid #DCDBDD;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
+}
+.slice header{
+  border-bottom: 1px solid #DCDBDD;
+  border-radius: 8px 8px 0 0;
+  font-size: sm;
+  font-weight: semibold;
+  padding: 8px 16px;
+  background: #F9F8F9;
+}
+.slice section{
+  padding: 16px;
 }
