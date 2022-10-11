@@ -53,7 +53,7 @@ export const DraggableList = <T extends IdObj>({
             >
               {children(item as any, idx)}
             </Draggable>
-            <InsertSlice />
+            <InsertSlice idx={idx} />
           </Fragment>
         )
       })}

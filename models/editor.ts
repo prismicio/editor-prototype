@@ -30,6 +30,7 @@ export const editor = createModel<RootModel>()({
       return state
     },
     onDrop: (state, payload: number) => {
+      console.log(payload)
       const temp = state.slices[payload]
       state.slices[payload] = state.slices[state.draggedID]
       state.slices[state.draggedID] = temp

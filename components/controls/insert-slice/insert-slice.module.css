@@ -1,9 +1,23 @@
 .root {
   border: none;
-  padding-block: xs;
+  padding: xs;
   background: transparent;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
 }
 
-.dragover {
-  background: red;
+.root > * {
+  fill: rgb(224, 224, 224);
+  transition: 300ms ease-in;
+}
+
+.root:hover > * {
+  fill: #6e56cf;
+}
+
+.dragover > * {
+  fill: #6e56cf;
 }

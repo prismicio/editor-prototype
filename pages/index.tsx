@@ -11,39 +11,43 @@ import PublishOptions from 'components/publishOptions/publishOptions'
 import EditorTabs from 'components/editorTabs/editorTabs'
 import DocumentName from 'components/documentName/documentName'
 import { Fragment } from 'react'
+import { Root } from 'components/dialogs/select-slice/root'
 
 const Home: NextPage = () => {
   const slices = useSelector((state: RootState) => state.editor.slices)
 
   return (
-    <Byside as="div">
-      <Byside.Sidebar width="8xl" as="aside" className={styles.slices}>
-        <DocumentName />
-        <DraggableList
-          items={slices}
-          children={(item) => (
-            <Fragment>
-              <Slice preview={item.image} name={item.name} id={item.id} />
-            </Fragment>
-          )}
-        />
-      </Byside.Sidebar>
-      <Byside.Primary breakAT="9xl" as="main">
-        <EditorTabs />
-        <Box className={styles.wrapper}>
-          {slices.map((item, idx) => (
-            <article className={styles.slice} key={idx}>
-              <header>{item.name}</header>
-              <section>My slice fields...</section>
-            </article>
-          ))}
-        </Box>
-      </Byside.Primary>
-      <Byside.Sidebar width="8xl" as="aside" className={styles.rightPanel}>
-        <PublishOptions />
-        <VersionPanel />
-      </Byside.Sidebar>
-    </Byside>
+    <Fragment>
+      <Root />
+      <Byside as="div">
+        <Byside.Sidebar width="8xl" as="aside" className={styles.slices}>
+          <DocumentName />
+          <DraggableList
+            items={slices}
+            children={(item) => (
+              <Fragment>
+                <Slice preview={item.image} name={item.name} id={item.id} />
+              </Fragment>
+            )}
+          />
+        </Byside.Sidebar>
+        <Byside.Primary breakAT="9xl" as="main">
+          <EditorTabs />
+          <Box className={styles.wrapper}>
+            {slices.map((item, idx) => (
+              <article className={styles.slice} key={idx}>
+                <header>{item.name}</header>
+                <section>My slice fields...</section>
+              </article>
+            ))}
+          </Box>
+        </Byside.Primary>
+        <Byside.Sidebar width="8xl" as="aside" className={styles.rightPanel}>
+          <PublishOptions />
+          <VersionPanel />
+        </Byside.Sidebar>
+      </Byside>
+    </Fragment>
   )
 }
 
