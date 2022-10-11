@@ -17,8 +17,8 @@
 .slice header{
   border-bottom: 1px solid #DCDBDD;
   border-radius: 8px 8px 0 0;
-  font-size: sm;
-  font-weight: semibold;
+  font-size: xs;
+  color: #6F6E77;
   padding: 8px 16px;
   background: #F9F8F9;
 }
