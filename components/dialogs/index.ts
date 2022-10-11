@@ -1,1 +1,1 @@
-import { SelectSlice } from './select-slice/select-slice'
+export * from './root-dialog'

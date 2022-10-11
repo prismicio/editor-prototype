@@ -11,14 +11,13 @@ import PublishOptions from 'components/publishOptions/publishOptions'
 import EditorTabs from 'components/editorTabs/editorTabs'
 import DocumentName from 'components/documentName/documentName'
 import { Fragment } from 'react'
-import { Root } from 'components/dialogs/root'
+import { RootDialog } from 'components/dialogs/root-dialog'
 
 const Home: NextPage = () => {
   const slices = useSelector((state: RootState) => state.editor.slices)
 
   return (
     <Fragment>
-      <Root />
       <Byside as="div">
         <Byside.Sidebar width="8xl" as="aside" className={styles.slices}>
           <DocumentName />
@@ -47,6 +46,7 @@ const Home: NextPage = () => {
           <VersionPanel />
         </Byside.Sidebar>
       </Byside>
+      <RootDialog />
     </Fragment>
   )
 }

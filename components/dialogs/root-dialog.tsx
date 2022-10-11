@@ -2,13 +2,13 @@ import { RootState } from 'pages/_app'
 import { useSelector } from 'react-redux'
 import { SelectSlice } from './select-slice/select-slice'
 
-const MODALS = {
+const DIALOGS = {
   SELECT_SLICE: SelectSlice,
 }
 
-export function Root() {
+export function RootDialog() {
   const dialog = useSelector((state: RootState) => state.dialog)
   if (!dialog.type) return null
-  const Component = MODALS[dialog.type as keyof typeof MODALS]
+  const Component = DIALOGS[dialog.type as keyof typeof DIALOGS]
   return <Component {...dialog.props} />
 }

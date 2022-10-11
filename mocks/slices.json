@@ -1,27 +1,32 @@
 [
   {
-    "id": 0,
+    "id": 678,
     "name": "Slice A",
-    "image": "/slices-thumbnails/a.png"
+    "image": "/slices-thumbnails/a.png",
+    "type": "Content sections"
   },
   {
-    "id": 1,
+    "id": 989,
     "name": "Slice A",
-    "image": "/slices-thumbnails/b.png"
+    "image": "/slices-thumbnails/b.png",
+    "type": "Hero sections"
   },
   {
-    "id": 2,
+    "id": 768,
     "name": "Slice A",
-    "image": "/slices-thumbnails/c.png"
+    "image": "/slices-thumbnails/c.png",
+    "type": "Pricing sections"
   },
   {
-    "id": 3,
+    "id": 567,
     "name": "Slice A",
-    "image": "/slices-thumbnails/d.png"
+    "image": "/slices-thumbnails/d.png",
+    "type": "FAQs sections"
   },
   {
-    "id": 4,
+    "id": 678,
     "name": "Slice A",
-    "image": "/slices-thumbnails/d.png"
+    "image": "/slices-thumbnails/d.png",
+    "type": "FAQs sections"
   }
 ]

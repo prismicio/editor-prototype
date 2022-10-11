@@ -18,6 +18,7 @@ export default function Slice({
   return (
     <Box as="div" className={styles.root} {...restProps}>
       <NextImage height="126" width="232" src={preview} />
+      {name}
     </Box>
   )
 }
