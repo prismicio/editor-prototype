@@ -23,7 +23,7 @@ export function InsertSlice({ idx }: InsertSliceProps) {
 
   return (
     <button
-      onClick={() => dispatch.dialog.open('SELECT_SLICE')}
+      onClick={() => dispatch.dialog.open({ type: 'SELECT_SLICE', props: {} })}
       ref={ref}
       onDragOver={onDragOver}
       onDragLeave={onDragLeave}

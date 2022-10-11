@@ -11,7 +11,7 @@ import PublishOptions from 'components/publishOptions/publishOptions'
 import EditorTabs from 'components/editorTabs/editorTabs'
 import DocumentName from 'components/documentName/documentName'
 import { Fragment } from 'react'
-import { Root } from 'components/dialogs/select-slice/root'
+import { Root } from 'components/dialogs/root'
 
 const Home: NextPage = () => {
   const slices = useSelector((state: RootState) => state.editor.slices)
