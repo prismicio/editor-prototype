@@ -3,9 +3,10 @@ import { Box } from 'components/layouts/box'
 import styles from './draggable-list.module.css'
 import { Draggable } from './draggable'
 import tokens from 'token.config.json'
-import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Dispatch, RootState } from 'pages/_app'
+import { InsertSlice } from '../insert-slice'
+import { Fragment } from 'react'
 
 interface DraggableList<T> {
   children: (item: T, index: number) => React.ReactNode
@@ -43,14 +44,17 @@ export const DraggableList = <T extends IdObj>({
     >
       {data?.map((item, idx) => {
         return (
-          <Draggable
-            key={idx}
-            idx={idx}
-            onStarting={(idx: number) => onDragStart(idx)}
-            onDropping={(idx: number) => onDrop(idx)}
-          >
-            {children(item as any, idx)}
-          </Draggable>
+          <Fragment key={idx}>
+            <Draggable
+              key={idx}
+              idx={idx}
+              onStarting={(idx: number) => onDragStart(idx)}
+              onDropping={(idx: number) => onDrop(idx)}
+            >
+              {children(item as any, idx)}
+            </Draggable>
+            <InsertSlice />
+          </Fragment>
         )
       })}
     </Box>

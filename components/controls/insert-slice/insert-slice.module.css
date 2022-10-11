@@ -1,0 +1,9 @@
+.root {
+  border: none;
+  padding-block: xs;
+  background: transparent;
+}
+
+.dragover {
+  background: red;
+}
