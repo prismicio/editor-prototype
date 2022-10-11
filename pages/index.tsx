@@ -34,7 +34,7 @@ const Home: NextPage = () => {
           {slices.map((item, idx) => (
             <article className={styles.slice} key={idx}>
               <header>{item.name}</header>
-              <section>toto</section>
+              <section>My slice fields...</section>
             </article>
           ))}
         </Box>
