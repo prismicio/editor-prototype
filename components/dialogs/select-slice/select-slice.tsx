@@ -22,8 +22,12 @@ export function SelectSlice() {
             <Box>All Slices</Box>
             <Box>{libray.slices.length}</Box>
           </Box>
-          {Object.keys(libray.groups).map((group) => (
-            <Box as="button" onClick={() => dispatch.library.filter(group)}>
+          {Object.keys(libray.groups).map((group, index) => (
+            <Box
+              as="button"
+              onClick={() => dispatch.library.filter(group)}
+              key={index}
+            >
               <Box>{group}</Box>
               <Box>{libray.groups[group].length}</Box>
             </Box>
@@ -31,7 +35,7 @@ export function SelectSlice() {
         </Box>
         <Box>
           {libray.filtered.map((slice) => (
-            <Box as="div">
+            <Box as="div" key={slice.id}>
               <Slice name={slice.name} preview={slice.image} id={slice.id} />
               <Box
                 as="button"
