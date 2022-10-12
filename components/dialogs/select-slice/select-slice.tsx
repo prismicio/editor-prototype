@@ -4,6 +4,7 @@ import { Dialog } from 'components/dialogs/dialog-layout/dialog-layout'
 import { Box } from 'components/layouts/box'
 import Slice from 'components/cards/slice/slice'
 import { Button } from '@mui/material'
+import styles from './select-slice.module.css'
 
 export function SelectSlice() {
   const dispatch = useDispatch<Dispatch>()
@@ -17,23 +18,23 @@ export function SelectSlice() {
         Select a slice to add
       </Dialog.Title>
       <Dialog.Content>
-        <Box as="ul">
-          <Box as="button" onClick={() => dispatch.library.reset()}>
-            <Box>All Slices</Box>
-            <Box>{libray.slices.length}</Box>
+        <Box as="ul" className={styles.list}>
+          <Box as="li" onClick={() => dispatch.library.reset()}>
+            <p className={styles.SliceNumber}>All Slices</p>
+            <p>{libray.slices.length} Slices (XX Variations)</p>
           </Box>
           {Object.keys(libray.groups).map((group, index) => (
             <Box
-              as="button"
+              as="li"
               onClick={() => dispatch.library.filter(group)}
               key={index}
             >
-              <Box>{group}</Box>
-              <Box>{libray.groups[group].length}</Box>
+              <p className={styles.SliceNumber}>{group}</p>
+              <p>{libray.groups[group].length} variations</p>
             </Box>
           ))}
         </Box>
-        <Box>
+        <Box className={styles.listOfSlices}>
           {libray.filtered.map((slice) => (
             <Box as="div" key={slice.id}>
               <Slice name={slice.name} preview={slice.image} id={slice.id} />
