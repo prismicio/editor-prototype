@@ -5,6 +5,7 @@ import { Box } from 'components/layouts/box'
 import Slice from 'components/cards/slice/slice'
 import { Button } from '@mui/material'
 import styles from './select-slice.module.css'
+import AddIcon from '@mui/icons-material/Add';
 
 export function SelectSlice() {
   const dispatch = useDispatch<Dispatch>()

@@ -29,6 +29,9 @@
   padding: sm;
   background: #f4f2f4;
   border-bottom: 1px solid #DCDBDD;
+  font-size: sm;
+  line-height: 24px;
+  font-weight: semibold;
 }
 .title button{
   border: none;
