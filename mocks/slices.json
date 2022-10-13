@@ -1,32 +1,55 @@
 [
   {
-    "id": 678,
-    "name": "Slice A",
-    "image": "/slices-thumbnails/a.png",
-    "type": "Content sections"
+    "id": 0,
+    "name": "Content Sections",
+    "variations": [
+      {
+        "id": 0,
+        "name": "Variation A",
+        "image": "/slices-thumbnails/a.png"
+      },
+      {
+        "id": 1,
+        "name": "Variation A",
+        "image": "/slices-thumbnails/a.png"
+      }
+    ]
   },
   {
-    "id": 989,
-    "name": "Slice A",
-    "image": "/slices-thumbnails/b.png",
-    "type": "Hero sections"
+    "id": 1,
+    "name": "Hero Sections",
+    "variations": [
+      {
+        "id": 0,
+        "name": "Variation A",
+        "image": "/slices-thumbnails/a.png"
+      },
+      {
+        "id": 1,
+        "name": "Variation A",
+        "image": "/slices-thumbnails/a.png"
+      }
+    ]
   },
   {
-    "id": 768,
-    "name": "Slice A",
-    "image": "/slices-thumbnails/c.png",
-    "type": "Pricing sections"
+    "id": 2,
+    "name": "Pricing Sections",
+    "variations": []
   },
   {
-    "id": 567,
-    "name": "Slice A",
-    "image": "/slices-thumbnails/d.png",
-    "type": "FAQs sections"
-  },
-  {
-    "id": 668,
-    "name": "Slice A",
-    "image": "/slices-thumbnails/d.png",
-    "type": "FAQs sections"
+    "id": 3,
+    "name": "FAQs Sections",
+    "variations": [
+      {
+        "id": 0,
+        "name": "Variation A",
+        "image": "/slices-thumbnails/a.png"
+      },
+      {
+        "id": 1,
+        "name": "Variation A",
+        "image": "/slices-thumbnails/a.png"
+      }
+    ]
   }
 ]
