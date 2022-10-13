@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Dialog } from 'components/dialogs/dialog-layout/dialog-layout'
 import { Box } from 'components/layouts/box'
 import styles from './select-slice.module.css'
-import { Slice } from 'components/cards/slice/slice'
 import clsx from 'clsx'
 import { Variation } from 'components/cards/variation'
 
@@ -80,13 +79,3 @@ export function SelectSlice() {
     </Dialog>
   )
 }
-
-/**<Box as="div" key={slice.id}>
-              <Slice name={slice.name} preview={slice.image} id={slice.id} />
-              <Box
-                as="button"
-                onClick={() => dispatch.library.add({ position, slice })}
-              >
-                Add
-              </Box>
-            </Box> */

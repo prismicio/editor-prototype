@@ -1,9 +1,11 @@
 import { RootState } from 'pages/_app'
 import { useSelector } from 'react-redux'
+import { ScheduleDocument } from './schedule-document/schedule-document'
 import { SelectSlice } from './select-slice/select-slice'
 
 const DIALOGS = {
   SELECT_SLICE: SelectSlice,
+  SCHEDULE: ScheduleDocument,
 }
 
 export function RootDialog() {
