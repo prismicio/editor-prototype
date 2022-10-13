@@ -1,28 +1,28 @@
-.list{
+.list {
   display: flex;
   flex-direction: column;
   gap: 2xs;
   width: 240px;
-  border-right: 1px solid #DCDBDD;
+  border-right: 1px solid #dcdbdd;
   padding: sm;
   list-style-type: none;
 }
-.list li{
+.list li {
   border: none;
   border-radius: md;
   font-size: sm;
-  color: #6F6E77;
+  color: #6f6e77;
   padding: 8px 16px;
 }
-.list li .SliceNumber{
-  color: #1A1523;
+.list li .SliceNumber {
+  color: #1a1523;
   font-weight: medium;
 }
-.list li:hover{
+.list li:hover {
   cursor: pointer;
-  background-color: #EDECEE;
+  background-color: #edecee;
 }
-.listOfSlices{
+.listOfSlices {
   padding: 16px 24px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);

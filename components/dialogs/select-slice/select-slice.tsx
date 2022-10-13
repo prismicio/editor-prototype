@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Dialog } from 'components/dialogs/dialog-layout/dialog-layout'
 import { Box } from 'components/layouts/box'
 import Slice from 'components/cards/slice/slice'
-import { Button } from '@mui/material'
 import styles from './select-slice.module.css'
 
 export function SelectSlice() {
