@@ -4,6 +4,7 @@ import { Dialog } from 'components/dialogs/dialog-layout/dialog-layout'
 import { Box } from 'components/layouts/box'
 import Slice from 'components/cards/slice/slice'
 import styles from './select-slice.module.css'
+import AddIcon from '@mui/icons-material/Add';
 
 export function SelectSlice() {
   const dispatch = useDispatch<Dispatch>()
