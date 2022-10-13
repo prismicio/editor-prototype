@@ -3,15 +3,15 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Dialog } from 'components/dialogs/dialog-layout/dialog-layout'
 import { Box } from 'components/layouts/box'
 import styles from './select-slice.module.css'
-import Slice from 'components/cards/slice/slice'
+import { Slice } from 'components/cards/slice/slice'
 import clsx from 'clsx'
+import { Variation } from 'components/cards/variation'
 
 export function SelectSlice() {
   const dispatch = useDispatch<Dispatch>()
   const library = useSelector((state: RootState) => state.library)
   const position = useSelector((state: RootState) => state.editor.selectedID)
 
-  console.log(library)
   return (
     <Dialog>
       <Dialog.Title onClose={() => dispatch.dialog.close()}>
@@ -62,7 +62,10 @@ export function SelectSlice() {
                 </Box>
                 <Box as="div" className={styles.variations}>
                   {slice.variations.map((variation) => (
-                    <Slice
+                    <Variation
+                      add={() =>
+                        dispatch.editor.onInsert({ position, variation })
+                      }
                       name={variation.name}
                       preview={variation.image}
                       id={variation.id}

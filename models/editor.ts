@@ -22,7 +22,7 @@ const SLICE_TEMPLATES = [
 ]
 
 type InsertPayloadType = {
-  slice: SliceType
+  variation: VariationType
   position: number
 }
 
@@ -42,10 +42,7 @@ export const editor = createModel<RootModel>()({
       return state
     },
     onInsert: (state, payload: InsertPayloadType) => {
-      state.slices.splice(payload.position, 0, {
-        ...payload.slice,
-        name: cuid(),
-      })
+      state.slices.splice(payload.position, 0, payload.variation)
       return state
     },
     onDrop: (state, payload: number) => {

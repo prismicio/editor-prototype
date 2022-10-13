@@ -1,7 +1,7 @@
 import { Box } from 'components/layouts/box'
 import type { NextPage } from 'next'
 import styles from 'styles/Home.module.css'
-import Slice from 'components/cards/slice/slice'
+import { Slice } from 'components/cards/slice/slice'
 import { Byside } from 'components/layouts/by-side'
 import { DraggableList } from 'components/controls/draggable'
 import { useSelector } from 'react-redux'
