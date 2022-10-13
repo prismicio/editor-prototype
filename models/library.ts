@@ -2,11 +2,11 @@ import { createModel } from '@rematch/core'
 import { RootModel } from '.'
 import slices from 'mocks/slices.json'
 
-type INITIAL_STATE_LIBRARY = {
+type INITIAL_STATE = {
   slices: Array<SliceType>
   total: number
 }
-const INITIAL_STATE = {
+const INITIAL_STATE: INITIAL_STATE = {
   slices,
   filtered: slices,
 }

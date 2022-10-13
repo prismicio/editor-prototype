@@ -2,9 +2,8 @@ import { Dispatch, RootState } from 'pages/_app'
 import { useDispatch, useSelector } from 'react-redux'
 import { Dialog } from 'components/dialogs/dialog-layout/dialog-layout'
 import { Box } from 'components/layouts/box'
-import Slice from 'components/cards/slice/slice'
 import styles from './select-slice.module.css'
-import AddIcon from '@mui/icons-material/Add'
+
 
 export function SelectSlice() {
   const dispatch = useDispatch<Dispatch>()
@@ -38,6 +37,7 @@ export function SelectSlice() {
           {library.filtered.map((slice) => (
             <Box as="div">
               <Box as="h2">{slice.name}</Box>
+              {slice.variations.map(())}
             </Box>
           ))}
         </Box>

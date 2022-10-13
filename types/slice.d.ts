@@ -3,9 +3,3 @@ type SliceType = {
   name: string
   variations: Array<VariationType>
 }
-
-type VariationType = {
-  id: number
-  name: string
-  image: string
-}
