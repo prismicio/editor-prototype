@@ -2,19 +2,17 @@ import { createModel } from '@rematch/core'
 import { RootModel } from '.'
 import slices from 'mocks/slices.json'
 
-type INITIAL_STATE = {
-  slices: Array<SliceType>
-  total: number
-}
-const INITIAL_STATE: INITIAL_STATE = {
+const INITIAL_STATE = {
   slices,
   filtered: slices,
+  selected: null,
 }
 
 export const library = createModel<RootModel>()({
   state: INITIAL_STATE,
   reducers: {
     filter(state, payload: number) {
+      state.selected = payload as any
       state.filtered = state.slices.filter((slice) => slice.id === payload)
       return state
     },

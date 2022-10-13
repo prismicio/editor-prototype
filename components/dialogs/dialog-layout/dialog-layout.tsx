@@ -2,7 +2,7 @@ import clsx from 'clsx'
 import { Box } from 'components/layouts/box'
 import { ReactNode } from 'react'
 import styles from './dialog-layout.module.css'
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from '@mui/icons-material/Close'
 type DialogProps = {
   children: ReactNode
 }
@@ -31,7 +31,11 @@ function Title(props: DialogTitleProps) {
 }
 
 function Content(props: DialogProps) {
-  return <Box as="div" className={clsx(styles.wrapper)}>{props.children}</Box>
+  return (
+    <Box as="div" className={clsx(styles.wrapper)}>
+      {props.children}
+    </Box>
+  )
 }
 
 Dialog.Title = Title

@@ -34,7 +34,13 @@
   {
     "id": 2,
     "name": "Pricing Sections",
-    "variations": []
+    "variations": [
+      {
+        "id": 1,
+        "name": "Variation A",
+        "image": "/slices-thumbnails/a.png"
+      }
+    ]
   },
   {
     "id": 3,

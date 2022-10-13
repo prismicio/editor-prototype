@@ -1,24 +1,78 @@
-.list {
+.library {
+  display: flex;
+}
+
+.slices {
   display: flex;
   flex-direction: column;
   gap: 2xs;
-  width: 240px;
+  min-width: 240px;
   border-right: 1px solid #dcdbdd;
   padding: sm;
   list-style-type: none;
+  background: #f9f8f9;
 }
-.list li {
+
+.slice {
   border: none;
   border-radius: md;
   font-size: sm;
   color: #6f6e77;
   padding: 8px 16px;
 }
-.list li .SliceNumber {
-  color: #1a1523;
-  font-weight: medium;
-}
-.list li:hover {
+
+.slice:hover {
   cursor: pointer;
   background-color: #edecee;
+  transition: 200ms ease;
+}
+
+.name {
+  color: #1a1523;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1a1523;
+  line-height: 24px;
+}
+
+.number {
+  color: #1a1523;
+  font-size: 12px;
+  color: #6f6e77;
+  line-height: 16px;
+}
+
+.group {
+  padding: 16px 24px;
+}
+
+.selected {
+  background: #edecee;
+}
+
+.variations {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  gap: var(--space-sm);
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  align-items: center;
+  color: #1a1523;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.amount {
+  color: #6f6e77;
+  font-size: 16px;
+  font-weight: 400;
 }

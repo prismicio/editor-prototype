@@ -28,17 +28,17 @@
   justify-content: space-between;
   padding: sm;
   background: #f4f2f4;
-  border-bottom: 1px solid #DCDBDD;
+  border-bottom: 1px solid #dcdbdd;
   font-size: sm;
   line-height: 24px;
   font-weight: semibold;
 }
-.title button{
+.title button {
   border: none;
   line-height: 0;
   background: transparent;
-  color: #6F6E77;
+  color: #6f6e77;
 }
-.wrapper{
+.wrapper {
   display: flex;
 }
