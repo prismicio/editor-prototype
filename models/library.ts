@@ -22,10 +22,10 @@ export const library = createModel<RootModel>()({
     },
   },
   effects: (dispatch) => ({
-    async add(payload: { position: number; slice: SliceType }) {
+    async add(payload: { position: number; variation: SliceType }) {
       dispatch.editor.onInsert({
         position: payload.position + 1,
-        slice: payload.slice,
+        variation: payload.variation,
       })
     },
   }),
