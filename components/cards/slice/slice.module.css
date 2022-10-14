@@ -1,6 +1,11 @@
 .root {
   background: white;
-  padding: xs;
+  padding: 8px;
   border: 1px solid #dcdbdd;
   border-radius: 8px;
+  position: relative;
+}
+.root:hover{
+  border: 1px solid #908E96;
+  cursor: pointer;
 }
