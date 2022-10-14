@@ -3,4 +3,28 @@
   padding: xs;
   border: 1px solid #dcdbdd;
   border-radius: 8px;
+  position: relative;
+}
+.root button {
+  display: block;
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  background: #1C1C1F;
+  border: none;
+  border-radius: md;
+  line-height: 0;
+  padding: 10px;
+}
+.root button:hover{
+  cursor: pointer;
+}
+.root button svg{
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+.sliceName{
+  font-size: xs;
+  font-weight: semibold;
 }

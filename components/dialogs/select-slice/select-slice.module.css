@@ -1,5 +1,6 @@
 .library {
   display: flex;
+  width: -webkit-fill-available;
 }
 
 .slices {
@@ -44,6 +45,7 @@
 
 .group {
   padding: 16px 24px;
+  width: -webkit-fill-available;
 }
 
 .selected {
@@ -57,15 +59,16 @@
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
   gap: var(--space-sm);
+  margin-bottom: md;
 }
 
 .title {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
   align-items: center;
   color: #1a1523;
-  margin-bottom: 4px;
+  margin-bottom: xs;
   display: flex;
   align-items: center;
   gap: 4px;
