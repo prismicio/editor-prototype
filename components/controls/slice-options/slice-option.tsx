@@ -1,34 +1,40 @@
 import { SaveAlt } from '@mui/icons-material'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import styles from './slice-option.module.css'
+import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
+import ContentCopyOutlinedIcon from '@mui/icons-material/ContentCopyOutlined';
+import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 
 export function SliceOptions() {
   return (
     <DropdownMenu.Root>
-      <DropdownMenu.Trigger>Options</DropdownMenu.Trigger>
+      <DropdownMenu.Trigger className={styles.trigger}><MoreVertOutlinedIcon /></DropdownMenu.Trigger>
       <DropdownMenu.Portal>
         <DropdownMenu.Content className={styles.root}>
-          <DropdownMenu.Label>Slice options</DropdownMenu.Label>
-          <DropdownMenu.Item>
-            <SaveAlt /> Move up
+          <DropdownMenu.Label className={styles.title}>Slice options</DropdownMenu.Label>
+          <DropdownMenu.Item className={styles.menuItem}>
+            <ArrowUpwardIcon /> Move up
           </DropdownMenu.Item>
           <DropdownMenu.Separator />
-          <DropdownMenu.Item>
-            <SaveAlt /> Move down
+          <DropdownMenu.Item className={styles.menuItem}>
+            <ArrowDownwardIcon /> Move down
           </DropdownMenu.Item>
           <DropdownMenu.Separator />
-          <DropdownMenu.Item>
-            <SaveAlt />
+          <DropdownMenu.Item className={styles.menuItem}>
+            <DescriptionOutlinedIcon />
             Change variation
           </DropdownMenu.Item>
           <DropdownMenu.Separator />
-          <DropdownMenu.Item>
-            <SaveAlt />
+          <DropdownMenu.Item className={styles.menuItem}>
+            <ContentCopyOutlinedIcon />
             Duplicate
           </DropdownMenu.Item>
           <DropdownMenu.Separator />
-          <DropdownMenu.Item>
-            <SaveAlt />
+          <DropdownMenu.Item className={styles.menuItem}>
+            <DeleteOutlineOutlinedIcon />
             Delete
           </DropdownMenu.Item>
         </DropdownMenu.Content>
