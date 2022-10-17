@@ -11,7 +11,7 @@
 
 .root > * {
   fill: rgb(224, 224, 224);
-  transition: 300ms ease-in;
+  transition: 100ms ease-in-out;
 }
 
 .root:hover > * {

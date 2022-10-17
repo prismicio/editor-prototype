@@ -1,4 +1,5 @@
 .root {
+  user-select: none;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -9,8 +10,9 @@
   background: #FFFFFF;
   border: 1px solid #E4E2E4;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 6px;  
+  border-radius: 6px;
 }
+
 .trigger{
   background: #FFFFFF;
   border: 1px solid #DCDBDD;
@@ -23,12 +25,17 @@
   right: 16px;
   top: 16px;
 }
+.trigger:hover{
+  cursor: pointer;
+  background-color: #F4F2F4;
+}
 .trigger svg{
   color: #6F6E77;
   width: 20px;
   height: 20px;
 }
 .title{
+  user-select: none;
   border-bottom: 1px solid #E4E2E4;
   padding: 8px 16px;
   width: 100%;
