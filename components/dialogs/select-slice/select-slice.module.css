@@ -79,3 +79,10 @@
   font-size: 16px;
   font-weight: 400;
 }
+
+.button {
+  font-weight: 400;
+  padding-block: 8px;
+  padding-inline: 16px;
+  font-size: 14px;
+}

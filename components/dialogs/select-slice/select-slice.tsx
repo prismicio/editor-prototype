@@ -39,7 +39,7 @@ export function SelectSlice() {
                     [styles.selected]: slice.id === library.selected,
                   })}
                   onClick={() => dispatch.library.filter(slice.id)}
-                  key={index}
+                  key={slice.id}
                 >
                   <Box className={styles.name}>{slice.name}</Box>
                   <Box
@@ -51,7 +51,7 @@ export function SelectSlice() {
           </Box>
           <Box className={styles.group}>
             {library.filtered.map((slice) => (
-              <Box as="div">
+              <Box as="div" key={slice.id}>
                 <Box as="div" className={styles.title}>
                   <Box as="span"> {`${slice.name}`}</Box>
                   <Box
@@ -62,6 +62,7 @@ export function SelectSlice() {
                 <Box as="div" className={styles.variations}>
                   {slice.variations.map((variation) => (
                     <Variation
+                      key={variation.id}
                       add={() =>
                         dispatch.editor.onInsert({ position, variation })
                       }
