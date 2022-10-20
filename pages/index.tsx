@@ -28,7 +28,7 @@ const Home: NextPage = () => {
               dispatch.dialog.open({ type: 'SELECT_SLICE', props: {} })
             }
           >
-            Ajouter une tranche
+            Ajouter une tranche de fou furieux
           </button>
           <DraggableList
             items={slices}
