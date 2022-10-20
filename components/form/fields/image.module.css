@@ -70,7 +70,6 @@
 .image_container .title label {
   font-weight: 600;
   font-size: 14px;
-  margin-bottom: 8px;
   display: block;
 }
 .image_container .actions .buttons {
@@ -79,13 +78,16 @@
   width: 100%;
   justify-content: space-between;
 }
+.image_container .buttons{
+  display: flex;
+  gap: 8px;
+}
 .image_container .buttons button.small {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   padding: 5px;
   display: flex;
-  gap: 8px;
   align-items: center;
   color: #1a1523;
 }
