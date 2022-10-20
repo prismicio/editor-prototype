@@ -93,7 +93,7 @@
   content: 'Type / to add something';
 }
 
-.commands-list-container {
+.commands_list_container {
   margin: 0;
   padding: 4px 0;
   width: 256px;
@@ -103,12 +103,12 @@
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
 }
-.commands-list-container header {
+.commands_list_container header {
   border-bottom: 1px solid #dcdbdd;
   padding: 4px 16px 8px 16px;
   color: #6f6e77;
 }
-.commands-list-item {
+.commands_list_item {
   padding: 8px 16px;
   list-style: none;
   font-weight: 400;
@@ -118,13 +118,13 @@
   display: flex;
   gap: 8px;
 }
-.commands-list-item:hover,
+.commands_list_item:hover,
 .active {
   background: #f4f2f4;
   cursor: pointer;
 }
 
-.commands-list-item svg {
+.commands_list_item svg {
   width: 16px;
   height: 16px;
 }

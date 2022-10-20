@@ -33,13 +33,13 @@ const ICONS = {
 function CommandsList(props) {
   const { items, selectItem, selectedIndex } = props
   return (
-    <ul className={`${styles}.commands-list-container`}>
+    <ul className={styles.commands_list_container}>
       <header>Add field</header>
       {items.map(({ title, icon }, idx) => {
         const ComponentIcon = ICONS[icon]
         return (
           <li
-            className={classNames('commands-list-item', {
+            className={classNames(styles.commands_list_item, {
               active: selectedIndex === idx,
             })}
             key={idx}
