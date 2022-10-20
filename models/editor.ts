@@ -108,7 +108,7 @@ export const editor = createModel<RootModel>()({
       return state
     },
     onInsert: (state, payload: InsertPayloadType) => {
-      state.slices.splice(payload.position, 0, payload.variation)
+      state.slices.splice(payload.position, 0, payload.variation as any)
       return state
     },
     onDrop: (state, payload: number) => {
