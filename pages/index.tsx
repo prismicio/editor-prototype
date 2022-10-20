@@ -25,13 +25,17 @@ const Home: NextPage = () => {
         <Byside.Sidebar width="8xl" as="aside" className={styles.slices}>
           <DocumentName />
           {!slices.length && (
-            <button
-              onClick={() =>
-                dispatch.dialog.open({ type: 'SELECT_SLICE', props: {} })
-              }
-            >
-              click here ma gueule to add la slice
-            </button>
+            <Box>
+              <h2>Empty Slices</h2>
+              <p>Pas de Slices dans ce document</p>
+              <button
+                onClick={() =>
+                  dispatch.dialog.open({ type: 'SELECT_SLICE', props: {} })
+                }
+              >
+                click ici pour en ajouter frère
+              </button>
+            </Box>
           )}
           <DraggableList
             items={slices}
