@@ -4,7 +4,7 @@ import styles from 'styles/Home.module.css'
 import { Slice } from 'components/cards/slice/slice'
 import { Byside } from 'components/layouts/by-side'
 import { DraggableList } from 'components/controls/draggable'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from './_app'
 import VersionPanel from 'components/versionPanel/versionPanel'
 import PublishOptions from 'components/publishOptions/publishOptions'
@@ -16,12 +16,20 @@ import Form from 'components/form/form'
 
 const Home: NextPage = () => {
   const slices = useSelector((state: RootState) => state.editor.slices)
+  const dispatch = useDispatch()
 
   return (
     <Fragment>
       <Byside as="div">
         <Byside.Sidebar width="8xl" as="aside" className={styles.slices}>
           <DocumentName />
+          <button
+            onClick={() =>
+              dispatch.dialog.open({ type: 'SELECT_SLICE', props: {} })
+            }
+          >
+            Ajouter une tranche
+          </button>
           <DraggableList
             items={slices}
             children={(item) => (
