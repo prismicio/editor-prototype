@@ -2,17 +2,14 @@ import { Box } from 'components/layouts/box'
 import React from 'react'
 import styles from './variation.module.css'
 import NextImage from 'next/image'
-import AddIcon from '@mui/icons-material/Add';
+import AddIcon from '@mui/icons-material/Add'
 
-interface SliceProps {
-  preview: string
-  name: string
-  id: number
+interface SliceProps extends Pick<VariationType, 'image' | 'id' | 'name'> {
   add: () => void
 }
 
 export function Variation({
-  preview,
+  image,
   name,
   id,
   add,
@@ -20,7 +17,7 @@ export function Variation({
 }: SliceProps): JSX.Element {
   return (
     <Box as="div" className={styles.root} {...restProps}>
-      <NextImage height="126" width="232" src={preview} />
+      <NextImage height="126" width="232" src={image} />
       <Box as="button" onClick={add}>
         <AddIcon />
       </Box>

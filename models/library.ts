@@ -2,6 +2,12 @@ import { createModel } from '@rematch/core'
 import { RootModel } from '.'
 import slices from 'mocks/slices.json'
 
+interface SliceProps {
+  slices: Array<SliceType>
+  filtered: Array<SliceType>
+  selected: null
+}
+
 const INITIAL_STATE = {
   slices,
   filtered: slices,
