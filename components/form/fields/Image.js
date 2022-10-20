@@ -68,16 +68,7 @@ function Image(props) {
       <div className={styles.image_container}>
         <div className={styles.title}>
           <label>{props.label}</label>
-        </div>
-        <div className={styles.preview}>
-          <img
-            onClick={() => setOpen(true)}
-            className={styles.image_preview}
-            alt="imagze"
-            src={props.value}
-          />
-        </div>
-        <div className={styles.actions}>
+
           <div className={styles.buttons}>
             <button className={clsx(styles.secondary, styles.small)} disabled>
               <CropOutlinedIcon /> Crop & Resize
@@ -92,6 +83,14 @@ function Image(props) {
               <DeleteOutlineOutlinedIcon /> Clear
             </button>
           </div>
+        </div>
+        <div className={styles.preview}>
+          <img
+            onClick={() => setOpen(true)}
+            className={styles.image_preview}
+            alt="imagze"
+            src={props.value}
+          />
         </div>
         <Field
           placeholder={props.child.alt.config.label}

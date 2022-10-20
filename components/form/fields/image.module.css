@@ -13,6 +13,13 @@
   padding: 0;
   border: 0;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  background-image: url("https://images.prismic.io/findone/fafc6030-f24a-4974-b5f4-343c88c5cd22_previewBackground.jpg");
+  background-repeat: repeat;
+  background-size: 10px;
+  border: 1px solid #DCDBDD;
 }
 .image_preview {
   width: 100%;
@@ -46,19 +53,13 @@
   display: flex;
   justify-content: space-between;
 }
-.image_container .title label {
-  font-weight: 600;
-  font-size: 14px;
+.image_container .title{
   margin-bottom: 8px;
-  display: block;
-}
-.image_container .actions .buttons {
   display: flex;
-  gap: 8px;
-  width: 100%;
   justify-content: space-between;
+  align-items: center
 }
-.image_container .actions button.small {
+.image-container button.small {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -66,13 +67,37 @@
   display: flex;
   color: #1a1523;
 }
-.image_container .actions button:disabled {
+.image_container .title label {
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+}
+.image_container .actions .buttons {
+  display: flex;
+  gap: 4px;
+  width: 100%;
+  justify-content: space-between;
+}
+.image_container .buttons{
+  display: flex;
+  gap: 8px;
+}
+.image_container .buttons button.small {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  color: #1a1523;
+}
+.image_container button:disabled {
   opacity: 0.5;
 }
-.image_container .actions button:disabled:hover {
+.image_container button:disabled:hover {
   cursor: not-allowed;
 }
-.image_container .actions button svg {
+.image_container button svg {
   color: #6f6e77;
   width: 16px;
   height: 16px;
@@ -98,4 +123,24 @@
   padding: 16px;
   background: #f4f2f4;
   font-weight: 600;
+}
+button.secondary {
+  user-select: none;
+  padding: 10px 16px;
+  background: #ffffff;
+  border: 1px solid #dcdbdd;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 0px rgb(0 0 0 / 4%);
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1a1523;
+}
+button.secondary:hover {
+  background: #f4f2f4;
+  border: 1px solid #dcdbdd;
+  box-shadow: 0px 1px 0px rgb(0 0 0 / 4%);
+  cursor: pointer;
 }
