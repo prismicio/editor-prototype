@@ -53,6 +53,20 @@
   display: flex;
   justify-content: space-between;
 }
+.image_container .title{
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.image-container button.small {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 5px;
+  display: flex;
+  color: #1a1523;
+}
 .image_container .title label {
   font-weight: 600;
   font-size: 14px;
@@ -61,25 +75,27 @@
 }
 .image_container .actions .buttons {
   display: flex;
-  gap: 8px;
+  gap: 4px;
   width: 100%;
   justify-content: space-between;
 }
-.image_container .actions button.small {
+.image_container .buttons button.small {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   padding: 5px;
   display: flex;
+  gap: 8px;
+  align-items: center;
   color: #1a1523;
 }
-.image_container .actions button:disabled {
+.image_container button:disabled {
   opacity: 0.5;
 }
-.image_container .actions button:disabled:hover {
+.image_container button:disabled:hover {
   cursor: not-allowed;
 }
-.image_container .actions button svg {
+.image_container button svg {
   color: #6f6e77;
   width: 16px;
   height: 16px;
@@ -125,12 +141,4 @@ button.secondary:hover {
   border: 1px solid #dcdbdd;
   box-shadow: 0px 1px 0px rgb(0 0 0 / 4%);
   cursor: pointer;
-}
-.image-container .actions button.small {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  padding: 5px;
-  display: flex;
-  color: #1a1523;
 }
