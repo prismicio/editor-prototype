@@ -43,6 +43,19 @@
   display: flex;
   gap: 8px;
 }
+.bubble_menu .secondary {
+  user-select: none;
+  background: #ffffff;
+  border: 1px solid #dcdbdd;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 0px rgb(0 0 0 / 4%);
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1a1523;
+}
 .bubble_menu button svg {
   width: 20px;
   height: 20px;
