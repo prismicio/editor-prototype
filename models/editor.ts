@@ -36,7 +36,7 @@ export const editor = createModel<RootModel>()({
     },
     onEditStaticZone: (state, payload: { target: string; value: string }) => {
       const field = state.static.fields as any
-      field.value = payload.value
+      field[payload.target].value = payload.value
       return state
     },
     onInsert: (state, payload: InsertPayloadType) => {

@@ -63,9 +63,10 @@ export function SelectSlice() {
                   {slice.variations.map((variation) => (
                     <Variation
                       key={variation.id}
-                      add={() =>
+                      add={() => {
                         dispatch.editor.onInsert({ position, variation })
-                      }
+                        dispatch.dialog.close()
+                      }}
                       name={variation.name}
                       image={variation.image}
                       id={variation.id}
