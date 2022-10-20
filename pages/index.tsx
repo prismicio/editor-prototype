@@ -13,6 +13,7 @@ import DocumentName from 'components/documentName/documentName'
 import { Fragment } from 'react'
 import { RootDialog } from 'components/dialogs/root-dialog'
 import Form from 'components/form/form'
+import staticz from 'mocks/static.json'
 
 const Home: NextPage = () => {
   const slices = useSelector((state: RootState) => state.editor.slices)
@@ -44,6 +45,10 @@ const Home: NextPage = () => {
         <Byside.Primary breakAT="9xl" as="main">
           <EditorTabs />
           <Box className={styles.wrapper}>
+            <article className={styles.slice}>
+              <header>Static Zone</header>
+              <Form fields={staticz.fields} />
+            </article>
             {slices.map((item, idx) => (
               <article className={styles.slice} key={idx}>
                 <header>{item.name}</header>
