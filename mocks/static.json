@@ -1,7 +1,4 @@
 {
-  "id": 0,
-  "name": "Static Zone",
-  "image": "/slices-thumbnails/a.png",
   "fields": {
     "title": {
       "value": "Lorem ispum dolor...",

@@ -15,13 +15,12 @@ const FIELDS = {
   Image: ImageField,
 }
 
-export default function Form({ fields, index }) {
+export default function StaticZone({ fields }) {
   const dispatch = useDispatch()
   function onChange(e) {
-    dispatch.editor.onEditSlice({
+    dispatch.editor.onEditStaticZone({
       target: e.target.name,
       value: e.target.value,
-      index,
     })
   }
   function onRichTextUpdateChange(e) {

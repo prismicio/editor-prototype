@@ -1,4 +1,5 @@
 import { createModel } from '@rematch/core'
+import staticz from 'mocks/static.json'
 import cuid from 'cuid'
 
 import { RootModel } from '.'
@@ -12,8 +13,8 @@ export const editor = createModel<RootModel>()({
   state: {
     draggedID: 0,
     selectedID: 0,
-    focusID: 0,
     variations: [] as VariationType[],
+    static: { ...staticz },
   },
   reducers: {
     onDragStart: (state, payload: number) => {
@@ -24,13 +25,18 @@ export const editor = createModel<RootModel>()({
       state.selectedID = payload
       return state
     },
-    onEdit: (
+    onEditSlice: (
       state,
       payload: { target: string; value: string; index: number }
     ) => {
       state.variations[payload.index].fields[payload.target].value =
         payload.value
 
+      return state
+    },
+    onEditStaticZone: (state, payload: { target: string; value: string }) => {
+      const field = state.static.fields as any
+      field.value = payload.value
       return state
     },
     onInsert: (state, payload: InsertPayloadType) => {

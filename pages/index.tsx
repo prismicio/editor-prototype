@@ -13,10 +13,10 @@ import DocumentName from 'components/documentName/documentName'
 import { Fragment } from 'react'
 import { RootDialog } from 'components/dialogs/root-dialog'
 import Form from 'components/form/form'
-import staticz from 'mocks/static.json'
+import StaticZone from 'components/form/StaticZone'
 
 const Home: NextPage = () => {
-  const variations = useSelector((state: RootState) => state.editor.variations)
+  const editor = useSelector((state: RootState) => state.editor)
   const dispatch = useDispatch()
 
   return (
@@ -24,7 +24,7 @@ const Home: NextPage = () => {
       <Byside as="div">
         <Byside.Sidebar width="8xl" as="aside" className={styles.slices}>
           <DocumentName />
-          {!variations.length && (
+          {!editor.variations.length && (
             <Box>
               <h2>Empty Slices</h2>
               <p>Pas de Slices dans ce document</p>
@@ -33,12 +33,12 @@ const Home: NextPage = () => {
                   dispatch.dialog.open({ type: 'SELECT_SLICE', props: {} })
                 }
               >
-                click ici pour en ajouter frère
+                Add
               </button>
             </Box>
           )}
           <DraggableList
-            items={variations}
+            items={editor.variations}
             children={(item) => (
               <Fragment>
                 <Slice preview={item.image} name={item.name} id={item.id} />
@@ -51,9 +51,9 @@ const Home: NextPage = () => {
           <Box className={styles.wrapper}>
             <article className={styles.slice}>
               <header>Static Zone</header>
-              <Form fields={staticz.fields} index={-1} />
+              <StaticZone fields={editor.static.fields} />
             </article>
-            {variations.map((item, idx) => (
+            {editor.variations.map((item, idx) => (
               <article className={styles.slice} key={idx}>
                 <header>{item.name}</header>
                 <Form fields={item.fields} index={idx} />
