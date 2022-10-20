@@ -9,5 +9,5 @@ type VariationType = {
   id: number
   name: string
   image: string
-  fields: object
+  fields: any
 }

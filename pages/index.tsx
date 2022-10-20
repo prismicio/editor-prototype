@@ -16,7 +16,7 @@ import Form from 'components/form/form'
 import staticz from 'mocks/static.json'
 
 const Home: NextPage = () => {
-  const slices = useSelector((state: RootState) => state.editor.slices)
+  const variations = useSelector((state: RootState) => state.editor.variations)
   const dispatch = useDispatch()
 
   return (
@@ -24,7 +24,7 @@ const Home: NextPage = () => {
       <Byside as="div">
         <Byside.Sidebar width="8xl" as="aside" className={styles.slices}>
           <DocumentName />
-          {!slices.length && (
+          {!variations.length && (
             <Box>
               <h2>Empty Slices</h2>
               <p>Pas de Slices dans ce document</p>
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
             </Box>
           )}
           <DraggableList
-            items={slices}
+            items={variations}
             children={(item) => (
               <Fragment>
                 <Slice preview={item.image} name={item.name} id={item.id} />
@@ -51,12 +51,12 @@ const Home: NextPage = () => {
           <Box className={styles.wrapper}>
             <article className={styles.slice}>
               <header>Static Zone</header>
-              <Form fields={staticz.fields} />
+              <Form fields={staticz.fields} index={-1} />
             </article>
-            {slices.map((item, idx) => (
+            {variations.map((item, idx) => (
               <article className={styles.slice} key={idx}>
                 <header>{item.name}</header>
-                <Form fields={item.fields} />
+                <Form fields={item.fields} index={idx} />
               </article>
             ))}
           </Box>

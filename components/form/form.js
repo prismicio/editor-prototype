@@ -5,6 +5,7 @@ import SimpleField from './fields/simpleField'
 import Textarea from './fields/textArea'
 import RichText from './fields/richText'
 import ImageField from './fields/Image'
+import { useDispatch, useSelector } from 'react-redux'
 
 const FIELDS = {
   Select: Select,
@@ -14,7 +15,22 @@ const FIELDS = {
   Image: ImageField,
 }
 
-export default function Form({ fields }) {
+export default function Form({ fields, index }) {
+  const dispatch = useDispatch()
+  function onChange(e) {
+    dispatch.editor.onEdit({
+      target: e.target.name,
+      value: e.target.value,
+      index,
+    })
+  }
+  function onRichTextUpdateChange(e) {
+    console.log(e)
+  }
+
+  function onChangeImage(e) {
+    console.log(e)
+  }
   return (
     <div className={styles.fieldSet}>
       {Object.keys(fields).map((key, i) => {
@@ -29,9 +45,9 @@ export default function Form({ fields }) {
             child={child}
             key={key + i}
             value={value}
-            //onChange={context.onChange}
-            //onRichTextUpdate={context.onRichTextUpdate}
-            //onChangeImage={context.onChangeImage}
+            onChange={onChange}
+            onRichTextUpdate={onRichTextUpdateChange}
+            onChangeImage={onChangeImage}
             name={key}
           />
         )

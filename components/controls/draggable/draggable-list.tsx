@@ -32,7 +32,7 @@ export const DraggableList = <T extends IdObj>({
 }: DraggableList<T>) => {
   const VSpace = `var(--space-${space})`
   const dispatch = useDispatch<Dispatch>()
-  const data = useSelector((state: RootState) => state.editor.slices)
+  const data = useSelector((state: RootState) => state.editor.variations)
   const onDragStart = (idx: number) => dispatch.editor.onDragStart(idx)
   const onDrop = (idx: number) => dispatch.editor.onDrop(idx)
   return (
