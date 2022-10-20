@@ -67,7 +67,7 @@ export function SelectSlice() {
                         dispatch.editor.onInsert({ position, variation })
                       }
                       name={variation.name}
-                      preview={variation.image}
+                      image={variation.image}
                       id={variation.id}
                     />
                   ))}

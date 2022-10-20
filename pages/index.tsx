@@ -4,7 +4,7 @@ import styles from 'styles/Home.module.css'
 import { Slice } from 'components/cards/slice/slice'
 import { Byside } from 'components/layouts/by-side'
 import { DraggableList } from 'components/controls/draggable'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from './_app'
 import VersionPanel from 'components/versionPanel/versionPanel'
 import PublishOptions from 'components/publishOptions/publishOptions'
@@ -13,15 +13,26 @@ import DocumentName from 'components/documentName/documentName'
 import { Fragment } from 'react'
 import { RootDialog } from 'components/dialogs/root-dialog'
 import Form from 'components/form/form'
+import staticz from 'mocks/static.json'
 
 const Home: NextPage = () => {
   const slices = useSelector((state: RootState) => state.editor.slices)
+  const dispatch = useDispatch()
 
   return (
     <Fragment>
       <Byside as="div">
         <Byside.Sidebar width="8xl" as="aside" className={styles.slices}>
           <DocumentName />
+          {!slices.length && (
+            <button
+              onClick={() =>
+                dispatch.dialog.open({ type: 'SELECT_SLICE', props: {} })
+              }
+            >
+              click here ma gueule to add la slice
+            </button>
+          )}
           <DraggableList
             items={slices}
             children={(item) => (
@@ -34,6 +45,10 @@ const Home: NextPage = () => {
         <Byside.Primary breakAT="9xl" as="main">
           <EditorTabs />
           <Box className={styles.wrapper}>
+            <article className={styles.slice}>
+              <header>Static Zone</header>
+              <Form fields={staticz.fields} />
+            </article>
             {slices.map((item, idx) => (
               <article className={styles.slice} key={idx}>
                 <header>{item.name}</header>
