@@ -6,12 +6,61 @@
       {
         "id": 0,
         "name": "Variation A",
-        "image": "/slices-thumbnails/a.png"
+        "image": "/slices-thumbnails/a.png",
+        "fields": {
+          "title": {
+            "value": "Lorem ispum dolor...",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "Heading" }
+            }
+          },
+          "text": {
+            "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper est ut sem suscipit euismod. Suspendisse potenti. Donec cursus metus sollicitudin ex eleifend faucibus sollicitudin tempor velit. Maecenas id ultricies lectus.</p>",
+            "config": {
+              "type": "RichText2",
+              "placeholder": "Placeholder...",
+              "label": "Text",
+              "props": { "label": "Introduction Text" }
+            }
+          },
+          "cta": {
+            "value": "This is a button",
+            "config": {
+              "type": "KeyText",
+              "label": "CTA",
+              "placeholder": "Placeholder...",
+              "props": { "label": "Call to Action label" }
+            }
+          },
+          "bg": {
+            "value": "#111",
+            "config": {
+              "type": "Select",
+              "label": "CTA",
+              "placeholder": "Placeholder...",
+              "props": { "label": "Background Color" }
+            }
+          }
+        }
       },
       {
         "id": 1,
         "name": "Variation A",
-        "image": "/slices-thumbnails/a.png"
+        "image": "/slices-thumbnails/a.png",
+        "fields": {
+          "title": {
+            "value": "Lorem ispum dolor...",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "Heading" }
+            }
+          }
+        }
       }
     ]
   },
@@ -22,12 +71,34 @@
       {
         "id": 0,
         "name": "Variation A",
-        "image": "/slices-thumbnails/a.png"
+        "image": "/slices-thumbnails/a.png",
+        "fields": {
+          "title": {
+            "value": "Lorem ispum dolor...",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "Heading" }
+            }
+          }
+        }
       },
       {
         "id": 1,
         "name": "Variation A",
-        "image": "/slices-thumbnails/a.png"
+        "image": "/slices-thumbnails/a.png",
+        "fields": {
+          "title": {
+            "value": "Lorem ispum dolor...",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "Heading" }
+            }
+          }
+        }
       }
     ]
   },
@@ -38,7 +109,18 @@
       {
         "id": 1,
         "name": "Variation A",
-        "image": "/slices-thumbnails/a.png"
+        "image": "/slices-thumbnails/a.png",
+        "fields": {
+          "title": {
+            "value": "Lorem ispum dolor...",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "Heading" }
+            }
+          }
+        }
       }
     ]
   },
@@ -49,12 +131,34 @@
       {
         "id": 0,
         "name": "Variation A",
-        "image": "/slices-thumbnails/a.png"
+        "image": "/slices-thumbnails/a.png",
+        "fields": {
+          "title": {
+            "value": "Lorem ispum dolor...",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "Heading" }
+            }
+          }
+        }
       },
       {
         "id": 1,
         "name": "Variation A",
-        "image": "/slices-thumbnails/a.png"
+        "image": "/slices-thumbnails/a.png",
+        "fields": {
+          "title": {
+            "value": "Lorem ispum dolor...",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "Heading" }
+            }
+          }
+        }
       }
     ]
   }

@@ -6,18 +6,84 @@ import { RootModel } from '.'
 const SLICE_TEMPLATES = [
   {
     id: 0,
-    name: 'Slice A',
+    name: 'Variation A',
     image: '/slices-thumbnails/a.png',
-  },
-  {
-    id: 1,
-    name: 'Slice B',
-    image: '/slices-thumbnails/b.png',
+    fields: {
+      title: {
+        value: 'Lorem ispum dolor...',
+        config: {
+          type: 'RichText',
+          placeholder: 'Placeholder...',
+          label: 'Title',
+          props: { label: 'Heading' },
+        },
+      },
+      text: {
+        value:
+          '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper est ut sem suscipit euismod. Suspendisse potenti. Donec cursus metus sollicitudin ex eleifend faucibus sollicitudin tempor velit. Maecenas id ultricies lectus.</p>',
+        config: {
+          type: 'RichText2',
+          placeholder: 'Placeholder...',
+          label: 'Text',
+          props: { label: 'Introduction Text' },
+        },
+      },
+      cta: {
+        value: 'This is a button',
+        config: {
+          type: 'KeyText',
+          label: 'CTA',
+          placeholder: 'Placeholder...',
+          props: { label: 'Call to Action label' },
+        },
+      },
+      bg: {
+        value: '#111',
+        config: {
+          type: 'Select',
+          label: 'CTA',
+          placeholder: 'Placeholder...',
+          props: { label: 'Background Color' },
+        },
+      },
+      img: {
+        value:
+          'https://cdn.dribbble.com/users/374165/screenshots/15724702/media/3e51e5cec73ae7de11dd2757d24bdf4e.png',
+        config: {
+          type: 'Image',
+          label: 'Image',
+          placeholder: 'Placeholder...',
+          props: { label: 'Feature Image' },
+        },
+        child: {
+          alt: {
+            value: 'Alt text',
+            config: {
+              type: 'KeyText',
+              label: 'Alt text',
+              placeholder: 'Placeholder...',
+              props: { label: 'Alt text' },
+            },
+          },
+        },
+      },
+    },
   },
   {
     id: 2,
-    name: 'Slice C',
-    image: '/slices-thumbnails/c.png',
+    name: 'Variation A',
+    image: '/slices-thumbnails/a.png',
+    fields: {
+      title: {
+        value: 'Lorem ispum dolor...',
+        config: {
+          type: 'RichText',
+          placeholder: 'Placeholder...',
+          label: 'Title',
+          props: { label: 'Heading' },
+        },
+      },
+    },
   },
 ]
 

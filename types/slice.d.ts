@@ -9,4 +9,5 @@ type VariationType = {
   id: number
   name: string
   image: string
+  fields: Array<Object>
 }

@@ -1,0 +1,176 @@
+.richtext_container {
+  position: relative;
+  padding: 12px;
+  margin: 16px 0 0;
+  border: 1px dashed #dcdbdd;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+}
+.richtext_container:focus-within {
+  border: 1px solid #c8c7cb;
+}
+.richtext_container label {
+  user-select: none;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #6f6e77;
+  background: white;
+  position: absolute;
+  top: -6px;
+  left: 8px;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+
+.ProseMirror {
+  border: 0;
+  outline: none;
+}
+
+.ProseMirror > p {
+  margin: 8px 0;
+}
+
+.bubble_menu {
+  background: #ffffff;
+  border: 1px solid #dcdbdd;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 8px;
+  display: flex;
+  gap: 8px;
+}
+.bubble_menu button svg {
+  width: 20px;
+  height: 20px;
+}
+.bubble_menu button.small {
+  height: 28px;
+  width: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bubble_menu .separator {
+  width: 1px;
+  height: 28px;
+  background: #dcdbdd;
+}
+.bubble_menu .selectField {
+  border: 1px solid #dcdbdd;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  height: 28px;
+  padding: 0 4px;
+}
+
+.empty-node::before {
+  position: absolute;
+  color: #86848d;
+  cursor: text;
+}
+.empty-node::before {
+  content: 'Type / to add something';
+}
+
+.commands-list-container {
+  margin: 0;
+  padding: 4px 0;
+  width: 256px;
+  background: #fff;
+  border: 1px solid #dcdbdd;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+.commands-list-container header {
+  border-bottom: 1px solid #dcdbdd;
+  padding: 4px 16px 8px 16px;
+  color: #6f6e77;
+}
+.commands-list-item {
+  padding: 8px 16px;
+  list-style: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1a1523;
+  display: flex;
+  gap: 8px;
+}
+.commands-list-item:hover,
+.active {
+  background: #f4f2f4;
+  cursor: pointer;
+}
+
+.commands-list-item svg {
+  width: 16px;
+  height: 16px;
+}
+.ProseMirror > ul,
+.ProseMirror > ol {
+  padding-left: 20px;
+  margin: 8px 0;
+}
+.ProseMirror > ul li p,
+.ProseMirror > ol li p {
+  margin: 0;
+}
+.ProseMirror h1 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 48px;
+  letter-spacing: -0.15px;
+  margin: 16px 0 8px 0;
+}
+.ProseMirror h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: -0.15px;
+  margin: 16px 0 8px 0;
+}
+.ProseMirror h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.15px;
+  margin: 16px 0 8px 0;
+}
+.ProseMirror h4 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.15px;
+  margin: 16px 0 8px 0;
+}
+.ProseMirror h5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  margin: 16px 0 8px 0;
+}
+.ProseMirror h6 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.15px;
+  margin: 16px 0 8px 0;
+}
+.ProseMirror pre {
+  padding: 8px 12px;
+  background: #f9f8f9;
+  border: 1px solid #e4e2e4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 8px 0px;
+}

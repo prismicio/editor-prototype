@@ -1,0 +1,101 @@
+.image_container {
+  padding: 8px 16px 16px 16px;
+  margin: 16px 0 0;
+  position: relative;
+  border: 1px dashed #dcdbdd;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.image_container:focus-within {
+  border: 1px solid #c8c7cb;
+}
+.image_container .preview {
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+.image_preview {
+  width: 100%;
+  max-width: 350px;
+  cursor: pointer;
+}
+.image_container .field-container {
+  margin-top: 8px;
+  padding: 0;
+  position: unset;
+  height: 40px;
+  display: flex;
+}
+.image_container .field-container label {
+  position: unset;
+  background: #f9f8f9;
+  border-right: 1px dashed #dcdbdd;
+  padding: 8px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  min-width: 80px;
+}
+.image_container .field_container input {
+  height: unset;
+  padding-left: 16px;
+}
+.image_container .actions {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.image_container .title label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+}
+.image_container .actions .buttons {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  justify-content: space-between;
+}
+.image_container .actions button.small {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 5px;
+  display: flex;
+  color: #1a1523;
+}
+.image_container .actions button:disabled {
+  opacity: 0.5;
+}
+.image_container .actions button:disabled:hover {
+  cursor: not-allowed;
+}
+.image_container .actions button svg {
+  color: #6f6e77;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+.react-responsive-modal-modal {
+  border-radius: 6px;
+  padding: 0px !important;
+}
+.react-responsive-modal-modal section {
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 16px;
+  row-gap: 16px;
+}
+.react-responsive-modal-modal section img {
+  max-width: 300px;
+  height: 225px;
+  cursor: pointer;
+}
+.react-responsive-modal-modal header {
+  padding: 16px;
+  background: #f4f2f4;
+  font-weight: 600;
+}

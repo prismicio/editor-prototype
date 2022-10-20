@@ -12,6 +12,7 @@ import EditorTabs from 'components/editorTabs/editorTabs'
 import DocumentName from 'components/documentName/documentName'
 import { Fragment } from 'react'
 import { RootDialog } from 'components/dialogs/root-dialog'
+import Form from 'components/form/form'
 
 const Home: NextPage = () => {
   const slices = useSelector((state: RootState) => state.editor.slices)
@@ -36,7 +37,7 @@ const Home: NextPage = () => {
             {slices.map((item, idx) => (
               <article className={styles.slice} key={idx}>
                 <header>{item.name}</header>
-                <section>My slice fields...</section>
+                <Form fields={item.fields} />
               </article>
             ))}
           </Box>
