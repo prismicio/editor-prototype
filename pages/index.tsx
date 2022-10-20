@@ -23,13 +23,15 @@ const Home: NextPage = () => {
       <Byside as="div">
         <Byside.Sidebar width="8xl" as="aside" className={styles.slices}>
           <DocumentName />
-          <button
-            onClick={() =>
-              dispatch.dialog.open({ type: 'SELECT_SLICE', props: {} })
-            }
-          >
-            click here ma gueule to add la slice
-          </button>
+          {!slices.length && (
+            <button
+              onClick={() =>
+                dispatch.dialog.open({ type: 'SELECT_SLICE', props: {} })
+              }
+            >
+              click here ma gueule to add la slice
+            </button>
+          )}
           <DraggableList
             items={slices}
             children={(item) => (
