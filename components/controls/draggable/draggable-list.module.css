@@ -9,4 +9,9 @@
   margin-inline: lg;
   position: sticky;
   top: 24px;
+  overflow: scroll;
+}
+
+.root::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
