@@ -5,6 +5,7 @@ import { Box } from 'components/layouts/box'
 import styles from './select-slice.module.css'
 import clsx from 'clsx'
 import { Variation } from 'components/cards/variation'
+import { toast } from 'react-toastify'
 
 export function SelectSlice() {
   const dispatch = useDispatch<Dispatch>()
@@ -66,6 +67,7 @@ export function SelectSlice() {
                       add={() => {
                         dispatch.editor.onInsert({ position, variation })
                         dispatch.dialog.close()
+                        toast.success('Variation added')
                       }}
                       name={variation.name}
                       image={variation.image}
