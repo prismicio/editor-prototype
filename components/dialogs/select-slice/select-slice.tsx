@@ -67,7 +67,7 @@ export function SelectSlice() {
                       add={() => {
                         dispatch.editor.onInsert({ position, variation })
                         dispatch.dialog.close()
-                        toast.success('Variation added')
+                        toast.success(`${variation.name} added`)
                       }}
                       name={variation.name}
                       image={variation.image}
