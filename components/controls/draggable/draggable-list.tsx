@@ -48,6 +48,7 @@ export const DraggableList = <T extends IdObj>({
             <Draggable
               key={idx}
               idx={idx}
+              variation={item.id}
               onStarting={(idx: number) => onDragStart(idx)}
               onDropping={(idx: number) => onDrop(idx)}
             >

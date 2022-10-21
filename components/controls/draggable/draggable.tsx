@@ -1,6 +1,7 @@
 import { ReactNode, SyntheticEvent, useRef } from 'react'
 import clsx from 'clsx'
 import styles from './draggable.module.css'
+import { Link, scroller } from 'react-scroll'
 
 interface DraggableProps {
   onStarting: any
@@ -8,6 +9,7 @@ interface DraggableProps {
   children?: ReactNode
   className?: string
   idx: number
+  variation: string
 }
 
 export const Draggable = ({
@@ -15,6 +17,7 @@ export const Draggable = ({
   onStarting,
   onDropping,
   children,
+  variation,
   className,
   ...restProps
 }: DraggableProps) => {
@@ -22,6 +25,15 @@ export const Draggable = ({
   const onDragEnter = () => ref.current?.classList.add(styles.dragover)
   const onDragLeave = () => ref.current?.classList.remove(styles.dragover)
   const onDragOver = (e: SyntheticEvent) => e.preventDefault()
+
+  const handleClick = () =>
+    scroller.scrollTo(variation, {
+      duration: 1500,
+      delay: 100,
+      smooth: true,
+      containerId: variation,
+      offset: 50,
+    })
 
   const onDragStart = () => {
     ref.current?.classList.add(styles.dragstart)
@@ -42,6 +54,7 @@ export const Draggable = ({
       draggable
       key={idx}
       ref={ref}
+      //onClick={handleClick}
       className={clsx(styles.root, className)}
       onDragLeave={onDragLeave}
       onDragEnd={onDragEnd}
@@ -51,7 +64,9 @@ export const Draggable = ({
       onDrop={onDrop}
       {...restProps}
     >
-      {children}
+      <Link to={variation} smooth={true}>
+        {children}
+      </Link>
     </li>
   )
 }

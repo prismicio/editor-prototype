@@ -7,4 +7,6 @@
   list-style: none;
   height: 100vh;
   margin-inline: lg;
+  position: sticky;
+  top: 24px;
 }

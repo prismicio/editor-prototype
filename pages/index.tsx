@@ -14,6 +14,7 @@ import { Fragment } from 'react'
 import { RootDialog } from 'components/dialogs/root-dialog'
 import Form from 'components/form/form'
 import StaticZone from 'components/form/StaticZone'
+import { Element } from 'react-scroll'
 
 const Home: NextPage = () => {
   const editor = useSelector((state: RootState) => state.editor)
@@ -54,10 +55,12 @@ const Home: NextPage = () => {
               <StaticZone fields={editor.static.fields} />
             </article>
             {editor.variations.map((item, idx) => (
-              <article className={styles.slice} key={idx}>
-                <header>{item.name}</header>
-                <Form fields={item.fields} index={idx} />
-              </article>
+              <Element name={item.id.toString()} key={idx}>
+                <article className={styles.slice}>
+                  <header>{item.id}</header>
+                  <Form fields={item.fields} index={idx} />
+                </article>
+              </Element>
             ))}
           </Box>
         </Byside.Primary>

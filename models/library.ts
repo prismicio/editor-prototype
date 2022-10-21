@@ -17,7 +17,7 @@ const INITIAL_STATE = {
 export const library = createModel<RootModel>()({
   state: INITIAL_STATE,
   reducers: {
-    filter(state, payload: number) {
+    filter(state, payload: string) {
       state.selected = payload as any
       state.filtered = state.slices.filter((slice) => slice.id === payload)
       return state

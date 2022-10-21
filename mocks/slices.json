@@ -1,11 +1,11 @@
 [
   {
-    "id": 0,
+    "id": "0",
     "name": "Content Sections",
     "image": "/slices-thumbnails/a.png",
     "variations": [
       {
-        "id": 0,
+        "id": "490",
         "name": "Variation A",
         "image": "/slices-thumbnails/a.png",
         "fields": {
@@ -48,7 +48,7 @@
         }
       },
       {
-        "id": 1,
+        "id": "879",
         "name": "Variation A",
         "image": "/slices-thumbnails/a.png",
         "fields": {
