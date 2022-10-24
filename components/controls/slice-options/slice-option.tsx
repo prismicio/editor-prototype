@@ -15,7 +15,12 @@ export function SliceOptions() {
         <MoreVertOutlinedIcon />
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
-        <DropdownMenu.Content className={styles.root}>
+        <DropdownMenu.Content
+          className={styles.root}
+          side="bottom"
+          align="start"
+          sideOffset={4}
+        >
           <DropdownMenu.Label className={styles.title}>
             Slice options
           </DropdownMenu.Label>
