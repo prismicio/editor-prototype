@@ -5,6 +5,7 @@ import MoreVertTwoToneIcon from '@mui/icons-material/MoreVertTwoTone'
 import CalendarTodayTwoToneIcon from '@mui/icons-material/CalendarTodayTwoTone'
 import { useDispatch } from 'react-redux'
 import { Dispatch } from 'pages/_app'
+import { PublishingOptions } from 'components/controls/publishing-options/publishing-option'
 
 interface PublishOptionsProps {}
 
@@ -26,14 +27,13 @@ export default function PublishOptions({
           Publish
         </button>
         <button
-          onClick={() => dispatch.dialog.open({ type: 'SCHEDULE', props: {} })}
           className={clsx(
             styles.buttonGroupPrimary,
             styles.buttonGroupPrimaryRight,
             styles.icon
           )}
         >
-          <CalendarTodayTwoToneIcon />
+          <PublishingOptions />
         </button>
       </div>
 

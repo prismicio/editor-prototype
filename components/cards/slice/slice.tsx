@@ -1,9 +1,7 @@
 import { Box } from 'components/layouts/box'
-import React, { ReactNode, SyntheticEvent } from 'react'
 import styles from './slice.module.css'
 import NextImage from 'next/image'
 import { SliceOptions } from 'components/controls/slice-options/slice-option'
-import Link from 'next/link'
 
 interface SliceProps {
   preview: string

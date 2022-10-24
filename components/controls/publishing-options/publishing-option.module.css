@@ -1,0 +1,51 @@
+.root {
+  user-select: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4px 1px;
+  background: #ffffff;
+  border: 1px solid #e4e2e4;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+.trigger {
+  background: transparent;
+}
+.trigger:hover {
+  cursor: pointer;
+  background-color: #f4f2f4;
+}
+.trigger svg {
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+.title {
+  user-select: none;
+  border-bottom: 1px solid #e4e2e4;
+  padding: 8px 16px;
+  width: 100%;
+  font-size: sm;
+  color: #6f6e77;
+}
+.menuItem {
+  font-size: sm;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  width: 100%;
+}
+.menuItem svg {
+  color: #6f6e77;
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+.menuItem:hover {
+  outline: 0;
+  cursor: pointer;
+  background-color: #edecee;
+}

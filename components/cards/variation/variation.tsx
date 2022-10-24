@@ -1,5 +1,4 @@
 import { Box } from 'components/layouts/box'
-import React from 'react'
 import styles from './variation.module.css'
 import NextImage from 'next/image'
 import AddIcon from '@mui/icons-material/Add'
