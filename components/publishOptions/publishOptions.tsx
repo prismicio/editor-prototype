@@ -27,20 +27,11 @@ export default function PublishOptions({
         >
           Publish
         </button>
-        <button
-          className={clsx(
-            styles.buttonGroupPrimary,
-            styles.buttonGroupPrimaryRight,
-            styles.icon
-          )}
-        >
-          <PublishingOptions />
-        </button>
+        <PublishingOptions />
       </div>
-
-      <button className={clsx(styles.buttonSecondary, styles.icon)}>
-        <DocumentOptions />
-      </button>
+      <DocumentOptions />
     </div>
   )
 }
+
+/**<DocumentOptions /> */

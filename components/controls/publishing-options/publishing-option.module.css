@@ -5,6 +5,8 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 4px 1px;
+  position: relative;
+  width: 256px;
   background: #ffffff;
   border: 1px solid #e4e2e4;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
@@ -12,11 +14,20 @@
 }
 
 .trigger {
-  background: transparent;
+  background: #6e56cf;
+  border-top: 1px solid #5842c3;
+  border-bottom: 1px solid #5842c3;
+  border-right: 1px solid #5842c3;
+  border-left: none;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.04);
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  line-height: 0;
+  padding: 6px 10px;
 }
 .trigger:hover {
   cursor: pointer;
-  background-color: #f4f2f4;
+  background-color: #5842c3;
 }
 .trigger svg {
   color: white;

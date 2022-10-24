@@ -1,12 +1,12 @@
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import styles from './document-options.module.css'
-import More from '@mui/icons-material/More'
+import MoreVert from '@mui/icons-material/MoreVert'
 
 export function DocumentOptions() {
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger className={styles.trigger}>
-        <More />
+        <MoreVert />
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
         <DropdownMenu.Content className={styles.root}>

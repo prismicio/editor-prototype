@@ -13,9 +13,6 @@ export function PublishingOptions() {
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
         <DropdownMenu.Content className={styles.root}>
-          <DropdownMenu.Label className={styles.title}>
-            Options
-          </DropdownMenu.Label>
           <DropdownMenu.Item
             className={styles.menuItem}
             onClick={() =>
