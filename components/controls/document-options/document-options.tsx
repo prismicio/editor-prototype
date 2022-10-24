@@ -9,7 +9,13 @@ export function DocumentOptions() {
         <MoreVert />
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
-        <DropdownMenu.Content className={styles.root}>
+        <DropdownMenu.Content
+          className={styles.root}
+          side="bottom"
+          align="end"
+          sideOffset={4}
+          avoidCollisions={false}
+        >
           <DropdownMenu.Item className={styles.menuItem}>
             Archive
           </DropdownMenu.Item>

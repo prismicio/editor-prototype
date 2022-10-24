@@ -12,7 +12,13 @@ export function PublishingOptions() {
         <CalendarTodayTwoTone />
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
-        <DropdownMenu.Content className={styles.root}>
+        <DropdownMenu.Content
+          className={styles.root}
+          side="bottom"
+          align="end"
+          sideOffset={4}
+          avoidCollisions={false}
+        >
           <DropdownMenu.Item
             className={styles.menuItem}
             onClick={() =>
