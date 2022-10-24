@@ -6,6 +6,7 @@ import CalendarTodayTwoToneIcon from '@mui/icons-material/CalendarTodayTwoTone'
 import { useDispatch } from 'react-redux'
 import { Dispatch } from 'pages/_app'
 import { PublishingOptions } from 'components/controls/publishing-options/publishing-option'
+import { DocumentOptions } from 'components/controls/document-options/document-options'
 
 interface PublishOptionsProps {}
 
@@ -38,7 +39,7 @@ export default function PublishOptions({
       </div>
 
       <button className={clsx(styles.buttonSecondary, styles.icon)}>
-        <MoreVertTwoToneIcon />
+        <DocumentOptions />
       </button>
     </div>
   )
