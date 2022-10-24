@@ -1,0 +1,23 @@
+.root {
+  background: pink;
+}
+
+.form {
+  padding: sm;
+  display: flex;
+  align-items: center;
+  gap: sm;
+}
+
+.field {
+  min-width: 282px;
+}
+
+.input {
+  width: 100%;
+}
+
+.actions {
+  border-top: 1px solid red;
+  padding: sm;
+}
