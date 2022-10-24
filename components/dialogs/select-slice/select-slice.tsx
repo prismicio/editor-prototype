@@ -6,6 +6,8 @@ import styles from './select-slice.module.css'
 import clsx from 'clsx'
 import { Variation } from 'components/cards/variation'
 import { toast } from 'react-toastify'
+import { scroller } from 'react-scroll'
+import cuid from 'cuid'
 
 export function SelectSlice() {
   const dispatch = useDispatch<Dispatch>()
@@ -61,19 +63,24 @@ export function SelectSlice() {
                   >{`(${slice.variations.length} Variations)`}</Box>
                 </Box>
                 <Box as="div" className={styles.variations}>
-                  {slice.variations.map((variation) => (
-                    <Variation
-                      key={variation.id}
-                      add={() => {
-                        dispatch.editor.onInsert({ position, variation })
-                        dispatch.dialog.close()
-                        toast.success(`${variation.name} added`)
-                      }}
-                      name={variation.name}
-                      image={variation.image}
-                      id={variation.id}
-                    />
-                  ))}
+                  {slice.variations.map((variation) => {
+                    return (
+                      <Variation
+                        key={variation.id}
+                        add={async () => {
+                          dispatch.editor.onInsert({
+                            position,
+                            variation,
+                          })
+                          dispatch.dialog.close()
+                          toast.success(`${variation.name} added`)
+                        }}
+                        name={variation.name}
+                        image={variation.image}
+                        id={variation.id}
+                      />
+                    )
+                  })}
                 </Box>
               </Box>
             ))}

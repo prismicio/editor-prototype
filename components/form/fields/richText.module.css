@@ -7,6 +7,10 @@
   border-radius: 4px;
   outline: none;
 }
+
+.richtext_container * {
+  outline: none;
+}
 .richtext_container:focus-within {
   border: 1px solid #c8c7cb;
 }
@@ -84,12 +88,12 @@
   padding: 0 4px;
 }
 
-.empty-node::before {
+.empty_node::before {
   position: absolute;
   color: #86848d;
   cursor: text;
 }
-.empty-node::before {
+.empty_node::before {
   content: 'Type / to add something';
 }
 

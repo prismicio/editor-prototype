@@ -42,7 +42,6 @@ export const editor = createModel<RootModel>()({
     onInsert: (state, payload: InsertPayloadType) => {
       state.variations.splice(payload.position, 0, {
         ...payload.variation,
-        id: cuid(),
       })
       return state
     },
@@ -52,4 +51,9 @@ export const editor = createModel<RootModel>()({
       state.variations[state.draggedID] = temp
     },
   },
+  effects: (dispatch) => ({
+    async onInsertAsync(payload, rootState) {
+      dispatch.count.increment(payload)
+    },
+  }),
 })
