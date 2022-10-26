@@ -1,7 +1,3 @@
-.root {
-  background: pink;
-}
-
 .form {
   padding: sm;
   display: flex;
@@ -12,12 +8,77 @@
 .field {
   min-width: 282px;
 }
-
+.label{
+  display: block;
+  font-size: 14px;
+  color: #1A1523;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+.hint{
+  display: block;
+  font-size: 14px;
+  color: #6F6E77;
+  line-height: 24px;
+  margin-top: 4px;
+}
 .input {
   width: 100%;
+  padding: 8px 12px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #E4E2E4;
+  box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
 }
 
 .actions {
-  border-top: 1px solid red;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  border-top: 1px solid #DCDBDD;
   padding: sm;
+}
+button.secondary {
+  user-select: none;
+  padding: 10px 16px;
+  background: #ffffff;
+  border: 1px solid #dcdbdd;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 0px rgb(0 0 0 / 4%);
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1a1523;
+}
+
+button.secondary:hover {
+  background: #f4f2f4;
+  border: 1px solid #dcdbdd;
+  box-shadow: 0px 1px 0px rgb(0 0 0 / 4%);
+  cursor: pointer;
+}
+
+button.primary {
+  user-select: none;
+  padding: 10px 16px;
+  background: #6E56CF;
+  border: 1px solid #5842C3;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+}
+
+button.primary:hover {
+  background: #5842C3;
+  border: 1px solid #5842C3;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
 }

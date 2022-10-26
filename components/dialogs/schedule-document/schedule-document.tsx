@@ -16,11 +16,11 @@ export function ScheduleDocument() {
         <Box as="form" className={styles.root}>
           <Box className={styles.form}>
             <Box as="div" className={styles.field}>
-              <Box as="label" htmlFor="date">
+              <Box as="label" htmlFor="date" className={styles.label}>
                 Choose date & time
               </Box>
               <Box as="input" type="date" className={styles.input} />
-              <Box as="div">Scheduled in your current timezone</Box>
+              <Box as="div" className={styles.hint}>Scheduled in your current timezone</Box>
             </Box>
             <Box as="div" className={styles.field}>
               <Box as="label" htmlFor="time" />
@@ -29,6 +29,7 @@ export function ScheduleDocument() {
           </Box>
           <Box as="div" className={styles.actions}>
             <Box
+              className={styles.secondary}
               type="button"
               as="button"
               onClick={() => dispatch.dialog.close()}
@@ -36,6 +37,7 @@ export function ScheduleDocument() {
               Cancel
             </Box>
             <Box
+              className={styles.primary}
               type="button"
               as="button"
               onClick={() => {
