@@ -1,5 +1,6 @@
 import 'styles/reset.css'
 import 'styles/globals.css'
+import styles from 'styles/Home.module.css'
 import type { AppProps } from 'next/app'
 import loadingPlugin, { ExtraModelsFromLoading } from '@rematch/loading'
 import immerPlugin from '@rematch/immer'
@@ -20,6 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
       <ToastContainer
+        className={styles.toaster}
         position="bottom-right"
         autoClose={3000}
         hideProgressBar={true}
@@ -28,7 +30,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         rtl={false}
         pauseOnFocusLoss
         pauseOnHover
-        theme="light"
+        theme="dark"
       />
       <Component {...pageProps} />
     </Provider>
