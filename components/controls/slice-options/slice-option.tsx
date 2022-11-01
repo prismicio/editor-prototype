@@ -9,12 +9,15 @@ import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined
 import { useDispatch } from 'react-redux'
 import { Dispatch } from 'pages/_app'
 
-export function SliceOptions({ id }: { id: string }) {
+export function SliceOptions({ position }: { position: number }) {
   const dispatch = useDispatch<Dispatch>()
 
   return (
     <DropdownMenu.Root defaultOpen={false}>
-      <DropdownMenu.Trigger className={styles.trigger}>
+      <DropdownMenu.Trigger
+        className={styles.trigger}
+        onMouseOver={() => dispatch.editor.onSelect(position)}
+      >
         <MoreVertOutlinedIcon />
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
@@ -37,9 +40,12 @@ export function SliceOptions({ id }: { id: string }) {
           <DropdownMenu.Separator />
           <DropdownMenu.Item
             className={styles.menuItem}
-            onClick={() =>
-              dispatch.dialog.open({ type: 'SELECT_SLICE', props: {} })
-            }
+            onClick={() => {
+              dispatch.dialog.open({
+                type: 'SELECT_SLICE',
+                props: { isEditing: true },
+              })
+            }}
           >
             <DescriptionOutlinedIcon />
             Change variation
@@ -52,7 +58,7 @@ export function SliceOptions({ id }: { id: string }) {
           <DropdownMenu.Separator />
           <DropdownMenu.Item
             className={styles.menuItem}
-            onClick={() => dispatch.editor.onDelete(id)}
+            onClick={() => dispatch.editor.onDelete()}
           >
             <DeleteOutlineOutlinedIcon />
             Delete

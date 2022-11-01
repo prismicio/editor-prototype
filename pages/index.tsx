@@ -30,7 +30,10 @@ const Home: NextPage = () => {
               <p>Pas de Slices dans ce document</p>
               <button
                 onClick={() =>
-                  dispatch.dialog.open({ type: 'SELECT_SLICE', props: {} })
+                  dispatch.dialog.open({
+                    type: 'SELECT_SLICE',
+                    props: { pos: 0 },
+                  })
                 }
               >
                 Add
@@ -38,10 +41,15 @@ const Home: NextPage = () => {
             </Box>
           )}
           <DraggableList
-            items={editor.variations}
-            children={(item) => (
+            items={Object.values(editor.variations) || []}
+            children={(item, index) => (
               <Fragment>
-                <Slice preview={item.image} name={item.name} id={item.id} />
+                <Slice
+                  position={index}
+                  preview={item.image}
+                  name={item.name}
+                  id={item.id}
+                />
               </Fragment>
             )}
           />
@@ -55,7 +63,7 @@ const Home: NextPage = () => {
             </article>
             {editor.variations.length ? (
               editor.variations.map((item, idx) => (
-                <article className={styles.slice}>
+                <article key={idx} className={styles.slice}>
                   <header>{item.id}</header>
                   <Form fields={item.fields} index={idx} />
                 </article>
@@ -86,3 +94,5 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+//** */

@@ -6,13 +6,17 @@ import styles from './select-slice.module.css'
 import clsx from 'clsx'
 import { Variation } from 'components/cards/variation'
 import { toast } from 'react-toastify'
-import { scroller } from 'react-scroll'
-import cuid from 'cuid'
 
-export function SelectSlice() {
+type SelectSliceProps = {
+  isEditing: boolean
+  id: string
+  pos: number
+}
+
+export function SelectSlice(props: SelectSliceProps) {
+  console.log(props)
   const dispatch = useDispatch<Dispatch>()
   const library = useSelector((state: RootState) => state.library)
-  const position = useSelector((state: RootState) => state.editor.selectedID)
 
   return (
     <Dialog>
@@ -67,10 +71,11 @@ export function SelectSlice() {
                     return (
                       <Variation
                         key={variation.id}
-                        add={async () => {
+                        add={() => {
                           dispatch.editor.onInsert({
-                            position,
+                            isEditing: props.isEditing || false,
                             variation,
+                            position: props.pos,
                           })
                           dispatch.dialog.close()
                           toast.success(`${variation.name} added`)

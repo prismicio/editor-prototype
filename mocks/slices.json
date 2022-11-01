@@ -5,7 +5,7 @@
     "image": "/slices-thumbnails/a.png",
     "variations": [
       {
-        "id": "490",
+        "id": "2",
         "name": "Variation A",
         "image": "/slices-thumbnails/a.png",
         "fields": {
@@ -50,7 +50,7 @@
       {
         "id": "879",
         "name": "Variation A",
-        "image": "/slices-thumbnails/a.png",
+        "image": "/slices-thumbnails/b.png",
         "fields": {
           "title": {
             "value": "Lorem ispum dolor...",

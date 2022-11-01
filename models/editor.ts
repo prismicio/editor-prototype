@@ -5,24 +5,26 @@ import staticz from 'mocks/static.json'
 import { RootModel } from '.'
 
 type InsertPayloadType = {
+  isEditing: boolean
   variation: VariationType
   position: number
 }
 
 export const editor = createModel<RootModel>()({
   state: {
-    draggedID: 0,
-    selectedID: 0,
+    dragged: 0,
+    selected: 0,
     variations: [] as VariationType[],
     static: { ...staticz },
   },
   reducers: {
     onDragStart: (state, payload: number) => {
-      state.draggedID = payload
+      state.dragged = payload
       return state
     },
     onSelect: (state, payload: number) => {
-      state.selectedID = payload
+      console.log(payload)
+      state.selected = payload
       return state
     },
     onEditSlice: (
@@ -40,20 +42,31 @@ export const editor = createModel<RootModel>()({
       return state
     },
     onInsert: (state, payload: InsertPayloadType) => {
-      state.variations.splice(payload.position, 0, {
-        ...payload.variation,
-        id: cuid(),
-      })
-      return state
+      const id = cuid()
+      switch (payload.isEditing) {
+        case true:
+          state.variations.splice(state.selected, 1, {
+            ...payload.variation,
+            id: id,
+          })
+          return state
+        default:
+          state.variations.splice(payload.position, 0, {
+            ...payload.variation,
+            id: id,
+          })
+          return state
+      }
     },
-    onDelete: (state, payload: string) => {
-      state.variations = state.variations.filter((item) => item.id != payload)
+    onDelete: (state) => {
+      state.variations.splice(state.selected, 1)
       return state
     },
     onDrop: (state, payload: number) => {
       const temp = state.variations[payload]
-      state.variations[payload] = state.variations[state.draggedID]
-      state.variations[state.draggedID] = temp
+      console.log(state.variations[state.dragged])
+      state.variations[payload] = state.variations[state.dragged]
+      state.variations[state.dragged] = temp
     },
   },
   effects: (dispatch) => ({

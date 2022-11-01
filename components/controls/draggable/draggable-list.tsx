@@ -42,7 +42,7 @@ export const DraggableList = <T extends IdObj>({
       as={as}
       {...restProps}
     >
-      {data?.map((item, idx) => {
+      {Object.values(data)?.map((item, idx) => {
         return (
           <Fragment key={idx}>
             <Draggable
@@ -54,7 +54,7 @@ export const DraggableList = <T extends IdObj>({
             >
               {children(item as any, idx)}
             </Draggable>
-            <InsertSlice idx={idx} />
+            <InsertSlice pos={idx} idx={item.id} />
           </Fragment>
         )
       })}

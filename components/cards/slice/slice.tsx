@@ -8,6 +8,7 @@ interface SliceProps {
   name: string
   id: string
   meta?: boolean
+  position: number
 }
 
 export function Slice({
@@ -15,11 +16,12 @@ export function Slice({
   meta = false,
   name,
   id,
+  position,
   ...restProps
 }: SliceProps): JSX.Element {
   return (
     <Box as="div" className={styles.root} {...restProps}>
-      <SliceOptions id={id} />
+      <SliceOptions position={position} />
       <NextImage height="126" width="232" src={preview} />
     </Box>
   )

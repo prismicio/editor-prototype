@@ -6,10 +6,11 @@ import { useDispatch } from 'react-redux'
 import styles from './insert-slice.module.css'
 
 interface InsertSliceProps {
-  idx: number
+  idx: string
+  pos: number
 }
 
-export function InsertSlice({ idx }: InsertSliceProps) {
+export function InsertSlice({ idx, pos }: InsertSliceProps) {
   const ref = useRef<HTMLButtonElement>(null)
   const dispatch = useDispatch<Dispatch>()
   const onDragOver = (e: SyntheticEvent) => e.preventDefault()
@@ -18,14 +19,14 @@ export function InsertSlice({ idx }: InsertSliceProps) {
 
   const onDrop = () => {
     ref.current?.classList.remove(styles.dragover)
-    dispatch.editor.onDrop(idx)
+    dispatch.editor.onDrop(pos)
   }
 
   return (
     <button
       onClick={() => {
-        dispatch.dialog.open({ type: 'SELECT_SLICE', props: {} })
-        dispatch.editor.onSelect(idx)
+        dispatch.editor.onSelect(pos)
+        dispatch.dialog.open({ type: 'SELECT_SLICE', props: { pos: pos + 1 } })
       }}
       ref={ref}
       onDragOver={onDragOver}
@@ -34,9 +35,8 @@ export function InsertSlice({ idx }: InsertSliceProps) {
       onDrop={onDrop}
       className={clsx(styles.root)}
     >
+      insert
       <InsertSliceIcon />
     </button>
   )
 }
-
-//<InsertSliceIcon />
