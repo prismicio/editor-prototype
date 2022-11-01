@@ -30,6 +30,7 @@ export const library = createModel<RootModel>()({
   effects: (dispatch) => ({
     async add(payload: { position: number; variation: VariationType }) {
       dispatch.editor.onInsert({
+        isEditing: false,
         position: payload.position + 1,
         variation: payload.variation,
       })
