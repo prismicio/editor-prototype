@@ -23,7 +23,6 @@ export const editor = createModel<RootModel>()({
       return state
     },
     onSelect: (state, payload: number) => {
-      console.log(payload)
       state.selected = payload
       return state
     },
@@ -64,7 +63,6 @@ export const editor = createModel<RootModel>()({
     },
     onDrop: (state, payload: number) => {
       const temp = state.variations[payload]
-      console.log(state.variations[state.dragged])
       state.variations[payload] = state.variations[state.dragged]
       state.variations[state.dragged] = temp
     },

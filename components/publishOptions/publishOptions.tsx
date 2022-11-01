@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux'
 import { Dispatch } from 'pages/_app'
 import { PublishingOptions } from 'components/controls/publishing-options/publishing-option'
 import { DocumentOptions } from 'components/controls/document-options/document-options'
+import { toast } from 'react-toastify'
 
 interface PublishOptionsProps {}
 
@@ -24,6 +25,7 @@ export default function PublishOptions({
             styles.buttonGroupPrimary,
             styles.buttonGroupPrimaryLeft
           )}
+          onClick={() => toast.success('Published')}
         >
           Publish
         </button>

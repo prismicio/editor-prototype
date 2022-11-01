@@ -8,7 +8,6 @@ export default function Textarea(props) {
     <div className={styles.field_container}>
       <label>{props.label}</label>
       <textarea
-        //onSelect={(e) => console.log(e.target.selectionStart, e)}
         name={props.name}
         type={props.type}
         onChange={props.onChange}

@@ -77,7 +77,6 @@ export default function Slash() {
     !value.includes('/') ? setShow(false) : setShow(show)
   }, [value, show])
   const context = useContext(FieldContext)
-  console.log(context)
   return (
     <div className="field-container" ref={ref}>
       <textarea

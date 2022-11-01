@@ -14,7 +14,6 @@ type SelectSliceProps = {
 }
 
 export function SelectSlice(props: SelectSliceProps) {
-  console.log(props)
   const dispatch = useDispatch<Dispatch>()
   const library = useSelector((state: RootState) => state.library)
 
