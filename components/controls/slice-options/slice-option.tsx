@@ -6,8 +6,12 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
 import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined'
 import ContentCopyOutlinedIcon from '@mui/icons-material/ContentCopyOutlined'
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined'
+import { useDispatch } from 'react-redux'
+import { Dispatch } from 'pages/_app'
 
-export function SliceOptions() {
+export function SliceOptions({ id }: { id: string }) {
+  const dispatch = useDispatch<Dispatch>()
+
   return (
     <DropdownMenu.Root defaultOpen={false}>
       <DropdownMenu.Trigger className={styles.trigger}>
@@ -31,7 +35,12 @@ export function SliceOptions() {
             <ArrowDownwardIcon /> Move down
           </DropdownMenu.Item>
           <DropdownMenu.Separator />
-          <DropdownMenu.Item className={styles.menuItem}>
+          <DropdownMenu.Item
+            className={styles.menuItem}
+            onClick={() =>
+              dispatch.dialog.open({ type: 'SELECT_SLICE', props: {} })
+            }
+          >
             <DescriptionOutlinedIcon />
             Change variation
           </DropdownMenu.Item>
@@ -41,7 +50,10 @@ export function SliceOptions() {
             Duplicate
           </DropdownMenu.Item>
           <DropdownMenu.Separator />
-          <DropdownMenu.Item className={styles.menuItem}>
+          <DropdownMenu.Item
+            className={styles.menuItem}
+            onClick={() => dispatch.editor.onDelete(id)}
+          >
             <DeleteOutlineOutlinedIcon />
             Delete
           </DropdownMenu.Item>

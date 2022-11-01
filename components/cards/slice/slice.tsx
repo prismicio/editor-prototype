@@ -19,7 +19,7 @@ export function Slice({
 }: SliceProps): JSX.Element {
   return (
     <Box as="div" className={styles.root} {...restProps}>
-      <SliceOptions />
+      <SliceOptions id={id} />
       <NextImage height="126" width="232" src={preview} />
     </Box>
   )

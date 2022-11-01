@@ -14,7 +14,6 @@ import { Fragment } from 'react'
 import { RootDialog } from 'components/dialogs/root-dialog'
 import Form from 'components/form/form'
 import StaticZone from 'components/form/StaticZone'
-import { Element } from 'react-scroll'
 
 const Home: NextPage = () => {
   const editor = useSelector((state: RootState) => state.editor)
@@ -54,14 +53,26 @@ const Home: NextPage = () => {
               <header>Static Zone</header>
               <StaticZone fields={editor.static.fields} />
             </article>
-            {editor.variations.map((item, idx) => (
-              <Element name={item.id.toString()} key={idx}>
+            {editor.variations.length ? (
+              editor.variations.map((item, idx) => (
                 <article className={styles.slice}>
                   <header>{item.id}</header>
                   <Form fields={item.fields} index={idx} />
                 </article>
-              </Element>
-            ))}
+              ))
+            ) : (
+              <div>
+                <h2>There is no Slices here</h2>
+                <p>Add one slices your document</p>
+                <button
+                  onClick={() =>
+                    dispatch.dialog.open({ type: 'SELECT_SLICE', props: {} })
+                  }
+                >
+                  Add
+                </button>
+              </div>
+            )}
           </Box>
         </Byside.Primary>
         <Byside.Sidebar width="8xl" as="aside" className={styles.rightPanel}>

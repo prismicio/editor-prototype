@@ -1,6 +1,6 @@
 import { createModel } from '@rematch/core'
-import staticz from 'mocks/static.json'
 import cuid from 'cuid'
+import staticz from 'mocks/static.json'
 
 import { RootModel } from '.'
 
@@ -42,7 +42,12 @@ export const editor = createModel<RootModel>()({
     onInsert: (state, payload: InsertPayloadType) => {
       state.variations.splice(payload.position, 0, {
         ...payload.variation,
+        id: cuid(),
       })
+      return state
+    },
+    onDelete: (state, payload: string) => {
+      state.variations = state.variations.filter((item) => item.id != payload)
       return state
     },
     onDrop: (state, payload: number) => {
