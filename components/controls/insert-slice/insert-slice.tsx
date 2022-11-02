@@ -35,7 +35,6 @@ export function InsertSlice({ idx, pos }: InsertSliceProps) {
       onDrop={onDrop}
       className={clsx(styles.root)}
     >
-      insert
       <InsertSliceIcon />
     </button>
   )

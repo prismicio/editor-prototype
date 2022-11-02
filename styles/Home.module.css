@@ -25,6 +25,49 @@
 .slice section{
   padding: 16px;
 }
-.toaster{
-
+.emptyState{
+  padding: 24px;
+}
+.emptyState > div{
+  background: #F4F2F4;
+  border: 1px solid #DCDBDD;
+  box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+}
+.emptyState>div h2{
+  font-size: sm;
+  color: #6F6E77;
+}
+.emptyState>div p {
+  font-size: xs;
+  color: #6F6E77;
+}
+.emptyState>div button{
+  background: #6E56CF;
+  border: 1px solid #5842C3;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  font-size: sm;
+  color: #fff;
+  padding: 6px 8px;
+  font-weight: semibold;
+  margin-top: 8px;
+}
+.emptyState>div button:hover {
+  cursor: pointer;
+  background: #5842C3;
+  border: 1px solid #5842C3;
+}
+.emptyState>div button:active{
+  background: #5842C3;
+  border: 1px solid #5842C3;
+  box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.08);
+}
+.emptyState>div button:focus {
+    background: #6E56CF;
+    border: 1px solid #5842C3;
+    box-shadow: 0px 0px 0px 3px rgba(124, 102, 220, 0.3);
+    outline: 0;
 }

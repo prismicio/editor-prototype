@@ -25,19 +25,21 @@ const Home: NextPage = () => {
         <Byside.Sidebar width="8xl" as="aside" className={styles.slices}>
           <DocumentName />
           {!editor.variations.length && (
-            <Box>
-              <h2>Empty Slices</h2>
-              <p>Pas de Slices dans ce document</p>
-              <button
-                onClick={() =>
-                  dispatch.dialog.open({
-                    type: 'SELECT_SLICE',
-                    props: { pos: 0 },
-                  })
-                }
-              >
-                Add
-              </button>
+            <Box className={styles.emptyState}>
+              <div>
+                <h2>Add your first Slice</h2>
+                <p>Click on the button below to choose the first Slice of the page.</p>
+                <button
+                  onClick={() =>
+                    dispatch.dialog.open({
+                      type: 'SELECT_SLICE',
+                      props: { pos: 0 },
+                    })
+                  }
+                >
+                  Add slice
+                </button>
+              </div>
             </Box>
           )}
           <DraggableList
