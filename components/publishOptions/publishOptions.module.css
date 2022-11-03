@@ -17,6 +17,10 @@
   font-weight: semibold;
   line-height: 1.5rem;
 }
+.buttonSecondary:hover{
+  cursor: pointer;
+  background-color: #F4F2F4;
+}
 .buttonGroup {
   display: flex;
 }
@@ -32,6 +36,10 @@
   letter-spacing: -0.15px;
   font-weight: semibold;
   line-height: 1.5rem;
+}
+.buttonGroupPrimary:hover{
+  cursor: pointer;
+  background-color: #5842c3;
 }
 .icon {
   line-height: 0;
