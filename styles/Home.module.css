@@ -30,11 +30,21 @@
 }
 .emptyState > div{
   background: #F4F2F4;
-  border: 1px solid #DCDBDD;
   box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   padding: 30px;
   text-align: center;
+  
+  border: 1px solid #DCDBDD;
+  animation: blink 1.5s;
+  animation-iteration-count: 5;
+}
+
+@keyframes blink {
+  50% {
+    border-color: #5842C3;
+    background-color: #F1EEFE;
+  }
 }
 .emptyState>div h2{
   font-size: sm;
