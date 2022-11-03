@@ -37,7 +37,7 @@
   
   border: 1px solid #DCDBDD;
   animation: blink 1.5s;
-  animation-iteration-count: 5;
+  animation-iteration-count: infinite;
 }
 
 @keyframes blink {

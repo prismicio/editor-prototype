@@ -63,26 +63,12 @@ const Home: NextPage = () => {
               <header>Static Zone</header>
               <StaticZone fields={editor.static.fields} />
             </article>
-            {editor.variations.length ? (
-              editor.variations.map((item, idx) => (
-                <article key={idx} className={styles.slice}>
-                  <header>{item.id}</header>
-                  <Form fields={item.fields} index={idx} />
-                </article>
-              ))
-            ) : (
-              <div>
-                <h2>There is no Slices here</h2>
-                <p>Add one slices your document</p>
-                <button
-                  onClick={() =>
-                    dispatch.dialog.open({ type: 'SELECT_SLICE', props: {} })
-                  }
-                >
-                  Add
-                </button>
-              </div>
-            )}
+            {editor.variations.map((item, idx) => (
+              <article key={idx} className={styles.slice}>
+                <header>{item.id}</header>
+                <Form fields={item.fields} index={idx} />
+              </article>
+            ))}
           </Box>
         </Byside.Primary>
         <Byside.Sidebar width="8xl" as="aside" className={styles.rightPanel}>
