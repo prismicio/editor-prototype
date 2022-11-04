@@ -1,6 +1,7 @@
 import { Dialog } from 'components/dialogs/dialog-layout/dialog-layout'
 import { Dispatch } from 'pages/_app'
 import { useDispatch } from 'react-redux'
+import styles from './select-image.module.css'
 
 const IMAGES = [
   {
@@ -43,7 +44,7 @@ export function SelectImage() {
         Select an image from Unsplash.com
       </Dialog.Title>
       <Dialog.Content>
-        <section>
+        <section className={styles.galery}>
           {IMAGES.map((i, index) => (
             <img
               key={index}
