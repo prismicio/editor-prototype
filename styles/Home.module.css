@@ -8,6 +8,8 @@
   padding: lg 0;
 }
 .slice{
+  max-width: 880px;
+  margin: 0 auto;
   margin-bottom: 16px;
   background: #FFFFFF;
   border: 1px solid #DCDBDD;

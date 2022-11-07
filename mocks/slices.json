@@ -2,12 +2,12 @@
   {
     "id": "0",
     "name": "Content Sections",
-    "image": "/slices-thumbnails/a.png",
+    "image": "/slices-thumbnails/gumroad-1.png",
     "variations": [
       {
         "id": "2",
         "name": "Variation A",
-        "image": "/slices-thumbnails/a.png",
+        "image": "/slices-thumbnails/gumroad-1.png",
         "fields": {
           "title": {
             "value": "Lorem ispum dolor...",
@@ -59,6 +59,47 @@
               "placeholder": "Placeholder...",
               "label": "Title",
               "props": { "label": "Heading" }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "name": "Testimonials",
+    "image": "/slices-thumbnails/testimonial-1.png",
+    "variations": [
+      {
+        "id": "2",
+        "name": "Variation A",
+        "image": "/slices-thumbnails/testimonial-1.png",
+        "fields": {
+          "text": {
+            "value": "<p>I launched MaxPacks as an experimental side gig; but within 2 years those Procreate brushes were earning more than my 6-figure salary in CG. Leaving in favor of Gumroad enabled me to explore other aspects of my art, develop new hobbies, and finally prioritize my personal life.</p>",
+            "config": {
+              "type": "RichText2",
+              "placeholder": "Placeholder...",
+              "label": "Text",
+              "props": { "label": "Introduction Text" }
+            }
+          },
+          "cta": {
+            "value": "Max Ulichney sells Procreate Brush Packs",
+            "config": {
+              "type": "KeyText",
+              "label": "CTA",
+              "placeholder": "Placeholder...",
+              "props": { "label": "Call to Action label" }
+            }
+          },
+          "bg": {
+            "value": "#111",
+            "config": {
+              "type": "Select",
+              "label": "CTA",
+              "placeholder": "Placeholder...",
+              "props": { "label": "Background Color" }
             }
           }
         }

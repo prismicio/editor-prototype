@@ -13,8 +13,10 @@ export default function Select(props) {
         <option value="" disabled>
           Select an option
         </option>
-        <option value="#111">Dark</option>
-        <option value="#7C66DC">Purple</option>
+        <option value="#111">Green</option>
+        <option value="#7C66DC">Pink</option>
+        <option value="#FFC800">Yellow</option>
+        <option value="#000000">Black</option>
       </select>
     </div>
   )

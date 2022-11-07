@@ -1,7 +1,7 @@
 {
   "fields": {
     "title": {
-      "value": "Lorem ispum dolor...",
+      "value": "Go from zero to $1",
       "config": {
         "type": "RichText",
         "placeholder": "Placeholder...",
@@ -10,7 +10,7 @@
       }
     },
     "text": {
-      "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper est ut sem suscipit euismod. Suspendisse potenti. Donec cursus metus sollicitudin ex eleifend faucibus sollicitudin tempor velit. Maecenas id ultricies lectus.</p>",
+      "value": "<p>With Gumroad, anyone can earn their first dollar online. Just start with what you know, see what sticks, and get paid. It’s that easy.</p>",
       "config": {
         "type": "RichText2",
         "placeholder": "Placeholder...",
@@ -19,7 +19,7 @@
       }
     },
     "cta": {
-      "value": "This is a button",
+      "value": "Start Selling",
       "config": {
         "type": "KeyText",
         "label": "CTA",
@@ -27,17 +27,9 @@
         "props": { "label": "Call to Action label" }
       }
     },
-    "bg": {
-      "value": "#111",
-      "config": {
-        "type": "Select",
-        "label": "CTA",
-        "placeholder": "Placeholder...",
-        "props": { "label": "Background Color" }
-      }
-    },
+    
     "img": {
-      "value": "https://cdn.dribbble.com/users/374165/screenshots/15724702/media/3e51e5cec73ae7de11dd2757d24bdf4e.png",
+      "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61942b84ec3d406199f07d78_vegalia.png",
       "config": {
         "type": "Image",
         "label": "Image",
