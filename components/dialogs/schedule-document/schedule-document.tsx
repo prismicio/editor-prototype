@@ -10,7 +10,7 @@ export function ScheduleDocument() {
   return (
     <Dialog>
       <Dialog.Title onClose={() => dispatch.dialog.close()}>
-        Publish it during a new release
+        Publish it at a specific date and time…
       </Dialog.Title>
       <Dialog.Content>
         <Box as="form" className={styles.root}>
