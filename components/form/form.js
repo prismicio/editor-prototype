@@ -36,6 +36,7 @@ export default function Form({ fields, index, item }) {
       {Object.keys(fields).map((key, i) => {
         const type = fields[key].config.type
         const value = fields[key].value
+        const placeholder = fields[key].config.placeholder || ''
         const child = fields[key]?.child || {}
         const label = fields[key].config.props.label
         const Field = FIELDS[type]
@@ -45,6 +46,7 @@ export default function Form({ fields, index, item }) {
             child={child}
             key={key + i}
             value={value}
+            placeholder={placeholder}
             onChange={onChange}
             onRichTextUpdate={onRichTextUpdateChange}
             onChangeImage={onChangeImage}

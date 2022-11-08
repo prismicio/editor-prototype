@@ -36,6 +36,7 @@ export default function StaticZone({ fields }) {
         const type = fields[key].config.type
         const value = fields[key].value
         const child = fields[key]?.child || {}
+        const placeholder = fields[key].config.placeholder || ''
         const label = fields[key].config.props.label
         const Field = FIELDS[type]
         return (
@@ -48,6 +49,7 @@ export default function StaticZone({ fields }) {
             onRichTextUpdate={onRichTextUpdateChange}
             onChangeImage={onChangeImage}
             name={key}
+            placeholder={placeholder}
           />
         )
       })}

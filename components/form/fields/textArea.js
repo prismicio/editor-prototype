@@ -12,7 +12,7 @@ export default function Textarea(props) {
         type={props.type}
         onChange={props.onChange}
         value={props.value}
-        placeholder="Placeholder ..."
+        placeholder={props.placeholder}
       />
     </div>
   )
