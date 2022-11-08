@@ -22,7 +22,7 @@ export function Slice({
   return (
     <Box as="div" className={styles.root} {...restProps}>
       <SliceOptions position={position} />
-      <NextImage height="126" width="232" src={preview} />
+      <NextImage quality={100} height="150" width="278" src={preview} />
     </Box>
   )
 }

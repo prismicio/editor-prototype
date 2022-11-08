@@ -16,7 +16,7 @@ export function Variation({
 }: SliceProps): JSX.Element {
   return (
     <Box as="div" className={styles.root} {...restProps}>
-      <NextImage height="150" width="278" src={image} />
+      <NextImage quality={100} height="150" width="278" src={image} />
       <Box as="button" onClick={add}>
         <AddIcon />
       </Box>
