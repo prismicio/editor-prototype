@@ -17,7 +17,7 @@ export default function DocumentName({
           <span></span> Gumroad – Sell what you know and see what sticks
         </p>
         <p className={styles.history}>
-          Edited 17 hours ago - <a>View more</a>
+          Edited 17 hours ago - <a>View history</a>
         </p>
       </div>
     </div>

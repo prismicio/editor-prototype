@@ -1,4 +1,6 @@
 .library {
+  height: 647px;
+  overflow-y: scroll;
   display: flex;
   width: -webkit-fill-available;
 }

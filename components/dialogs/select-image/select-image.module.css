@@ -1,4 +1,5 @@
 .galery{
+  height: 647px;
   overflow-y: scroll;
   padding: 16px;
   display: grid;

@@ -32,7 +32,7 @@ function Title(props: DialogTitleProps) {
 
 function Content(props: DialogProps) {
   return (
-    <Box as="div" className={clsx(styles.wrapper)}>
+    <Box as="div">
       {props.children}
     </Box>
   )
