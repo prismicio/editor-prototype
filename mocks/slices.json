@@ -1,39 +1,30 @@
 [
   {
-    "id": "0",
-    "name": "Content Sections",
-    "image": "/slices-thumbnails/gumroad-1.png",
+    "id": "1",
+    "name": "Testimonials",
+    "image": "/slices-thumbnails/testimonial-text-left.png",
     "variations": [
       {
         "id": "2",
-        "name": "Variation A",
-        "image": "/slices-thumbnails/gumroad-1.png",
+        "name": "Text Left",
+        "image": "/slices-thumbnails/testimonial-text-left.png",
         "fields": {
-          "title": {
-            "value": "Lorem ispum dolor...",
-            "config": {
-              "type": "RichText",
-              "placeholder": "Placeholder...",
-              "label": "Title",
-              "props": { "label": "Heading" }
-            }
-          },
           "text": {
-            "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper est ut sem suscipit euismod. Suspendisse potenti. Donec cursus metus sollicitudin ex eleifend faucibus sollicitudin tempor velit. Maecenas id ultricies lectus.</p>",
+            "value": "<p>I launched MaxPacks as an experimental side gig; but within 2 years those Procreate brushes were earning more than my 6-figure salary in CG. Leaving in favor of Gumroad enabled me to explore other aspects of my art, develop new hobbies, and finally prioritize my personal life.</p>",
             "config": {
               "type": "RichText2",
               "placeholder": "Placeholder...",
               "label": "Text",
-              "props": { "label": "Introduction Text" }
+              "props": { "label": "Quote text" }
             }
           },
           "cta": {
-            "value": "This is a button",
+            "value": "Max Ulichney sells Procreate Brush Packs",
             "config": {
               "type": "KeyText",
               "label": "CTA",
               "placeholder": "Placeholder...",
-              "props": { "label": "Call to Action label" }
+              "props": { "label": "Author information" }
             }
           },
           "bg": {
@@ -48,17 +39,35 @@
         }
       },
       {
-        "id": "879",
-        "name": "Variation A",
-        "image": "/slices-thumbnails/b.png",
+        "id": "1",
+        "name": "Text Left",
+        "image": "/slices-thumbnails/testimonial-text-right.png",
         "fields": {
-          "title": {
-            "value": "Lorem ispum dolor...",
+          "text": {
+            "value": "<p>Originally, I took pre-orders for my Trend Reports on Gumroad. But I received... exactly $0. So I changed tactics: I made half of my report free, and the other half paid. Today, 99% of Trends.VC revenue is recurring in the form of annual and quarterly subscriptions.</p>",
             "config": {
-              "type": "RichText",
+              "type": "RichText2",
               "placeholder": "Placeholder...",
-              "label": "Title",
-              "props": { "label": "Heading" }
+              "label": "Text",
+              "props": { "label": "Quote text" }
+            }
+          },
+          "cta": {
+            "value": "Dru Riley sells business insights and expertise",
+            "config": {
+              "type": "KeyText",
+              "label": "CTA",
+              "placeholder": "Placeholder...",
+              "props": { "label": "Author information" }
+            }
+          },
+          "bg": {
+            "value": "#111",
+            "config": {
+              "type": "Select",
+              "label": "CTA",
+              "placeholder": "Placeholder...",
+              "props": { "label": "Background Color" }
             }
           }
         }
@@ -66,26 +75,123 @@
     ]
   },
   {
-    "id": "1",
-    "name": "Testimonials",
-    "image": "/slices-thumbnails/testimonial-1.png",
+    "id": "2",
+    "name": "Feature text + image",
+    "image": "/slices-thumbnails/feature-text-right.png",
     "variations": [
       {
         "id": "2",
-        "name": "Variation A",
-        "image": "/slices-thumbnails/testimonial-1.png",
+        "name": "Text right",
+        "image": "/slices-thumbnails/feature-text-right.png",
         "fields": {
+          "title": {
+            "value": "Sell anything",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "Heading" }
+            }
+          },
           "text": {
-            "value": "<p>I launched MaxPacks as an experimental side gig; but within 2 years those Procreate brushes were earning more than my 6-figure salary in CG. Leaving in favor of Gumroad enabled me to explore other aspects of my art, develop new hobbies, and finally prioritize my personal life.</p>",
+            "value": "<p>Video lessons. Monthly subscriptions. Physical products. Whatever! Gumroad was created to help you experiment with all kinds of ideas and formats. <li>Sell your Top 10 lists</li><li>Sell your crypto tips</li><li>Sell your fractal pack</li><li>Sell your keto cookbook</li><li>Sell your C4D scenes</li><li>Sell your new emojis</li><li>Seriously, sell anything!</li></p>",
             "config": {
               "type": "RichText2",
               "placeholder": "Placeholder...",
               "label": "Text",
-              "props": { "label": "Introduction Text" }
+              "props": { "label": "Quote text" }
+            }
+          },
+          "img": {
+            "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619532e016b9ee57c1b529e6_home-feature-1.svg",
+            "config": {
+              "type": "Image",
+              "label": "Image",
+              "placeholder": "Placeholder...",
+              "props": { "label": "Feature Image" }
+            },
+            "child": {
+              "alt": {
+                "value": "Alt text",
+                "config": {
+                  "type": "KeyText",
+                  "label": "Alt text",
+                  "placeholder": "Placeholder...",
+                  "props": { "label": "Alt text" }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "1",
+        "name": "Text Left",
+        "image": "/slices-thumbnails/feature-text-left.png",
+        "fields": {
+          "title": {
+            "value": "Sell anywhere",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "Heading" }
+            }
+          },
+          "text": {
+            "value": "<p>Create and customize your storefront with our all-in-one platform or choose to use your personal site instead. With Zapier, you can seamlessly connect your Gumroad account to thousands of apps in your current stack.</p>",
+            "config": {
+              "type": "RichText2",
+              "placeholder": "Placeholder...",
+              "label": "Text",
+              "props": { "label": "Quote text" }
+            }
+          },
+          "img": {
+            "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61991f9baa14038b9c100d6c_home-feature-4.svg",
+            "config": {
+              "type": "Image",
+              "label": "Image",
+              "placeholder": "Placeholder...",
+              "props": { "label": "Feature Image" }
+            },
+            "child": {
+              "alt": {
+                "value": "Alt text",
+                "config": {
+                  "type": "KeyText",
+                  "label": "Alt text",
+                  "placeholder": "Placeholder...",
+                  "props": { "label": "Alt text" }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Call to actions",
+    "image": "/slices-thumbnails/call-to-action.png",
+    "variations": [
+      {
+        "id": "1",
+        "name": "Variation A",
+        "image": "/slices-thumbnails/call-to-action.png",
+        "fields": {
+          "text": {
+            "value": "<p>Share your work. Someone out there needs it.</p>",
+            "config": {
+              "type": "RichText2",
+              "placeholder": "Placeholder...",
+              "label": "Text",
+              "props": { "label": "Heading text" }
             }
           },
           "cta": {
-            "value": "Max Ulichney sells Procreate Brush Packs",
+            "value": "Start Selling",
             "config": {
               "type": "KeyText",
               "label": "CTA",
@@ -100,6 +206,49 @@
               "label": "CTA",
               "placeholder": "Placeholder...",
               "props": { "label": "Background Color" }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Heading sections",
+    "image": "/slices-thumbnails/heading-section.png",
+    "variations": [
+      {
+        "id": "1",
+        "name": "Variation A",
+        "image": "/slices-thumbnails/heading-section.png",
+        "fields": {
+          "title": {
+            "value": "You know all those great ideas you have? We want you to try them, lots of them, and find out what works.",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "Heading" }
+            }
+          },
+          "img": {
+            "value": "/slices-thumbnails/heading-section-image.png",
+            "config": {
+              "type": "Image",
+              "label": "Image",
+              "placeholder": "Placeholder...",
+              "props": { "label": "Feature Image" }
+            },
+            "child": {
+              "alt": {
+                "value": "Alt text",
+                "config": {
+                  "type": "KeyText",
+                  "label": "Alt text",
+                  "placeholder": "Placeholder...",
+                  "props": { "label": "Alt text" }
+                }
+              }
             }
           }
         }
