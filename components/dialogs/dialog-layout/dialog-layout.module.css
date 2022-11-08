@@ -37,6 +37,11 @@
   line-height: 0;
   background: transparent;
   color: #6f6e77;
+  border-radius: 4px;
+}
+.title button:hover {
+  cursor: pointer;
+  background: #DCDBDD;
 }
 .wrapper {
   height: 647px;
