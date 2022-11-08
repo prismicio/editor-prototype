@@ -20,7 +20,7 @@ export function Variation({
       <Box as="button" onClick={add}>
         <AddIcon />
       </Box>
-      <p className={styles.sliceName}>Slice Name</p>
+      <p className={styles.sliceName}>{name}</p>
     </Box>
   )
 }

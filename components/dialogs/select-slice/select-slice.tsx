@@ -73,7 +73,7 @@ export function SelectSlice(props: SelectSliceProps) {
                         add={() => {
                           dispatch.editor.onInsert({
                             isEditing: props.isEditing || false,
-                            variation,
+                            variation: { ...variation, sliceName: slice.name },
                             position: props.pos,
                           })
                           dispatch.dialog.close()

@@ -54,7 +54,7 @@ export const Draggable = ({
       draggable
       key={idx}
       ref={ref}
-      //onClick={handleClick}
+      onClick={handleClick}
       className={clsx(styles.root, className)}
       onDragLeave={onDragLeave}
       onDragEnd={onDragEnd}

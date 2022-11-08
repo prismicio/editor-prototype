@@ -10,4 +10,5 @@ type VariationType = {
   name: string
   image: string
   fields: any
+  sliceName: string
 }

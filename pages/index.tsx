@@ -14,6 +14,7 @@ import { Fragment } from 'react'
 import { RootDialog } from 'components/dialogs/root-dialog'
 import Form from 'components/form/form'
 import StaticZone from 'components/form/StaticZone'
+import { Element } from 'react-scroll'
 
 const Home: NextPage = () => {
   const editor = useSelector((state: RootState) => state.editor)
@@ -28,7 +29,10 @@ const Home: NextPage = () => {
             <Box className={styles.emptyState}>
               <div>
                 <h2>Add your first Slice</h2>
-                <p>Click on the button below to choose the first Slice of the page.</p>
+                <p>
+                  Click on the button below to choose the first Slice of the
+                  page.
+                </p>
                 <button
                   onClick={() =>
                     dispatch.dialog.open({
@@ -64,10 +68,12 @@ const Home: NextPage = () => {
               <StaticZone fields={editor.static.fields} />
             </article>
             {editor.variations.map((item, idx) => (
-              <article key={idx} className={styles.slice}>
-                <header>{item.id}</header>
-                <Form fields={item.fields} index={idx} />
-              </article>
+              <Element name={item.id}>
+                <article key={idx} className={styles.slice}>
+                  <header>{item.sliceName}</header>
+                  <Form fields={item.fields} index={idx} />
+                </article>
+              </Element>
             ))}
           </Box>
         </Byside.Primary>
