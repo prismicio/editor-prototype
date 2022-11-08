@@ -2,7 +2,7 @@
   overflow-y: scroll;
   padding: 16px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 16px;
   row-gap: 16px;
 }
@@ -13,4 +13,9 @@
   padding: 10%;
   background-color: #e2e2e2;
   border-radius: 6px;
+  border: 2px solid transparent;
+}
+.imageWrapper:hover{
+  border: 2px solid #FFFFFF;
+  box-shadow: 0px 0px 0px 2px #6E56CF;
 }
