@@ -49,11 +49,11 @@ const IMAGES = [
     value:
       'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619537b960fa2619636d2959_max-ulnichey.png',
   },
-  
 ]
 
-export function SelectImage() {
+export function SelectImage(props: any) {
   const dispatch = useDispatch<Dispatch>()
+  console.log(props)
   return (
     <Dialog>
       <Dialog.Title onClose={() => dispatch.dialog.close()}>
@@ -63,13 +63,28 @@ export function SelectImage() {
         <section className={styles.galery}>
           {IMAGES.map((i, index) => (
             <div className={styles.imageWrapper}>
-            <img
-              key={index}
-              alt={i.name}
-              loading="lazy"
-              src={i.value}
-              onClick={() => dispatch.dialog.close()}
-            />
+              <img
+                key={index}
+                alt={i.name}
+                loading="lazy"
+                src={i.value}
+                onClick={() => {
+                  if (props.index) {
+                    dispatch.editor.onEditSlice({
+                      target: props.name,
+                      value: i.value,
+                      index: props.index,
+                    })
+                  } else {
+                    dispatch.editor.onEditStaticZone({
+                      target: props.name,
+                      value: i.value,
+                    })
+                  }
+
+                  dispatch.dialog.close()
+                }}
+              />
             </div>
           ))}
         </section>

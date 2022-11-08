@@ -4,33 +4,13 @@ import 'react-responsive-modal/styles.css'
 import CropOutlinedIcon from '@mui/icons-material/CropOutlined'
 import ImageSearchOutlinedIcon from '@mui/icons-material/ImageSearchOutlined'
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined'
-import { Modal } from 'react-responsive-modal'
 import Field from './simpleField'
 import clsx from 'clsx'
 import { useDispatch } from 'react-redux'
 
 function Image(props) {
-  const [open, setOpen] = React.useState(false)
+  console.log(props)
   const dispatch = useDispatch()
-  const ImageModal = ({ onClose, open }) => (
-    <Modal open={open} onClose={onClose} center>
-      <header>Select an image from Unsplash.com</header>
-      <section>
-        {IMAGES.map((i, index) => (
-          <img
-            key={props.name + index}
-            alt={i.name}
-            loading="lazy"
-            src={i.value}
-            onClick={() => {
-              props.onChangeImage({ src: i.value, name: props.name })
-              onClose()
-            }}
-          />
-        ))}
-      </section>
-    </Modal>
-  )
   return (
     <Fragment>
       <div className={styles.image_container}>
@@ -44,7 +24,10 @@ function Image(props) {
             <button
               className={clsx(styles.secondary, styles.small)}
               onClick={() =>
-                dispatch.dialog.open({ type: 'SELECT_IMAGE', props: {} })
+                dispatch.dialog.open({
+                  type: 'SELECT_IMAGE',
+                  props: props,
+                })
               }
             >
               <ImageSearchOutlinedIcon /> Replace image
@@ -56,14 +39,17 @@ function Image(props) {
         </div>
         <div className={styles.preview}>
           <div className={styles.tile}>
-          <img
-            onClick={() =>
-              dispatch.dialog.open({ type: 'SELECT_IMAGE', props: {} })
-            }
-            className={styles.image_preview}
-            alt="imagze"
-            src={props.value}
-          />
+            <img
+              onClick={() =>
+                dispatch.dialog.open({
+                  type: 'SELECT_IMAGE',
+                  props: props,
+                })
+              }
+              className={styles.image_preview}
+              alt="imagze"
+              src={props.value}
+            />
           </div>
         </div>
         <Field

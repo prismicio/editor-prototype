@@ -15,7 +15,7 @@ const FIELDS = {
   Image: ImageField,
 }
 
-export default function Form({ fields, index }) {
+export default function Form({ fields, index, item }) {
   const dispatch = useDispatch()
   function onChange(e) {
     dispatch.editor.onEditSlice({
@@ -23,13 +23,6 @@ export default function Form({ fields, index }) {
       value: e.target.value,
       index,
     })
-  }
-  function onRichTextUpdateChange(e) {
-    console.log(e)
-  }
-
-  function onChangeImage(e) {
-    console.log(e)
   }
   return (
     <div className={styles.fieldSet}>
@@ -46,9 +39,9 @@ export default function Form({ fields, index }) {
             key={key + i}
             value={value}
             onChange={onChange}
-            onRichTextUpdate={onRichTextUpdateChange}
-            onChangeImage={onChangeImage}
             name={key}
+            item={item}
+            index={index}
           />
         )
       })}

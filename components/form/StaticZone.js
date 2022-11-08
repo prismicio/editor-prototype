@@ -23,13 +23,6 @@ export default function StaticZone({ fields }) {
       value: e.target.value,
     })
   }
-  function onRichTextUpdateChange(e) {
-    console.log(e)
-  }
-
-  function onChangeImage(e) {
-    console.log(e)
-  }
   return (
     <div className={styles.fieldSet}>
       {Object.keys(fields).map((key, i) => {
@@ -45,8 +38,6 @@ export default function StaticZone({ fields }) {
             key={key + i}
             value={value}
             onChange={onChange}
-            onRichTextUpdate={onRichTextUpdateChange}
-            onChangeImage={onChangeImage}
             name={key}
           />
         )

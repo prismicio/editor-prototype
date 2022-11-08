@@ -71,7 +71,7 @@ const Home: NextPage = () => {
               <Element name={item.id}>
                 <article key={idx} className={styles.slice}>
                   <header>{item.sliceName}</header>
-                  <Form fields={item.fields} index={idx} />
+                  <Form item={item} fields={item.fields} index={idx} />
                 </article>
               </Element>
             ))}

@@ -30,6 +30,7 @@ export const editor = createModel<RootModel>()({
       state,
       payload: { target: string; value: string; index: number }
     ) => {
+      console.log(payload)
       state.variations[payload.index].fields[payload.target].value =
         payload.value
 
