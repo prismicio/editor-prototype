@@ -9,7 +9,6 @@ import clsx from 'clsx'
 import { useDispatch } from 'react-redux'
 
 function Image(props) {
-  console.log(props)
   const dispatch = useDispatch()
   return (
     <Fragment>

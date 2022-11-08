@@ -1,6 +1,7 @@
 import { createModel } from '@rematch/core'
 import cuid from 'cuid'
 import staticz from 'mocks/static.json'
+import filled from 'mocks/filled.json'
 
 import { RootModel } from '.'
 
@@ -26,11 +27,14 @@ export const editor = createModel<RootModel>()({
       state.selected = payload
       return state
     },
+    onFill: (state) => {
+      state.variations = filled
+      return state
+    },
     onEditSlice: (
       state,
       payload: { target: string; value: string; index: number }
     ) => {
-      console.log(payload)
       state.variations[payload.index].fields[payload.target].value =
         payload.value
 

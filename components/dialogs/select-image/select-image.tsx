@@ -53,7 +53,6 @@ const IMAGES = [
 
 export function SelectImage(props: any) {
   const dispatch = useDispatch<Dispatch>()
-  console.log(props)
   return (
     <Dialog>
       <Dialog.Title onClose={() => dispatch.dialog.close()}>

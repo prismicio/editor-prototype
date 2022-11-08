@@ -5,20 +5,35 @@ import { Slice } from 'components/cards/slice/slice'
 import { Byside } from 'components/layouts/by-side'
 import { DraggableList } from 'components/controls/draggable'
 import { useDispatch, useSelector } from 'react-redux'
-import { RootState } from './_app'
+import { Dispatch, RootState } from './_app'
 import VersionPanel from 'components/versionPanel/versionPanel'
 import PublishOptions from 'components/publishOptions/publishOptions'
 import EditorTabs from 'components/editorTabs/editorTabs'
 import DocumentName from 'components/documentName/documentName'
-import { Fragment } from 'react'
+import { Fragment, useEffect } from 'react'
 import { RootDialog } from 'components/dialogs/root-dialog'
 import Form from 'components/form/form'
 import StaticZone from 'components/form/StaticZone'
 import { Element } from 'react-scroll'
+import { useRouter } from 'next/router'
+import queryString from 'query-string'
+
+type QueryProps = {
+  filled?: boolean
+}
 
 const Home: NextPage = () => {
+  const router = useRouter()
   const editor = useSelector((state: RootState) => state.editor)
-  const dispatch = useDispatch()
+  const dispatch = useDispatch<Dispatch>()
+  const url = queryString.parseUrl(router.asPath, {
+    parseBooleans: true,
+  })
+  const query = url.query as QueryProps
+
+  useEffect(() => {
+    if (query.filled) dispatch.editor.onFill()
+  }, [query.filled])
 
   return (
     <Fragment>

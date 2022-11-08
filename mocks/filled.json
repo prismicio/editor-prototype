@@ -1,0 +1,197 @@
+[
+  {
+    "id": "cla8djo1v00003b6qln7vpnbj",
+    "name": "Text Left",
+    "image": "/slices-thumbnails/testimonial-text-left.png",
+    "fields": {
+      "text": {
+        "value": "<p>I launched MaxPacks as an experimental side gig; but within 2 years those Procreate brushes were earning more than my 6-figure salary in CG. Leaving in favor of Gumroad enabled me to explore other aspects of my art, develop new hobbies, and finally prioritize my personal life.</p>",
+        "config": {
+          "type": "RichText2",
+          "placeholder": "Placeholder...",
+          "label": "Text",
+          "props": {
+            "label": "Quote text"
+          }
+        }
+      },
+      "cta": {
+        "value": "Max Ulichney sells Procreate Brush Packs",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": {
+            "label": "Author information"
+          }
+        }
+      },
+      "bg": {
+        "value": "#111",
+        "config": {
+          "type": "Select",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": {
+            "label": "Background Color"
+          }
+        }
+      },
+      "img": {
+        "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619537b960fa2619636d2959_max-ulnichey.png",
+        "config": {
+          "type": "Image",
+          "label": "Image",
+          "placeholder": "Placeholder...",
+          "props": {
+            "label": "Author Image"
+          }
+        },
+        "child": {
+          "alt": {
+            "value": "Alt text",
+            "config": {
+              "type": "KeyText",
+              "label": "Alt text",
+              "placeholder": "A short description of the image for the visually impaired",
+              "props": {
+                "label": "A short description of the image for the visually impaired"
+              }
+            }
+          }
+        }
+      }
+    },
+    "sliceName": "Testimonials"
+  },
+  {
+    "id": "cla8djsm900013b6q8cqcbu4l",
+    "name": "Text Left",
+    "image": "/slices-thumbnails/testimonial-text-right.png",
+    "fields": {
+      "text": {
+        "value": "<p>Originally, I took pre-orders for my Trend Reports on Gumroad. But I received... exactly $0. So I changed tactics: I made half of my report free, and the other half paid. Today, 99% of Trends.VC revenue is recurring in the form of annual and quarterly subscriptions.</p>",
+        "config": {
+          "type": "RichText2",
+          "placeholder": "Placeholder...",
+          "label": "Text",
+          "props": {
+            "label": "Quote text"
+          }
+        }
+      },
+      "cta": {
+        "value": "Dru Riley sells business insights and expertise",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": {
+            "label": "Author information"
+          }
+        }
+      },
+      "bg": {
+        "value": "#111",
+        "config": {
+          "type": "Select",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": {
+            "label": "Background Color"
+          }
+        }
+      },
+      "img": {
+        "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61957abf65d90d1b901c50f7_dru-riley.png",
+        "config": {
+          "type": "Image",
+          "label": "Image",
+          "placeholder": "Placeholder...",
+          "props": {
+            "label": "Author Image"
+          }
+        },
+        "child": {
+          "alt": {
+            "value": "Alt text",
+            "config": {
+              "type": "KeyText",
+              "label": "Alt text",
+              "placeholder": "A short description of the image for the visually impaired",
+              "props": {
+                "label": "A short description of the image for the visually impaired"
+              }
+            }
+          }
+        }
+      }
+    },
+    "sliceName": "Testimonials"
+  },
+  {
+    "id": "cla8dn3lo00023b6qlmjshug7",
+    "name": "Text Left",
+    "image": "/slices-thumbnails/testimonial-text-left.png",
+    "fields": {
+      "text": {
+        "value": "<p>I launched MaxPacks as an experimental side gig; but within 2 years those Procreate brushes were earning more than my 6-figure salary in CG. Leaving in favor of Gumroad enabled me to explore other aspects of my art, develop new hobbies, and finally prioritize my personal life.</p>",
+        "config": {
+          "type": "RichText2",
+          "placeholder": "Placeholder...",
+          "label": "Text",
+          "props": {
+            "label": "Quote text"
+          }
+        }
+      },
+      "cta": {
+        "value": "Max Ulichney sells Procreate Brush Packs",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": {
+            "label": "Author information"
+          }
+        }
+      },
+      "bg": {
+        "value": "#111",
+        "config": {
+          "type": "Select",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": {
+            "label": "Background Color"
+          }
+        }
+      },
+      "img": {
+        "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619537b960fa2619636d2959_max-ulnichey.png",
+        "config": {
+          "type": "Image",
+          "label": "Image",
+          "placeholder": "Placeholder...",
+          "props": {
+            "label": "Author Image"
+          }
+        },
+        "child": {
+          "alt": {
+            "value": "Alt text",
+            "config": {
+              "type": "KeyText",
+              "label": "Alt text",
+              "placeholder": "A short description of the image for the visually impaired",
+              "props": {
+                "label": "A short description of the image for the visually impaired"
+              }
+            }
+          }
+        }
+      }
+    },
+    "sliceName": "Testimonials"
+  }
+]

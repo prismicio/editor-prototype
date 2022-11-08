@@ -2,7 +2,6 @@ import React from 'react'
 import styles from './simpleField.module.css'
 
 export default function Field(props) {
-  console.log(props)
   return (
     <div className={styles.field_container}>
       <label>{props.label}</label>
