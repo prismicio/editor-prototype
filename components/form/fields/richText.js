@@ -39,8 +39,8 @@ function CommandsList(props) {
         const ComponentIcon = ICONS[icon]
         return (
           <li
-            className={classNames(styles.commands_list_item, {
-              active: selectedIndex === idx,
+            className={clsx(styles.commands_list_item, {
+              [styles.active]: selectedIndex === idx,
             })}
             key={idx}
             tabIndex={idx}
