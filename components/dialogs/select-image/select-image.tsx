@@ -17,12 +17,12 @@ const IMAGES = [
   {
     name: 'Image03',
     value:
-      'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619537b960fa2619636d2959_max-ulnichey.png',
+      'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619578e5eee7c6e8da61a827_home-feature-2.svg',
   },
   {
     name: 'Image03',
     value:
-      'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619578e5eee7c6e8da61a827_home-feature-2.svg',
+      'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61991f9baa14038b9c100d6c_home-feature-4.svg',
   },
   {
     name: 'Image03',
@@ -32,8 +32,24 @@ const IMAGES = [
   {
     name: 'Image03',
     value:
-      'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61991f9baa14038b9c100d6c_home-feature-4.svg',
+      'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619f82531c01ed0820276db1_features-3.svg',
   },
+  {
+    name: 'Image03',
+    value:
+      'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/6194643c04fdc36b37ec99d3_features-4.svg',
+  },
+  {
+    name: 'Image03',
+    value:
+      'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619957efd3a10ea42e318885_features-5.svg',
+  },
+  {
+    name: 'Image03',
+    value:
+      'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619537b960fa2619636d2959_max-ulnichey.png',
+  },
+  
 ]
 
 export function SelectImage() {
