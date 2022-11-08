@@ -60,37 +60,6 @@ export default function VersionPanel({
             </p>
             <span>Last edited by Anthony Aubertin</span>
           </li>
-          <li>
-            <p>
-              Planned on <a>Halloween</a> release
-            </p>
-            <span>Last edited by Benjamin Martin</span>
-          </li>
-          <li>
-            <p>
-              Planned on <b>11/11/2022 - 14:45PM</b>
-            </p>
-            <span>Last edited by Anthony Aubertin</span>
-          </li>
-          <li>
-            <p>
-              Planned on <b>01/12/2022 - 12:00PM</b>
-            </p>
-            <span>Last edited by Anthony Aubertin</span>
-          </li>
-          <li>
-            <p>
-              Planned on <b>24/12/2022 - 08:00AM</b> during <a>Christmas</a>{' '}
-              release
-            </p>
-            <span>Last edited by Benjamin Martin</span>
-          </li>
-          <li>
-            <p>
-              Planned on <b>10/09/2022 - 12:00PM</b>
-            </p>
-            <span>Last edited by Anthony Aubertin</span>
-          </li>
         </ul>
       </article>
     </div>

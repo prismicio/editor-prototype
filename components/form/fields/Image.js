@@ -55,6 +55,7 @@ function Image(props) {
           </div>
         </div>
         <div className={styles.preview}>
+          <div className={styles.tile}>
           <img
             onClick={() =>
               dispatch.dialog.open({ type: 'SELECT_IMAGE', props: {} })
@@ -63,6 +64,7 @@ function Image(props) {
             alt="imagze"
             src={props.value}
           />
+          </div>
         </div>
         <Field
           placeholder={props.child.alt.config.placeholder}
