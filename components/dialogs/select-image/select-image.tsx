@@ -69,20 +69,20 @@ export function SelectImage(props: any) {
                 loading="lazy"
                 src={i.value}
                 onClick={() => {
-                  if (props.index) {
+                  if (props.index !== undefined) {
                     dispatch.editor.onEditSlice({
                       target: props.name,
                       value: i.value,
                       index: props.index,
                     })
+                    dispatch.dialog.close()
                   } else {
                     dispatch.editor.onEditStaticZone({
                       target: props.name,
                       value: i.value,
                     })
+                    dispatch.dialog.close()
                   }
-
-                  dispatch.dialog.close()
                 }}
               />
             </div>
