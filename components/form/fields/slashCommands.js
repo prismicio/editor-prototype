@@ -1,25 +1,26 @@
-import React from "react";
-import { Extension } from "@tiptap/core";
-import Suggestion from "@tiptap/suggestion";
-import { ReactRenderer } from "@tiptap/react";
-import tippy from "tippy.js";
-import { Plugin } from "prosemirror-state";
-import { Decoration, DecorationSet } from "prosemirror-view";
+import React from 'react'
+import { Extension } from '@tiptap/core'
+import Suggestion from '@tiptap/suggestion'
+import { ReactRenderer } from '@tiptap/react'
+import tippy from 'tippy.js'
+import { Plugin } from 'prosemirror-state'
+import { Decoration, DecorationSet } from 'prosemirror-view'
+import styles from './richText.module.css'
 
 export const SlashCommands = Extension.create({
-  name: "slash-command",
+  name: 'slash-command',
 
   addOptions: {
     commands: [],
     filterCommands: (commands) => {
-      return commands;
+      return commands
     },
     component: null,
     suggestion: {
-      decorationTag: "span",
-      char: "/",
-      startOfLine: false
-    }
+      decorationTag: 'span',
+      char: '/',
+      startOfLine: false,
+    },
   },
 
   addProseMirrorPlugins() {
@@ -31,56 +32,56 @@ export const SlashCommands = Extension.create({
           return this.options.commands.filter(
             (item) =>
               item.title.toLowerCase().search(query.toLowerCase().trim()) !== -1
-          );
+          )
         },
         command: ({ editor, range, props }) => {
-          props.command({ editor, range });
+          props.command({ editor, range })
         },
         render: () => {
-          let component;
-          let popup;
+          let component
+          let popup
 
           return {
             onStart: (props) => {
               component = new ReactRenderer(CommandsListController, {
                 editor: props.editor,
-                props: { ...props, component: this.options.component }
-              });
+                props: { ...props, component: this.options.component },
+              })
 
-              popup = tippy("body", {
+              popup = tippy('body', {
                 getReferenceClientRect: props.clientRect,
                 appendTo: () => document.body,
                 content: component.element,
                 showOnCreate: true,
                 interactive: true,
-                trigger: "manual",
-                placement: "top-start"
-              });
+                trigger: 'manual',
+                placement: 'top-start',
+              })
             },
             onUpdate: (props) => {
               component.updateProps({
                 ...props,
-                component: this.options.component
-              });
+                component: this.options.component,
+              })
 
               popup[0].setProps({
-                getReferenceClientRect: props.clientRect
-              });
+                getReferenceClientRect: props.clientRect,
+              })
             },
             onKeyDown(props) {
-              return component.ref?.onKeyDown(props);
+              return component.ref?.onKeyDown(props)
             },
             onExit() {
-              popup[0].destroy();
-              component.destroy();
-            }
-          };
-        }
+              popup[0].destroy()
+              component.destroy()
+            },
+          }
+        },
       }),
       new Plugin({
         props: {
           decorations: (state) => {
-            const decorations = [];
+            const decorations = []
             const decorate = (node, pos) => {
               if (
                 node.type.isBlock &&
@@ -89,85 +90,85 @@ export const SlashCommands = Extension.create({
               ) {
                 decorations.push(
                   Decoration.node(pos, pos + node.nodeSize, {
-                    class: "empty_node"
+                    class: styles.empty_node,
                   })
-                );
+                )
               }
-            };
+            }
 
-            state.doc.descendants(decorate);
+            state.doc.descendants(decorate)
 
-            return DecorationSet.create(state.doc, decorations);
-          }
-        }
-      })
-    ];
-  }
-});
+            return DecorationSet.create(state.doc, decorations)
+          },
+        },
+      }),
+    ]
+  },
+})
 
 class CommandsListController extends React.Component {
   constructor() {
-    super();
+    super()
     this.state = {
-      selectedIndex: 0
-    };
-    this.selectItem = this.selectItem.bind(this);
+      selectedIndex: 0,
+    }
+    this.selectItem = this.selectItem.bind(this)
   }
 
   onKeyDown({ event }) {
-    if (event.key === "ArrowUp") {
-      this.upHandler();
-      return true;
+    if (event.key === 'ArrowUp') {
+      this.upHandler()
+      return true
     }
 
-    if (event.key === "ArrowDown") {
-      this.downHandler();
-      return true;
+    if (event.key === 'ArrowDown') {
+      this.downHandler()
+      return true
     }
 
-    if (event.key === "Enter") {
-      this.enterHandler();
-      return true;
+    if (event.key === 'Enter') {
+      this.enterHandler()
+      return true
     }
 
-    return false;
+    return false
   }
 
   upHandler() {
     this.setState({
       selectedIndex:
         (this.state.selectedIndex + this.props.items.length - 1) %
-        this.props.items.length
-    });
+        this.props.items.length,
+    })
   }
 
   downHandler() {
     this.setState({
-      selectedIndex: (this.state.selectedIndex + 1) % this.props.items.length
-    });
+      selectedIndex: (this.state.selectedIndex + 1) % this.props.items.length,
+    })
   }
 
   enterHandler() {
-    this.selectItem(this.state.selectedIndex);
+    this.selectItem(this.state.selectedIndex)
   }
 
   selectItem(index) {
-    const item = this.props.items[index];
+    const item = this.props.items[index]
 
     if (item) {
-      this.props.command(item);
+      this.props.command(item)
     }
   }
 
   componentDidUpdate(prevProps, prevState) {
     if (prevProps.items.length !== this.props.items.length) {
-      this.setState({ selectedIndex: 0 });
+      this.setState({ selectedIndex: 0 })
     }
   }
 
   render() {
-    const { items, component: Component } = this.props;
-    const { selectedIndex } = this.state;
+    const { items, component: Component } = this.props
+    const { selectedIndex } = this.state
 
     return (
       <Component
@@ -175,6 +176,6 @@ class CommandsListController extends React.Component {
         selectedIndex={selectedIndex}
         selectItem={this.selectItem}
       />
-    );
+    )
   }
 }
