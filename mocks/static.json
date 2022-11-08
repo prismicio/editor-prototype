@@ -42,7 +42,7 @@
           "config": {
             "type": "KeyText",
             "label": "Alt text",
-            "placeholder": "Placeholder...",
+            "placeholder": "A short description of the image for the visually impaired",
             "props": { "label": "Alt text" }
           }
         }

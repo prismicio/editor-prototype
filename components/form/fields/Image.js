@@ -65,7 +65,7 @@ function Image(props) {
           />
         </div>
         <Field
-          placeholder={props.child.alt.config.label}
+          placeholder={props.child.alt.config.placeholder}
           label={props.child.alt.config.label}
         />
       </div>

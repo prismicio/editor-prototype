@@ -7,32 +7,32 @@ const IMAGES = [
   {
     name: 'Image01',
     value:
-      'https://cdn.dribbble.com/users/374165/screenshots/15724702/media/d995ba65c484553311789f1f1af480e5.png',
+      'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61942b84ec3d406199f07d78_vegalia.png',
   },
   {
     name: 'Image02',
     value:
-      'https://cdn.dribbble.com/users/374165/screenshots/15724702/media/3e51e5cec73ae7de11dd2757d24bdf4e.png',
+      'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619532e016b9ee57c1b529e6_home-feature-1.svg',
   },
   {
     name: 'Image03',
     value:
-      'https://cdn.dribbble.com/users/374165/screenshots/15724702/media/0f48f073a378d5c805d5cc569aa29986.png',
+      'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619537b960fa2619636d2959_max-ulnichey.png',
   },
   {
     name: 'Image03',
     value:
-      'https://cdn.dribbble.com/users/374165/screenshots/15211270/media/eec938e9e3467772682230384259a07e.png',
+      'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619578e5eee7c6e8da61a827_home-feature-2.svg',
   },
   {
     name: 'Image03',
     value:
-      'https://cdn.dribbble.com/users/374165/screenshots/15211270/media/b8d0c4abab59f0932720b0295c3bdcdb.png',
+      'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61957abf65d90d1b901c50f7_dru-riley.png',
   },
   {
     name: 'Image03',
     value:
-      'https://cdn.dribbble.com/users/374165/screenshots/15211270/media/77c15838398c9936d58606134ff8a5ed.png',
+      'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61991f9baa14038b9c100d6c_home-feature-4.svg',
   },
 ]
 
@@ -46,6 +46,7 @@ export function SelectImage() {
       <Dialog.Content>
         <section className={styles.galery}>
           {IMAGES.map((i, index) => (
+            <div className={styles.imageWrapper}>
             <img
               key={index}
               alt={i.name}
@@ -53,6 +54,7 @@ export function SelectImage() {
               src={i.value}
               onClick={() => dispatch.dialog.close()}
             />
+            </div>
           ))}
         </section>
       </Dialog.Content>

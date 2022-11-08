@@ -35,6 +35,26 @@
               "placeholder": "Placeholder...",
               "props": { "label": "Background Color" }
             }
+          },
+          "img": {
+            "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619537b960fa2619636d2959_max-ulnichey.png",
+            "config": {
+              "type": "Image",
+              "label": "Image",
+              "placeholder": "Placeholder...",
+              "props": { "label": "Author Image" }
+            },
+            "child": {
+              "alt": {
+                "value": "Alt text",
+                "config": {
+                  "type": "KeyText",
+                  "label": "Alt text",
+                  "placeholder": "A short description of the image for the visually impaired",
+                  "props": { "label": "A short description of the image for the visually impaired" }
+                }
+              }
+            }
           }
         }
       },
@@ -68,6 +88,26 @@
               "label": "CTA",
               "placeholder": "Placeholder...",
               "props": { "label": "Background Color" }
+            }
+          },
+          "img": {
+            "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61957abf65d90d1b901c50f7_dru-riley.png",
+            "config": {
+              "type": "Image",
+              "label": "Image",
+              "placeholder": "Placeholder...",
+              "props": { "label": "Author Image" }
+            },
+            "child": {
+              "alt": {
+                "value": "Alt text",
+                "config": {
+                  "type": "KeyText",
+                  "label": "Alt text",
+                  "placeholder": "A short description of the image for the visually impaired",
+                  "props": { "label": "A short description of the image for the visually impaired" }
+                }
+              }
             }
           }
         }
@@ -116,7 +156,7 @@
                 "config": {
                   "type": "KeyText",
                   "label": "Alt text",
-                  "placeholder": "Placeholder...",
+                  "placeholder": "A short description of the image for the visually impaired",
                   "props": { "label": "Alt text" }
                 }
               }
@@ -161,7 +201,7 @@
                 "config": {
                   "type": "KeyText",
                   "label": "Alt text",
-                  "placeholder": "Placeholder...",
+                  "placeholder": "A short description of the image for the visually impaired",
                   "props": { "label": "Alt text" }
                 }
               }
@@ -245,7 +285,7 @@
                 "config": {
                   "type": "KeyText",
                   "label": "Alt text",
-                  "placeholder": "Placeholder...",
+                  "placeholder": "A short description of the image for the visually impaired",
                   "props": { "label": "Alt text" }
                 }
               }
