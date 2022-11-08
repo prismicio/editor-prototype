@@ -68,7 +68,7 @@ const Home: NextPage = () => {
               <StaticZone fields={editor.static.fields} />
             </article>
             {editor.variations.map((item, idx) => (
-              <Element name={item.id}>
+              <Element name={item.id} key={idx}>
                 <article key={idx} className={styles.slice}>
                   <header>{item.sliceName}</header>
                   <Form item={item} fields={item.fields} index={idx} />

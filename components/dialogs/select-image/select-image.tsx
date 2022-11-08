@@ -62,7 +62,7 @@ export function SelectImage(props: any) {
       <Dialog.Content>
         <section className={styles.galery}>
           {IMAGES.map((i, index) => (
-            <div className={styles.imageWrapper}>
+            <div className={styles.imageWrapper} key={index}>
               <img
                 key={index}
                 alt={i.name}
