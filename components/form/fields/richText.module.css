@@ -63,6 +63,7 @@
 .bubble_menu button svg {
   width: 20px;
   height: 20px;
+  color: #6F6E77;
 }
 .bubble_menu button.small {
   height: 28px;
@@ -70,6 +71,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.bubble_menu button.small:hover {
+  background: #F4F2F4;
+  cursor: pointer;
 }
 .bubble_menu .separator {
   width: 1px;

@@ -89,7 +89,7 @@ export const SlashCommands = Extension.create({
               ) {
                 decorations.push(
                   Decoration.node(pos, pos + node.nodeSize, {
-                    class: "empty-node"
+                    class: "empty_node"
                   })
                 );
               }
