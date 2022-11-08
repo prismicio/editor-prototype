@@ -14,7 +14,7 @@ export default function DocumentName({
       </button>
       <div className={styles.name}>
         <p className={styles.truncate}>
-          <span></span> Improve Your Prismic editing experience
+          <span></span> Gumroad – Sell what you know and see what sticks
         </p>
         <p className={styles.history}>
           Edited 17 hours ago - <a>View more</a>
