@@ -1,6 +1,10 @@
 .root {
   padding: 16px 0;
   border-bottom: 1px solid #dcdbdd;
+  /* position: sticky;
+  top: 0px;
+  z-index: 1;
+  background: #f9f8f9; */
 }
 .tabs {
   list-style-type: none;

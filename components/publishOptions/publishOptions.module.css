@@ -3,6 +3,10 @@
   border-bottom: 1px solid #dcdbdd;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background: #f9f8f9;
 }
 .buttonSecondary {
   color: #1a1523;
