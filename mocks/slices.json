@@ -116,7 +116,7 @@
   },
   {
     "id": "2",
-    "name": "Feature text + image",
+    "name": "Feature - 1 paragraph",
     "image": "/slices-thumbnails/feature-text-right.png",
     "variations": [
       {
@@ -212,6 +212,193 @@
     ]
   },
   {
+    "id": "8",
+    "name": "Feature - 3 paragraph",
+    "image": "/slices-thumbnails/feature-multiple-paragraph-text-left.png",
+    "variations": [
+      {
+        "id": "2",
+        "name": "Text right",
+        "image": "/slices-thumbnails/feature-multiple-paragraph-text-right.png",
+        "fields": {
+          "img": {
+            "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619532e016b9ee57c1b529e6_home-feature-1.svg",
+            "config": {
+              "type": "Image",
+              "label": "Image",
+              "placeholder": "Placeholder...",
+              "props": { "label": "Feature Image" }
+            },
+            "child": {
+              "alt": {
+                "value": "Alt text",
+                "config": {
+                  "type": "KeyText",
+                  "label": "Alt text",
+                  "placeholder": "A short description of the image for the visually impaired",
+                  "props": { "label": "Alt text" }
+                }
+              }
+            }
+          },
+          "bg": {
+            "value": "#111",
+            "config": {
+              "type": "Select",
+              "label": "CTA",
+              "placeholder": "Placeholder...",
+              "props": { "label": "Theme Color" }
+            }
+          },
+          "1title": {
+            "value": "Generate license keys",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "1st paragraph - Title" }
+            }
+          },
+          "1cta": {
+            "value": "Selling software? We can create your license keys, so you can get back to beta.",
+            "config": {
+              "type": "KeyText",
+              "label": "CTA",
+              "placeholder": "Placeholder...",
+              "props": { "label": "1st paragraph - Text" }
+            }
+          },
+          "2title": {
+            "value": "Sell multiple versions",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "2nd paragraph - Title" }
+            }
+          },
+          "2cta": {
+            "value": "Allow buyers to pick from PDF, ePub, and Mobi. Even charge more for lossless audio.",
+            "config": {
+              "type": "KeyText",
+              "label": "CTA",
+              "placeholder": "Placeholder...",
+              "props": { "label": "2nd paragraph - Text" }
+            }
+          },
+          "3title": {
+            "value": "Protect your work",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "3th paragraph - Title" }
+            }
+          },
+          "3cta": {
+            "value": "We can create lightweight DRM to help keep customers honest.",
+            "config": {
+              "type": "KeyText",
+              "label": "CTA",
+              "placeholder": "Placeholder...",
+              "props": { "label": "3th paragraph - Text" }
+            }
+          }
+        }
+      },
+      {
+        "id": "2",
+        "name": "Text left",
+        "image": "/slices-thumbnails/feature-multiple-paragraph-text-left.png",
+        "fields": {
+          "img": {
+            "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619532e016b9ee57c1b529e6_home-feature-1.svg",
+            "config": {
+              "type": "Image",
+              "label": "Image",
+              "placeholder": "Placeholder...",
+              "props": { "label": "Feature Image" }
+            },
+            "child": {
+              "alt": {
+                "value": "Alt text",
+                "config": {
+                  "type": "KeyText",
+                  "label": "Alt text",
+                  "placeholder": "A short description of the image for the visually impaired",
+                  "props": { "label": "Alt text" }
+                }
+              }
+            }
+          },
+          "bg": {
+            "value": "#111",
+            "config": {
+              "type": "Select",
+              "label": "CTA",
+              "placeholder": "Placeholder...",
+              "props": { "label": "Theme Color" }
+            }
+          },
+          "1title": {
+            "value": "Create a home here",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "1st paragraph - Title" }
+            }
+          },
+          "1cta": {
+            "value": "No site? No problem. Use our flexible page editor to build a storefront and customize your site’s colors, and more.",
+            "config": {
+              "type": "KeyText",
+              "label": "CTA",
+              "placeholder": "Placeholder...",
+              "props": { "label": "1st paragraph - Text" }
+            }
+          },
+          "2title": {
+            "value": "Use your own website, too",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "2nd paragraph - Title" }
+            }
+          },
+          "2cta": {
+            "value": "Already have a site? Link it to ours under a custom domain.",
+            "config": {
+              "type": "KeyText",
+              "label": "CTA",
+              "placeholder": "Placeholder...",
+              "props": { "label": "2nd paragraph - Text" }
+            }
+          },
+          "3title": {
+            "value": "Power-up your page",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "3th paragraph - Title" }
+            }
+          },
+          "3cta": {
+            "value": "You can easily embed our payment platform and ‘follow’ button on your existing site.",
+            "config": {
+              "type": "KeyText",
+              "label": "CTA",
+              "placeholder": "Placeholder...",
+              "props": { "label": "3th paragraph - Text" }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
     "id": "3",
     "name": "Call to actions",
     "image": "/slices-thumbnails/call-to-action.png",
@@ -259,7 +446,7 @@
     "variations": [
       {
         "id": "1",
-        "name": "Variation A",
+        "name": "With image",
         "image": "/slices-thumbnails/heading-section.png",
         "fields": {
           "title": {
@@ -289,6 +476,74 @@
                   "props": { "label": "Alt text" }
                 }
               }
+            }
+          }
+        }
+      },
+      {
+        "id": "1",
+        "name": "With link",
+        "image": "/slices-thumbnails/heading-section-with-link.png",
+        "fields": {
+          "title": {
+            "value": "Make your own road",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "Heading" }
+            }
+          },
+          "text": {
+            "value": "<p>Whether you need more balance, flexibility, or just a different gig, we make it easier to chart a new path. You don't have to be a tech expert or even understand how to start a business. You just gotta take what you know and sell it.</p>",
+            "config": {
+              "type": "RichText2",
+              "placeholder": "Placeholder...",
+              "label": "Text",
+              "props": { "label": "Heading text" }
+            }
+          },
+          "cta": {
+            "value": "Explore Features →",
+            "config": {
+              "type": "KeyText",
+              "label": "CTA",
+              "placeholder": "Placeholder...",
+              "props": { "label": "Author information" }
+            }
+          }
+        }
+      },
+      {
+        "id": "1",
+        "name": "With Sub-heading",
+        "image": "/slices-thumbnails/heading-section-with-subheading.png",
+        "fields": {
+          "cta": {
+            "value": "Customizable Options",
+            "config": {
+              "type": "KeyText",
+              "label": "CTA",
+              "placeholder": "Placeholder...",
+              "props": { "label": "Sub Heading" }
+            }
+          },
+          "title": {
+            "value": "Your store, your way",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "Heading" }
+            }
+          },
+          "text": {
+            "value": "<p>Gumroad plays well with others. Set up your store on our platform, or easily embed it on your existing site.</p>",
+            "config": {
+              "type": "RichText2",
+              "placeholder": "Placeholder...",
+              "label": "Text",
+              "props": { "label": "Text description" }
             }
           }
         }
