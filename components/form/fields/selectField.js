@@ -15,6 +15,7 @@ export default function Select(props) {
         </option>
         <option value="#111">Green</option>
         <option value="#7C66DC">Pink</option>
+        <option value="#90A8ED">Blue</option>
         <option value="#FFC800">Yellow</option>
         <option value="#000000">Black</option>
       </select>

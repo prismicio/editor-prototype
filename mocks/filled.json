@@ -1,116 +1,51 @@
 [
   {
-    "id": "cla8djo1v00003b6qln7vpnbj",
-    "name": "Text Left",
-    "image": "/slices-thumbnails/testimonial-text-left.png",
+    "id": "1",
+    "name": "With Sub-heading",
+    "image": "/slices-thumbnails/heading-section-with-subheading.png",
     "fields": {
-      "text": {
-        "value": "<p>I launched MaxPacks as an experimental side gig; but within 2 years those Procreate brushes were earning more than my 6-figure salary in CG. Leaving in favor of Gumroad enabled me to explore other aspects of my art, develop new hobbies, and finally prioritize my personal life.</p>",
-        "config": {
-          "type": "RichText2",
-          "placeholder": "Placeholder...",
-          "label": "Text",
-          "props": {
-            "label": "Quote text"
-          }
-        }
-      },
       "cta": {
-        "value": "Max Ulichney sells Procreate Brush Packs",
-        "config": {
-          "type": "KeyText",
-          "label": "CTA",
-          "placeholder": "Placeholder...",
-          "props": {
-            "label": "Author information"
-          }
-        }
-      },
-      "bg": {
-        "value": "#111",
-        "config": {
-          "type": "Select",
-          "label": "CTA",
-          "placeholder": "Placeholder...",
-          "props": {
-            "label": "Background Color"
-          }
-        }
-      },
-      "img": {
-        "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619537b960fa2619636d2959_max-ulnichey.png",
-        "config": {
-          "type": "Image",
-          "label": "Image",
-          "placeholder": "Placeholder...",
-          "props": {
-            "label": "Author Image"
-          }
-        },
-        "child": {
-          "alt": {
-            "value": "Alt text",
+            "value": "Customizable Options",
             "config": {
               "type": "KeyText",
-              "label": "Alt text",
-              "placeholder": "A short description of the image for the visually impaired",
-              "props": {
-                "label": "A short description of the image for the visually impaired"
-              }
+              "label": "CTA",
+              "placeholder": "Placeholder...",
+              "props": { "label": "Sub Heading" }
+            }
+          },
+          "title": {
+            "value": "Your store, your way",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "Heading" }
+            }
+          },
+          "text": {
+            "value": "<p>Gumroad plays well with others. Set up your store on our platform, or easily embed it on your existing site.</p>",
+            "config": {
+              "type": "RichText2",
+              "placeholder": "Placeholder...",
+              "label": "Text",
+              "props": { "label": "Text description" }
             }
           }
-        }
-      }
     },
-    "sliceName": "Testimonials"
+    "sliceName": "Heading sections"
   },
   {
-    "id": "cla8djsm900013b6q8cqcbu4l",
-    "name": "Text Left",
-    "image": "/slices-thumbnails/testimonial-text-right.png",
+    "id": "2",
+    "name": "Text left",
+    "image": "/slices-thumbnails/feature-multiple-paragraph-text-left.png",
     "fields": {
-      "text": {
-        "value": "<p>Originally, I took pre-orders for my Trend Reports on Gumroad. But I received... exactly $0. So I changed tactics: I made half of my report free, and the other half paid. Today, 99% of Trends.VC revenue is recurring in the form of annual and quarterly subscriptions.</p>",
-        "config": {
-          "type": "RichText2",
-          "placeholder": "Placeholder...",
-          "label": "Text",
-          "props": {
-            "label": "Quote text"
-          }
-        }
-      },
-      "cta": {
-        "value": "Dru Riley sells business insights and expertise",
-        "config": {
-          "type": "KeyText",
-          "label": "CTA",
-          "placeholder": "Placeholder...",
-          "props": {
-            "label": "Author information"
-          }
-        }
-      },
-      "bg": {
-        "value": "#111",
-        "config": {
-          "type": "Select",
-          "label": "CTA",
-          "placeholder": "Placeholder...",
-          "props": {
-            "label": "Background Color"
-          }
-        }
-      },
       "img": {
-        "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61957abf65d90d1b901c50f7_dru-riley.png",
+        "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61991f9baa14038b9c100d6c_home-feature-4.svg",
         "config": {
           "type": "Image",
           "label": "Image",
           "placeholder": "Placeholder...",
-          "props": {
-            "label": "Author Image"
-          }
+          "props": { "label": "Feature Image" }
         },
         "child": {
           "alt": {
@@ -119,63 +54,124 @@
               "type": "KeyText",
               "label": "Alt text",
               "placeholder": "A short description of the image for the visually impaired",
-              "props": {
-                "label": "A short description of the image for the visually impaired"
-              }
+              "props": { "label": "Alt text" }
             }
           }
         }
+      },
+      "bg": {
+        "value": "#FFC800",
+        "config": {
+          "type": "Select",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "Theme Color" }
+        }
+      },
+      "1title": {
+        "value": "Create a home here",
+        "config": {
+          "type": "RichText",
+          "placeholder": "Placeholder...",
+          "label": "Title",
+          "props": { "label": "1st paragraph - Title" }
+        }
+      },
+      "1cta": {
+        "value": "No site? No problem. Use our flexible page editor to build a storefront and customize your site’s colors, and more.",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "1st paragraph - Text" }
+        }
+      },
+      "2title": {
+        "value": "Use your own website, too",
+        "config": {
+          "type": "RichText",
+          "placeholder": "Placeholder...",
+          "label": "Title",
+          "props": { "label": "2nd paragraph - Title" }
+        }
+      },
+      "2cta": {
+        "value": "Already have a site? Link it to ours under a custom domain.",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "2nd paragraph - Text" }
+        }
+      },
+      "3title": {
+        "value": "Power-up your page",
+        "config": {
+          "type": "RichText",
+          "placeholder": "Placeholder...",
+          "label": "Title",
+          "props": { "label": "3th paragraph - Title" }
+        }
+      },
+      "3cta": {
+        "value": "You can easily embed our payment platform and ‘follow’ button on your existing site.",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "3th paragraph - Text" }
+        }
       }
     },
-    "sliceName": "Testimonials"
+    "sliceName": "Feature - 3 paragraph"
   },
   {
-    "id": "cla8dn3lo00023b6qlmjshug7",
-    "name": "Text Left",
-    "image": "/slices-thumbnails/testimonial-text-left.png",
+    "id": "3",
+    "name": "With Sub-heading",
+    "image": "/slices-thumbnails/heading-section-with-subheading.png",
     "fields": {
-      "text": {
-        "value": "<p>I launched MaxPacks as an experimental side gig; but within 2 years those Procreate brushes were earning more than my 6-figure salary in CG. Leaving in favor of Gumroad enabled me to explore other aspects of my art, develop new hobbies, and finally prioritize my personal life.</p>",
-        "config": {
-          "type": "RichText2",
-          "placeholder": "Placeholder...",
-          "label": "Text",
-          "props": {
-            "label": "Quote text"
-          }
-        }
-      },
       "cta": {
-        "value": "Max Ulichney sells Procreate Brush Packs",
-        "config": {
-          "type": "KeyText",
-          "label": "CTA",
-          "placeholder": "Placeholder...",
-          "props": {
-            "label": "Author information"
+            "value": "Payment Integrations",
+            "config": {
+              "type": "KeyText",
+              "label": "CTA",
+              "placeholder": "Placeholder...",
+              "props": { "label": "Sub Heading" }
+            }
+          },
+          "title": {
+            "value": "Money, incoming",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "Heading" }
+            }
+          },
+          "text": {
+            "value": "<p>Once you get set up, it’s easy to ring the register. Here’s how you can sell and get paid, fast.</p>",
+            "config": {
+              "type": "RichText2",
+              "placeholder": "Placeholder...",
+              "label": "Text",
+              "props": { "label": "Text description" }
+            }
           }
-        }
-      },
-      "bg": {
-        "value": "#111",
-        "config": {
-          "type": "Select",
-          "label": "CTA",
-          "placeholder": "Placeholder...",
-          "props": {
-            "label": "Background Color"
-          }
-        }
-      },
+    },
+    "sliceName": "Heading sections"
+  },
+  {
+    "id": "4",
+    "name": "Text right",
+    "image": "/slices-thumbnails/feature-multiple-paragraph-text-right.png",
+    "fields": {
       "img": {
-        "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619537b960fa2619636d2959_max-ulnichey.png",
+        "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619f82531c01ed0820276db1_features-3.svg",
         "config": {
           "type": "Image",
           "label": "Image",
           "placeholder": "Placeholder...",
-          "props": {
-            "label": "Author Image"
-          }
+          "props": { "label": "Feature Image" }
         },
         "child": {
           "alt": {
@@ -184,14 +180,509 @@
               "type": "KeyText",
               "label": "Alt text",
               "placeholder": "A short description of the image for the visually impaired",
-              "props": {
-                "label": "A short description of the image for the visually impaired"
-              }
+              "props": { "label": "Alt text" }
             }
           }
         }
+      },
+      "bg": {
+        "value": "#90A8ED",
+        "config": {
+          "type": "Select",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "Theme Color" }
+        }
+      },
+      "1title": {
+        "value": "Create simple memberships",
+        "config": {
+          "type": "RichText",
+          "placeholder": "Placeholder...",
+          "label": "Title",
+          "props": { "label": "1st paragraph - Title" }
+        }
+      },
+      "1cta": {
+        "value": "Give customers access to a library of content for as long as they’re subscribed.",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "1st paragraph - Text" }
+        }
+      },
+      "2title": {
+        "value": "Set up subscriptions",
+        "config": {
+          "type": "RichText",
+          "placeholder": "Placeholder...",
+          "label": "Title",
+          "props": { "label": "2nd paragraph - Title" }
+        }
+      },
+      "2cta": {
+        "value": "Let customers pay over time—monthly, quarterly, biannually, yearly, and more.",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "2nd paragraph - Text" }
+        }
+      },
+      "3title": {
+        "value": "The sky’s the limit",
+        "config": {
+          "type": "RichText",
+          "placeholder": "Placeholder...",
+          "label": "Title",
+          "props": { "label": "3th paragraph - Title" }
+        }
+      },
+      "3cta": {
+        "value": "Give your audience the chance to pay what they want for your product.",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "3th paragraph - Text" }
+        }
       }
     },
-    "sliceName": "Testimonials"
+    "sliceName": "Feature - 3 paragraph"
+  },
+  {
+    "id": "5",
+    "name": "Text left",
+    "image": "/slices-thumbnails/feature-multiple-paragraph-text-left.png",
+    "fields": {
+      "img": {
+        "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/6194643c04fdc36b37ec99d3_features-4.svg",
+        "config": {
+          "type": "Image",
+          "label": "Image",
+          "placeholder": "Placeholder...",
+          "props": { "label": "Feature Image" }
+        },
+        "child": {
+          "alt": {
+            "value": "Alt text",
+            "config": {
+              "type": "KeyText",
+              "label": "Alt text",
+              "placeholder": "A short description of the image for the visually impaired",
+              "props": { "label": "Alt text" }
+            }
+          }
+        }
+      },
+      "bg": {
+        "value": "#90A8ED",
+        "config": {
+          "type": "Select",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "Theme Color" }
+        }
+      },
+      "1title": {
+        "value": "Say ¥£$ to different currencies",
+        "config": {
+          "type": "RichText",
+          "placeholder": "Placeholder...",
+          "label": "Title",
+          "props": { "label": "1st paragraph - Title" }
+        }
+      },
+      "1cta": {
+        "value": "Increase your sales opportunities by accepting payments from a global audience.",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "1st paragraph - Text" }
+        }
+      },
+      "2title": {
+        "value": "Don't sweat VAT",
+        "config": {
+          "type": "RichText",
+          "placeholder": "Placeholder...",
+          "label": "Title",
+          "props": { "label": "2nd paragraph - Title" }
+        }
+      },
+      "2cta": {
+        "value": "We collect VAT as required and send it to the EU . You don’t need to do a thing.",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "2nd paragraph - Text" }
+        }
+      },
+      "3title": {
+        "value": "Want to give 10% off?",
+        "config": {
+          "type": "RichText",
+          "placeholder": "Placeholder...",
+          "label": "Title",
+          "props": { "label": "3th paragraph - Title" }
+        }
+      },
+      "3cta": {
+        "value": "Create discount offer codes for your products, as a percentage or fixed amount.",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "3th paragraph - Text" }
+        }
+      }
+    },
+    "sliceName": "Feature - 3 paragraph"
+  },
+  {
+    "id": "6",
+    "name": "Text right",
+    "image": "/slices-thumbnails/feature-multiple-paragraph-text-right.png",
+    "fields": {
+      "img": {
+        "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619957efd3a10ea42e318885_features-5.svg",
+        "config": {
+          "type": "Image",
+          "label": "Image",
+          "placeholder": "Placeholder...",
+          "props": { "label": "Feature Image" }
+        },
+        "child": {
+          "alt": {
+            "value": "Alt text",
+            "config": {
+              "type": "KeyText",
+              "label": "Alt text",
+              "placeholder": "A short description of the image for the visually impaired",
+              "props": { "label": "Alt text" }
+            }
+          }
+        }
+      },
+      "bg": {
+        "value": "#90A8ED",
+        "config": {
+          "type": "Select",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "Theme Color" }
+        }
+      },
+      "1title": {
+        "value": "Generate license keys",
+        "config": {
+          "type": "RichText",
+          "placeholder": "Placeholder...",
+          "label": "Title",
+          "props": { "label": "1st paragraph - Title" }
+        }
+      },
+      "1cta": {
+        "value": "Selling software? We can create your license keys, so you can get back to beta.",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "1st paragraph - Text" }
+        }
+      },
+      "2title": {
+        "value": "Sell multiple versions",
+        "config": {
+          "type": "RichText",
+          "placeholder": "Placeholder...",
+          "label": "Title",
+          "props": { "label": "2nd paragraph - Title" }
+        }
+      },
+      "2cta": {
+        "value": "Allow buyers to pick from PDF, ePub, and Mobi. Even charge more for lossless audio.",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "2nd paragraph - Text" }
+        }
+      },
+      "3title": {
+        "value": "Protect your work",
+        "config": {
+          "type": "RichText",
+          "placeholder": "Placeholder...",
+          "label": "Title",
+          "props": { "label": "3th paragraph - Title" }
+        }
+      },
+      "3cta": {
+        "value": "We can create lightweight DRM to help keep customers honest.",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "3th paragraph - Text" }
+        }
+      }
+    },
+    "sliceName": "Feature - 3 paragraph"
+  },
+  {
+    "id": "7",
+    "name": "With Sub-heading",
+    "image": "/slices-thumbnails/heading-section-with-subheading.png",
+    "fields": {
+      "cta": {
+            "value": "Comprehensive Platform",
+            "config": {
+              "type": "KeyText",
+              "label": "CTA",
+              "placeholder": "Placeholder...",
+              "props": { "label": "Sub Heading" }
+            }
+          },
+          "title": {
+            "value": "From start to finesse",
+            "config": {
+              "type": "RichText",
+              "placeholder": "Placeholder...",
+              "label": "Title",
+              "props": { "label": "Heading" }
+            }
+          },
+          "text": {
+            "value": "<p>We’ve spent ten years building an end-to-end platform so you can start selling in seconds.</p>",
+            "config": {
+              "type": "RichText2",
+              "placeholder": "Placeholder...",
+              "label": "Text",
+              "props": { "label": "Text description" }
+            }
+          }
+    },
+    "sliceName": "Heading sections"
+  },
+  {
+    "id": "8",
+    "name": "Text right",
+    "image": "/slices-thumbnails/feature-multiple-paragraph-text-right.png",
+    "fields": {
+      "img": {
+        "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619fafc95befb7dd73dbd25b_features-6.svg",
+        "config": {
+          "type": "Image",
+          "label": "Image",
+          "placeholder": "Placeholder...",
+          "props": { "label": "Feature Image" }
+        },
+        "child": {
+          "alt": {
+            "value": "Alt text",
+            "config": {
+              "type": "KeyText",
+              "label": "Alt text",
+              "placeholder": "A short description of the image for the visually impaired",
+              "props": { "label": "Alt text" }
+            }
+          }
+        }
+      },
+      "bg": {
+        "value": "#FFC800",
+        "config": {
+          "type": "Select",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "Theme Color" }
+        }
+      },
+      "1title": {
+        "value": "Tools to get going fast",
+        "config": {
+          "type": "RichText",
+          "placeholder": "Placeholder...",
+          "label": "Title",
+          "props": { "label": "1st paragraph - Title" }
+        }
+      },
+      "1cta": {
+        "value": "Create a profit-making machine in no time with our flexible page editor or easily embed a ‘Follow’ button onto your existing site.",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "1st paragraph - Text" }
+        }
+      },
+      "2title": {
+        "value": "Sell anything",
+        "config": {
+          "type": "RichText",
+          "placeholder": "Placeholder...",
+          "label": "Title",
+          "props": { "label": "2nd paragraph - Title" }
+        }
+      },
+      "2cta": {
+        "value": "We don’t limit your ideas. Whether it's a digital download, eBook, course, or monthly membership, we make sure it checks out.",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "2nd paragraph - Text" }
+        }
+      },
+      "3title": {
+        "value": "Bring your friends",
+        "config": {
+          "type": "RichText",
+          "placeholder": "Placeholder...",
+          "label": "Title",
+          "props": { "label": "3th paragraph - Title" }
+        }
+      },
+      "3cta": {
+        "value": "Already have fans? Easily import your existing email list—and export your followers and customers at any time.",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "3th paragraph - Text" }
+        }
+      }
+    },
+    "sliceName": "Feature - 3 paragraph"
+  },
+  {
+    "id": "9",
+    "name": "Text left",
+    "image": "/slices-thumbnails/feature-multiple-paragraph-text-left.png",
+    "fields": {
+      "img": {
+        "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61944b89c2b99c07f3dbba06_sales-graph.svg",
+        "config": {
+          "type": "Image",
+          "label": "Image",
+          "placeholder": "Placeholder...",
+          "props": { "label": "Feature Image" }
+        },
+        "child": {
+          "alt": {
+            "value": "Alt text",
+            "config": {
+              "type": "KeyText",
+              "label": "Alt text",
+              "placeholder": "A short description of the image for the visually impaired",
+              "props": { "label": "Alt text" }
+            }
+          }
+        }
+      },
+      "bg": {
+        "value": "#FFC800",
+        "config": {
+          "type": "Select",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "Theme Color" }
+        }
+      },
+      "1title": {
+        "value": "Be ready when they are",
+        "config": {
+          "type": "RichText",
+          "placeholder": "Placeholder...",
+          "label": "Title",
+          "props": { "label": "1st paragraph - Title" }
+        }
+      },
+      "1cta": {
+        "value": "All payments are secure and smooth, so your customers can read, listen, or watch their purchase immediately.",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "1st paragraph - Text" }
+        }
+      },
+      "2title": {
+        "value": "Make decisions with your data",
+        "config": {
+          "type": "RichText",
+          "placeholder": "Placeholder...",
+          "label": "Title",
+          "props": { "label": "2nd paragraph - Title" }
+        }
+      },
+      "2cta": {
+        "value": "Dive deeper into your sales with analytics that can help you improve your products and messaging.",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "2nd paragraph - Text" }
+        }
+      },
+      "3title": {
+        "value": "Grow your audience",
+        "config": {
+          "type": "RichText",
+          "placeholder": "Placeholder...",
+          "label": "Title",
+          "props": { "label": "3th paragraph - Title" }
+        }
+      },
+      "3cta": {
+        "value": "Post new updates, send email broadcasts, and use powerful automated workflows to connect and grow your audience.",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "3th paragraph - Text" }
+        }
+      }
+    },
+    "sliceName": "Feature - 3 paragraph"
+  },
+  {
+    "id": "10",
+    "name": "Variation A",
+    "image": "/slices-thumbnails/call-to-action.png",
+    "fields": {
+      "text": {
+        "value": "<p>Share your work. Someone out there needs it.</p>",
+        "config": {
+          "type": "RichText2",
+          "placeholder": "Placeholder...",
+          "label": "Text",
+          "props": { "label": "Heading text" }
+        }
+      },
+      "cta": {
+        "value": "Start Selling",
+        "config": {
+          "type": "KeyText",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "Call to Action label" }
+        }
+      },
+      "bg": {
+        "value": "#7C66DC",
+        "config": {
+          "type": "Select",
+          "label": "CTA",
+          "placeholder": "Placeholder...",
+          "props": { "label": "Background Color" }
+        }
+      }
+    },
+    "sliceName": "Call to actions"
   }
 ]
