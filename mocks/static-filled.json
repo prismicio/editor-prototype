@@ -1,0 +1,52 @@
+{
+  "fields": {
+    "title": {
+      "value": "Static filled",
+      "config": {
+        "type": "RichText",
+        "placeholder": "Placeholder...",
+        "label": "Title",
+        "props": { "label": "Heading" }
+      }
+    },
+    "text": {
+      "value": "<p>With Gumroad, anyone can earn their first dollar online. Just start with what you know, see what sticks, and get paid. It’s that easy.</p>",
+      "config": {
+        "type": "RichText2",
+        "placeholder": "Placeholder...",
+        "label": "Text",
+        "props": { "label": "Introduction Text" }
+      }
+    },
+    "cta": {
+      "value": "Start Selling",
+      "config": {
+        "type": "KeyText",
+        "label": "CTA",
+        "placeholder": "Placeholder...",
+        "props": { "label": "Call to Action label" }
+      }
+    },
+
+    "img": {
+      "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61942b84ec3d406199f07d78_vegalia.png",
+      "config": {
+        "type": "Image",
+        "label": "Image",
+        "placeholder": "Placeholder...",
+        "props": { "label": "Feature Image" }
+      },
+      "child": {
+        "alt": {
+          "value": "Alt text",
+          "config": {
+            "type": "KeyText",
+            "label": "Alt text",
+            "placeholder": "A short description of the image for the visually impaired",
+            "props": { "label": "Alt text" }
+          }
+        }
+      }
+    }
+  }
+}

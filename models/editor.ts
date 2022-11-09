@@ -1,6 +1,7 @@
 import { createModel } from '@rematch/core'
 import cuid from 'cuid'
 import staticz from 'mocks/static.json'
+import staticzf from 'mocks/static-filled.json'
 import filled from 'mocks/filled.json'
 
 import { RootModel } from '.'
@@ -29,6 +30,7 @@ export const editor = createModel<RootModel>()({
     },
     onFill: (state) => {
       state.variations = filled
+      state.static = staticzf
       return state
     },
     onEditSlice: (
