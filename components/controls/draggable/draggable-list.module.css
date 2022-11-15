@@ -8,9 +8,6 @@
   list-style: none;
   height: calc(100vh - 99px);
   margin-inline: lg;
-  position: sticky;
-  top: 99px;
-  overflow: scroll;
 }
 
 .root::-webkit-scrollbar {

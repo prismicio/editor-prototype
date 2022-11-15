@@ -17,6 +17,7 @@ import StaticZone from 'components/form/StaticZone'
 import { Element } from 'react-scroll'
 import { useRouter } from 'next/router'
 import queryString from 'query-string'
+import { Link, scroller } from 'react-scroll'
 
 type QueryProps = {
   filled?: boolean
@@ -40,9 +41,21 @@ const Home: NextPage = () => {
       <Byside as="div">
         <Byside.Sidebar width="8xl" as="aside" className={styles.slices}>
           <DocumentName />
-          <Box className={styles.staticZone}>
+
+          <div
+            className={styles.staticZone}
+            onClick={() =>
+              scroller.scrollTo('static-zone', {
+                duration: 1500,
+                delay: 100,
+                smooth: true,
+                offset: 0,
+              })
+            }
+          >
             <div className={styles.staticCard}>Static zone</div>
-          </Box>
+          </div>
+
           {!editor.variations.length && (
             <Box className={styles.emptyState}>
               <div>
@@ -82,10 +95,12 @@ const Home: NextPage = () => {
         <Byside.Primary breakAT="9xl" as="main">
           <EditorTabs />
           <Box className={styles.wrapper}>
-            <article className={styles.slice}>
-              <header>Static Zone</header>
-              <StaticZone fields={editor.static.fields} />
-            </article>
+            <Element name="static-zone">
+              <article className={styles.slice}>
+                <header>Static Zone</header>
+                <StaticZone fields={editor.static.fields} />
+              </article>
+            </Element>
             {editor.variations.map((item, idx) => (
               <Element name={item.id} key={idx}>
                 <article key={idx} className={styles.slice}>

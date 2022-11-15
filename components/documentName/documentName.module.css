@@ -1,60 +1,58 @@
-.root{
-    padding: 16px 24px;
-    border-bottom: 1px solid #DCDBDD;
-    display: flex;
-    gap: sm;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+.root {
+  padding: 16px 24px;
+  border-bottom: 1px solid #dcdbdd;
+  display: flex;
+  gap: sm;
+  z-index: 1;
 }
 .buttonSecondary {
-    color: #1A1523;
-    padding: 8px 16px;
-    box-sizing: border-box;
-    background: #FFFFFF;
-    border: 1px solid #DCDBDD;
-    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.04);
-    border-radius: 6px;
-    font-size: sm;
-    letter-spacing: -0.15px;
-    font-weight: semibold;
-    line-height: 1.5rem;
+  color: #1a1523;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #dcdbdd;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  font-size: sm;
+  letter-spacing: -0.15px;
+  font-weight: semibold;
+  line-height: 1.5rem;
 }
 .icon {
-    line-height: 0;
-    padding: 10px;
+  line-height: 0;
+  padding: 10px;
 }
 .icon svg {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
-.name{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    font-size: sm;
-    font-weight: semibold;
+.name {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  font-size: sm;
+  font-weight: semibold;
 }
-.name span{
-    display: inline-block;
-    border-radius: 100%;
-    width: 10px;
-    height: 10px;
-    margin-right: 2xs;
-    background: #F5B043;
-    border: 1px solid #CB943C;
+.name span {
+  display: inline-block;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  margin-right: 2xs;
+  background: #f5b043;
+  border: 1px solid #cb943c;
 }
-.name .truncate{
-    overflow: hidden;
-    min-width: 0;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+.name .truncate {
+  overflow: hidden;
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.name .history{
-    color: #9A9A9A;
-    font-weight: normal;
-    font-size: xs;
+.name .history {
+  color: #9a9a9a;
+  font-weight: normal;
+  font-size: xs;
 }
-.name .history a{
-    color:#1A1523;
+.name .history a {
+  color: #1a1523;
 }
