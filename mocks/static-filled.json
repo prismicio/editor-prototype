@@ -1,7 +1,16 @@
 {
   "fields": {
+    "subhead": {
+      "value": "Product Features",
+      "config": {
+        "type": "KeyText",
+        "label": "CTA",
+        "placeholder": "Placeholder...",
+        "props": { "label": "Call to Action label" }
+      }
+    },
     "title": {
-      "value": "Static filled",
+      "value": "Built for new beginnings",
       "config": {
         "type": "RichText",
         "placeholder": "Placeholder...",
@@ -10,7 +19,7 @@
       }
     },
     "text": {
-      "value": "<p>With Gumroad, anyone can earn their first dollar online. Just start with what you know, see what sticks, and get paid. It’s that easy.</p>",
+      "value": "<p>Gumroad is a powerful, but simple, e-commerce platform that puts a wide selection of tools at your fingertips. Now you can sell the digital services you want—books, memberships, courses, and more—right to your audience.</p>",
       "config": {
         "type": "RichText2",
         "placeholder": "Placeholder...",
@@ -18,23 +27,13 @@
         "props": { "label": "Introduction Text" }
       }
     },
-    "cta": {
-      "value": "Start Selling",
-      "config": {
-        "type": "KeyText",
-        "label": "CTA",
-        "placeholder": "Placeholder...",
-        "props": { "label": "Call to Action label" }
-      }
-    },
-
     "img": {
-      "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61942b84ec3d406199f07d78_vegalia.png",
+      "value": "/slices-thumbnails/header-static.png",
       "config": {
         "type": "Image",
         "label": "Image",
         "placeholder": "Placeholder...",
-        "props": { "label": "Feature Image" }
+        "props": { "label": "Hero image" }
       },
       "child": {
         "alt": {

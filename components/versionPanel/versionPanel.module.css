@@ -3,6 +3,10 @@
     flex-direction: column;
     gap: 24px;
     padding: 24px;
+    position: sticky;
+    top: 75px;
+    z-index: 1;
+    background: #f9f8f9;
 }
 .panelItem{
     display: flex;

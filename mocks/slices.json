@@ -10,7 +10,7 @@
         "image": "/slices-thumbnails/testimonial-text-left.png",
         "fields": {
           "text": {
-            "value": "<p>I launched MaxPacks as an experimental side gig; but within 2 years those Procreate brushes were earning more than my 6-figure salary in CG. Leaving in favor of Gumroad enabled me to explore other aspects of my art, develop new hobbies, and finally prioritize my personal life.</p>",
+            "value": "",
             "config": {
               "type": "RichText2",
               "placeholder": "Placeholder...",
@@ -19,16 +19,16 @@
             }
           },
           "cta": {
-            "value": "Max Ulichney sells Procreate Brush Packs",
+            "value": "",
             "config": {
               "type": "KeyText",
               "label": "CTA",
-              "placeholder": "Placeholder...",
+              "placeholder": "e.g: Work @prismic.io",
               "props": { "label": "Author information" }
             }
           },
           "bg": {
-            "value": "#111",
+            "value": "",
             "config": {
               "type": "Select",
               "label": "CTA",
@@ -64,7 +64,7 @@
         "image": "/slices-thumbnails/testimonial-text-right.png",
         "fields": {
           "text": {
-            "value": "<p>Originally, I took pre-orders for my Trend Reports on Gumroad. But I received... exactly $0. So I changed tactics: I made half of my report free, and the other half paid. Today, 99% of Trends.VC revenue is recurring in the form of annual and quarterly subscriptions.</p>",
+            "value": "",
             "config": {
               "type": "RichText2",
               "placeholder": "Placeholder...",
@@ -73,16 +73,16 @@
             }
           },
           "cta": {
-            "value": "Dru Riley sells business insights and expertise",
+            "value": "",
             "config": {
               "type": "KeyText",
               "label": "CTA",
-              "placeholder": "Placeholder...",
+              "placeholder": "e.g: Work @prismic.io",
               "props": { "label": "Author information" }
             }
           },
           "bg": {
-            "value": "#111",
+            "value": "",
             "config": {
               "type": "Select",
               "label": "CTA",
@@ -125,21 +125,21 @@
         "image": "/slices-thumbnails/feature-text-right.png",
         "fields": {
           "title": {
-            "value": "Sell anything",
+            "value": "",
             "config": {
               "type": "RichText",
-              "placeholder": "Placeholder...",
+              "placeholder": "Feature title",
               "label": "Title",
               "props": { "label": "Heading" }
             }
           },
           "text": {
-            "value": "<p>Video lessons. Monthly subscriptions. Physical products. Whatever! Gumroad was created to help you experiment with all kinds of ideas and formats. <li>Sell your Top 10 lists</li><li>Sell your crypto tips</li><li>Sell your fractal pack</li><li>Sell your keto cookbook</li><li>Sell your C4D scenes</li><li>Sell your new emojis</li><li>Seriously, sell anything!</li></p>",
+            "value": "",
             "config": {
               "type": "RichText2",
               "placeholder": "Placeholder...",
               "label": "Text",
-              "props": { "label": "Quote text" }
+              "props": { "label": "Feature description" }
             }
           },
           "img": {
@@ -148,7 +148,7 @@
               "type": "Image",
               "label": "Image",
               "placeholder": "Placeholder...",
-              "props": { "label": "Feature Image" }
+              "props": { "label": "Image" }
             },
             "child": {
               "alt": {
@@ -170,21 +170,21 @@
         "image": "/slices-thumbnails/feature-text-left.png",
         "fields": {
           "title": {
-            "value": "Sell anywhere",
+            "value": "",
             "config": {
               "type": "RichText",
-              "placeholder": "Placeholder...",
+              "placeholder": "Feature title",
               "label": "Title",
               "props": { "label": "Heading" }
             }
           },
           "text": {
-            "value": "<p>Create and customize your storefront with our all-in-one platform or choose to use your personal site instead. With Zapier, you can seamlessly connect your Gumroad account to thousands of apps in your current stack.</p>",
+            "value": "",
             "config": {
               "type": "RichText2",
               "placeholder": "Placeholder...",
               "label": "Text",
-              "props": { "label": "Quote text" }
+              "props": { "label": "Feature description" }
             }
           },
           "img": {
@@ -193,7 +193,7 @@
               "type": "Image",
               "label": "Image",
               "placeholder": "Placeholder...",
-              "props": { "label": "Feature Image" }
+              "props": { "label": "Image" }
             },
             "child": {
               "alt": {
@@ -227,7 +227,7 @@
               "type": "Image",
               "label": "Image",
               "placeholder": "Placeholder...",
-              "props": { "label": "Feature Image" }
+              "props": { "label": "Image" }
             },
             "child": {
               "alt": {
@@ -242,7 +242,7 @@
             }
           },
           "bg": {
-            "value": "#111",
+            "value": "",
             "config": {
               "type": "Select",
               "label": "CTA",
@@ -251,7 +251,7 @@
             }
           },
           "1title": {
-            "value": "Generate license keys",
+            "value": "",
             "config": {
               "type": "RichText",
               "placeholder": "Placeholder...",
@@ -260,7 +260,7 @@
             }
           },
           "1cta": {
-            "value": "Selling software? We can create your license keys, so you can get back to beta.",
+            "value": "",
             "config": {
               "type": "KeyText",
               "label": "CTA",
@@ -269,7 +269,7 @@
             }
           },
           "2title": {
-            "value": "Sell multiple versions",
+            "value": "",
             "config": {
               "type": "RichText",
               "placeholder": "Placeholder...",
@@ -278,7 +278,7 @@
             }
           },
           "2cta": {
-            "value": "Allow buyers to pick from PDF, ePub, and Mobi. Even charge more for lossless audio.",
+            "value": "",
             "config": {
               "type": "KeyText",
               "label": "CTA",
@@ -287,7 +287,7 @@
             }
           },
           "3title": {
-            "value": "Protect your work",
+            "value": "",
             "config": {
               "type": "RichText",
               "placeholder": "Placeholder...",
@@ -296,7 +296,7 @@
             }
           },
           "3cta": {
-            "value": "We can create lightweight DRM to help keep customers honest.",
+            "value": "",
             "config": {
               "type": "KeyText",
               "label": "CTA",
@@ -317,7 +317,7 @@
               "type": "Image",
               "label": "Image",
               "placeholder": "Placeholder...",
-              "props": { "label": "Feature Image" }
+              "props": { "label": "Image" }
             },
             "child": {
               "alt": {
@@ -332,7 +332,7 @@
             }
           },
           "bg": {
-            "value": "#111",
+            "value": "",
             "config": {
               "type": "Select",
               "label": "CTA",
@@ -341,7 +341,7 @@
             }
           },
           "1title": {
-            "value": "Create a home here",
+            "value": "",
             "config": {
               "type": "RichText",
               "placeholder": "Placeholder...",
@@ -350,7 +350,7 @@
             }
           },
           "1cta": {
-            "value": "No site? No problem. Use our flexible page editor to build a storefront and customize your site’s colors, and more.",
+            "value": "",
             "config": {
               "type": "KeyText",
               "label": "CTA",
@@ -359,7 +359,7 @@
             }
           },
           "2title": {
-            "value": "Use your own website, too",
+            "value": "",
             "config": {
               "type": "RichText",
               "placeholder": "Placeholder...",
@@ -368,7 +368,7 @@
             }
           },
           "2cta": {
-            "value": "Already have a site? Link it to ours under a custom domain.",
+            "value": "",
             "config": {
               "type": "KeyText",
               "label": "CTA",
@@ -377,7 +377,7 @@
             }
           },
           "3title": {
-            "value": "Power-up your page",
+            "value": "",
             "config": {
               "type": "RichText",
               "placeholder": "Placeholder...",
@@ -386,7 +386,7 @@
             }
           },
           "3cta": {
-            "value": "You can easily embed our payment platform and ‘follow’ button on your existing site.",
+            "value": "",
             "config": {
               "type": "KeyText",
               "label": "CTA",
@@ -408,26 +408,26 @@
         "name": "Variation A",
         "image": "/slices-thumbnails/call-to-action.png",
         "fields": {
-          "text": {
-            "value": "<p>Share your work. Someone out there needs it.</p>",
+          "title": {
+            "value": "",
             "config": {
-              "type": "RichText2",
-              "placeholder": "Placeholder...",
-              "label": "Text",
+              "type": "RichText",
+              "placeholder": "Section heading",
+              "label": "Title",
               "props": { "label": "Heading text" }
             }
           },
           "cta": {
-            "value": "Start Selling",
+            "value": "",
             "config": {
               "type": "KeyText",
               "label": "CTA",
-              "placeholder": "Placeholder...",
+              "placeholder": "e.g: 'Start Selling', 'find out more' or 'visit a store'",
               "props": { "label": "Call to Action label" }
             }
           },
           "bg": {
-            "value": "#111",
+            "value": "",
             "config": {
               "type": "Select",
               "label": "CTA",
@@ -450,10 +450,10 @@
         "image": "/slices-thumbnails/heading-section.png",
         "fields": {
           "title": {
-            "value": "You know all those great ideas you have? We want you to try them, lots of them, and find out what works.",
+            "value": "",
             "config": {
               "type": "RichText",
-              "placeholder": "Placeholder...",
+              "placeholder": "Section heading",
               "label": "Title",
               "props": { "label": "Heading" }
             }
@@ -464,7 +464,7 @@
               "type": "Image",
               "label": "Image",
               "placeholder": "Placeholder...",
-              "props": { "label": "Feature Image" }
+              "props": { "label": "Image" }
             },
             "child": {
               "alt": {
@@ -486,29 +486,29 @@
         "image": "/slices-thumbnails/heading-section-with-link.png",
         "fields": {
           "title": {
-            "value": "Make your own road",
+            "value": "",
             "config": {
               "type": "RichText",
-              "placeholder": "Placeholder...",
+              "placeholder": "Section heading",
               "label": "Title",
               "props": { "label": "Heading" }
             }
           },
           "text": {
-            "value": "<p>Whether you need more balance, flexibility, or just a different gig, we make it easier to chart a new path. You don't have to be a tech expert or even understand how to start a business. You just gotta take what you know and sell it.</p>",
+            "value": "",
             "config": {
               "type": "RichText2",
               "placeholder": "Placeholder...",
               "label": "Text",
-              "props": { "label": "Heading text" }
+              "props": { "label": "Text description" }
             }
           },
           "cta": {
-            "value": "Explore Features →",
+            "value": "",
             "config": {
               "type": "KeyText",
               "label": "CTA",
-              "placeholder": "Placeholder...",
+              "placeholder": "e.g: Work @prismic.io",
               "props": { "label": "Author information" }
             }
           }
@@ -520,25 +520,25 @@
         "image": "/slices-thumbnails/heading-section-with-subheading.png",
         "fields": {
           "cta": {
-            "value": "Customizable Options",
+            "value": "",
             "config": {
               "type": "KeyText",
               "label": "CTA",
-              "placeholder": "Placeholder...",
+              "placeholder": "Small introduction text with 3 or 4 words",
               "props": { "label": "Sub Heading" }
             }
           },
           "title": {
-            "value": "Your store, your way",
+            "value": "",
             "config": {
               "type": "RichText",
-              "placeholder": "Placeholder...",
+              "placeholder": "Section heading",
               "label": "Title",
               "props": { "label": "Heading" }
             }
           },
           "text": {
-            "value": "<p>Gumroad plays well with others. Set up your store on our platform, or easily embed it on your existing site.</p>",
+            "value": "",
             "config": {
               "type": "RichText2",
               "placeholder": "Placeholder...",

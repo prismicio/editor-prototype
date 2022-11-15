@@ -3,12 +3,13 @@
   flex-direction: column;
   justify-content: flex-start;
   margin: 24px;
+  margin-bottom: 0;
   padding: nil;
   list-style: none;
-  height: 100vh;
+  height: calc(100vh - 99px);
   margin-inline: lg;
   position: sticky;
-  top: 24px;
+  top: 99px;
   overflow: scroll;
 }
 

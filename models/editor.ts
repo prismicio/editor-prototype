@@ -30,7 +30,7 @@ export const editor = createModel<RootModel>()({
     },
     onFill: (state) => {
       state.variations = filled
-      state.static = staticzf
+      state.static = staticzf as any
       return state
     },
     onEditSlice: (
