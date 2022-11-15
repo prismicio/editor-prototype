@@ -40,10 +40,12 @@ const Home: NextPage = () => {
       <Byside as="div">
         <Byside.Sidebar width="8xl" as="aside" className={styles.slices}>
           <DocumentName />
+          <Box className={styles.staticZone}>
+            <div className={styles.staticCard}>Static zone</div>
+          </Box>
           {!editor.variations.length && (
             <Box className={styles.emptyState}>
               <div>
-                <h2>Add your first Slice</h2>
                 <p>
                   Click on the button below to choose the first Slice of the
                   page.

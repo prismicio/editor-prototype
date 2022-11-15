@@ -83,3 +83,16 @@
     box-shadow: 0px 0px 0px 3px rgba(124, 102, 220, 0.3);
     outline: 0;
 }
+.staticZone{
+  padding:24px 24px 0 24px;
+}
+.staticCard{
+  padding: 16px;
+  background: #FFFFFF;
+  border: 1px solid #DCDBDD;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  font-size: sm;
+  font-weight: 600;
+  color: #6F6E77;
+}
