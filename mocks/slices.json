@@ -117,12 +117,12 @@
   {
     "id": "2",
     "name": "Feature - 1 paragraph",
-    "image": "/slices-thumbnails/feature-text-left.png",
+    "image": "/slices-thumbnails/feature-text-right.png",
     "variations": [
       {
         "id": "2",
         "name": "Text right",
-        "image": "/slices-thumbnails/feature-text-left.png",
+        "image": "/slices-thumbnails/feature-text-right.png",
         "fields": {
           "title": {
             "value": "",
