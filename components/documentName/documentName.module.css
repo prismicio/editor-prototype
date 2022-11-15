@@ -3,6 +3,8 @@
   border-bottom: 1px solid #dcdbdd;
   display: flex;
   gap: sm;
+  position: sticky;
+  top: 0;
   z-index: 1;
 }
 .buttonSecondary {
