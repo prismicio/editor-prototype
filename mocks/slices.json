@@ -37,7 +37,7 @@
             }
           },
           "img": {
-            "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619537b960fa2619636d2959_max-ulnichey.png",
+            "value": "",
             "config": {
               "type": "Image",
               "label": "Image",
@@ -91,7 +91,7 @@
             }
           },
           "img": {
-            "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61957abf65d90d1b901c50f7_dru-riley.png",
+            "value": "",
             "config": {
               "type": "Image",
               "label": "Image",
@@ -143,7 +143,7 @@
             }
           },
           "img": {
-            "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619532e016b9ee57c1b529e6_home-feature-1.svg",
+            "value": "",
             "config": {
               "type": "Image",
               "label": "Image",
@@ -188,7 +188,7 @@
             }
           },
           "img": {
-            "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61991f9baa14038b9c100d6c_home-feature-4.svg",
+            "value": "",
             "config": {
               "type": "Image",
               "label": "Image",
@@ -222,7 +222,7 @@
         "image": "/slices-thumbnails/feature-multiple-paragraph-text-right.png",
         "fields": {
           "img": {
-            "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619532e016b9ee57c1b529e6_home-feature-1.svg",
+            "value": "",
             "config": {
               "type": "Image",
               "label": "Image",
@@ -312,7 +312,7 @@
         "image": "/slices-thumbnails/feature-multiple-paragraph-text-left.png",
         "fields": {
           "img": {
-            "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619532e016b9ee57c1b529e6_home-feature-1.svg",
+            "value": "",
             "config": {
               "type": "Image",
               "label": "Image",
@@ -459,7 +459,7 @@
             }
           },
           "img": {
-            "value": "/slices-thumbnails/heading-section-image.png",
+            "value": "",
             "config": {
               "type": "Image",
               "label": "Image",

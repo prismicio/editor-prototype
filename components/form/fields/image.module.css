@@ -140,7 +140,7 @@ button.secondary {
   box-shadow: 0px 1px 0px rgb(0 0 0 / 4%);
   border-radius: 6px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   line-height: 20px;
   color: #1a1523;
@@ -150,4 +150,17 @@ button.secondary:hover {
   border: 1px solid #dcdbdd;
   box-shadow: 0px 1px 0px rgb(0 0 0 / 4%);
   cursor: pointer;
+}
+.emptyStateImage{
+  user-select: none;
+  background-color: #F4F2F4;
+  width: -webkit-fill-available;
+  min-height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.emptyStateImage img, .emptyStateImage p{
+  margin-bottom: 8px;
 }
