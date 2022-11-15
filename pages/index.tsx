@@ -61,19 +61,21 @@ const Home: NextPage = () => {
               </div>
             </Box>
           )}
-          <DraggableList
-            items={Object.values(editor.variations) || []}
-            children={(item, index) => (
-              <Fragment>
-                <Slice
-                  position={index}
-                  preview={item.image}
-                  name={item.name}
-                  id={item.id}
-                />
-              </Fragment>
-            )}
-          />
+          {Object.values(editor.variations).length ? (
+            <DraggableList
+              items={Object.values(editor.variations) || []}
+              children={(item, index) => (
+                <Fragment>
+                  <Slice
+                    position={index}
+                    preview={item.image}
+                    name={item.name}
+                    id={item.id}
+                  />
+                </Fragment>
+              )}
+            />
+          ) : null}
         </Byside.Sidebar>
         <Byside.Primary breakAT="9xl" as="main">
           <EditorTabs />
