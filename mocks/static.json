@@ -1,16 +1,16 @@
 {
   "fields": {
     "title": {
-      "value": "Go from zero to $1",
+      "value": "",
       "config": {
         "type": "RichText",
-        "placeholder": "Placeholder...",
+        "placeholder": "Page title",
         "label": "Title",
         "props": { "label": "Heading" }
       }
     },
     "text": {
-      "value": "<p>With Gumroad, anyone can earn their first dollar online. Just start with what you know, see what sticks, and get paid. It’s that easy.</p>",
+      "value": "",
       "config": {
         "type": "RichText2",
         "placeholder": "Placeholder...",
@@ -19,11 +19,11 @@
       }
     },
     "cta": {
-      "value": "Start Selling",
+      "value": "",
       "config": {
         "type": "KeyText",
         "label": "CTA",
-        "placeholder": "Placeholder...",
+        "placeholder": "e.g: 'Start Selling', 'find out more' or 'visit a store'",
         "props": { "label": "Call to Action label" }
       }
     },
@@ -34,7 +34,7 @@
         "type": "Image",
         "label": "Image",
         "placeholder": "Placeholder...",
-        "props": { "label": "Feature Image" }
+        "props": { "label": "Image" }
       },
       "child": {
         "alt": {
