@@ -27,9 +27,9 @@
         "props": { "label": "Call to Action label" }
       }
     },
-    
+
     "img": {
-      "value": "https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61942b84ec3d406199f07d78_vegalia.png",
+      "value": "",
       "config": {
         "type": "Image",
         "label": "Image",

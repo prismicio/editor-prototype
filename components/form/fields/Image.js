@@ -38,17 +38,32 @@ function Image(props) {
         </div>
         <div className={styles.preview}>
           <div className={styles.tile}>
-            <img
-              onClick={() =>
-                dispatch.dialog.open({
-                  type: 'SELECT_IMAGE',
-                  props: props,
-                })
-              }
-              className={styles.image_preview}
-              alt="imagze"
-              src={props.value}
-            />
+            {props.value ? (
+              <img
+                onClick={() =>
+                  dispatch.dialog.open({
+                    type: 'SELECT_IMAGE',
+                    props: props,
+                  })
+                }
+                className={styles.image_preview}
+                alt="imagze"
+                src={props.value}
+              />
+            ) : (
+              <div>
+                <button
+                  onClick={() =>
+                    dispatch.dialog.open({
+                      type: 'SELECT_IMAGE',
+                      props: props,
+                    })
+                  }
+                >
+                  Upload image
+                </button>
+              </div>
+            )}
           </div>
         </div>
         <Field
