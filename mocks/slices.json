@@ -60,7 +60,7 @@
       },
       {
         "id": "1",
-        "name": "Text Left",
+        "name": "Text Right",
         "image": "/slices-thumbnails/testimonial-text-right.png",
         "fields": {
           "text": {

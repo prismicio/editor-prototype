@@ -37,6 +37,11 @@ const IMAGES = [
   {
     name: 'Image03',
     value:
+      'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619451f5da3d1c898a88673f_nick-greenawalt.png',
+  },
+  {
+    name: 'Image03',
+    value:
       'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/6194643c04fdc36b37ec99d3_features-4.svg',
   },
   {
@@ -48,7 +53,7 @@ const IMAGES = [
     name: 'Image03',
     value:
       'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619537b960fa2619636d2959_max-ulnichey.png',
-  },
+  }
 ]
 
 export function SelectImage(props: any) {
