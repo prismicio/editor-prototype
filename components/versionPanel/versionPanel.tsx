@@ -22,7 +22,7 @@ export default function VersionPanel({
         <ul>
           <li>
             <p>
-              Published <span className={styles.date}>10 minutes ago</span>
+              Published <b>10 minutes ago</b>
             </p>
             <span>by Renaud Bressand</span>
           </li>
