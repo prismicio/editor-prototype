@@ -96,3 +96,10 @@
   font-weight: 600;
   color: #6F6E77;
 }
+.sideBar{
+  margin-bottom: 0;
+  height: calc(100vh - 75px);
+  position: sticky;
+  top: 75px;
+  overflow: scroll;
+}

@@ -41,56 +41,57 @@ const Home: NextPage = () => {
       <Byside as="div">
         <Byside.Sidebar width="8xl" as="aside" className={styles.slices}>
           <DocumentName />
+          <div className={styles.sideBar}>
+            <div
+              className={styles.staticZone}
+              onClick={() =>
+                scroller.scrollTo('static-zone', {
+                  duration: 1500,
+                  delay: 100,
+                  smooth: true,
+                  offset: 0,
+                })
+              }
+            >
+              <div className={styles.staticCard}>Static zone</div>
+            </div>
 
-          <div
-            className={styles.staticZone}
-            onClick={() =>
-              scroller.scrollTo('static-zone', {
-                duration: 1500,
-                delay: 100,
-                smooth: true,
-                offset: 0,
-              })
-            }
-          >
-            <div className={styles.staticCard}>Static zone</div>
+            {!editor.variations.length && (
+              <Box className={styles.emptyState}>
+                <div>
+                  <p>
+                    Click on the button below to choose the first Slice of the
+                    page.
+                  </p>
+                  <button
+                    onClick={() =>
+                      dispatch.dialog.open({
+                        type: 'SELECT_SLICE',
+                        props: { pos: 0 },
+                      })
+                    }
+                  >
+                    Add slice
+                  </button>
+                </div>
+              </Box>
+            )}
+            {Object.values(editor.variations).length ? (
+              <DraggableList
+                items={Object.values(editor.variations) || []}
+                children={(item, index) => (
+                  <Fragment>
+                    <Slice
+                      position={index}
+                      preview={item.image}
+                      name={item.name}
+                      id={item.id}
+                    />
+                  </Fragment>
+                )}
+              />
+            ) : null}
           </div>
-
-          {!editor.variations.length && (
-            <Box className={styles.emptyState}>
-              <div>
-                <p>
-                  Click on the button below to choose the first Slice of the
-                  page.
-                </p>
-                <button
-                  onClick={() =>
-                    dispatch.dialog.open({
-                      type: 'SELECT_SLICE',
-                      props: { pos: 0 },
-                    })
-                  }
-                >
-                  Add slice
-                </button>
-              </div>
-            </Box>
-          )}
-          {Object.values(editor.variations).length ? (
-            <DraggableList
-              items={Object.values(editor.variations) || []}
-              children={(item, index) => (
-                <Fragment>
-                  <Slice
-                    position={index}
-                    preview={item.image}
-                    name={item.name}
-                    id={item.id}
-                  />
-                </Fragment>
-              )}
-            />
-          ) : null}
         </Byside.Sidebar>
         <Byside.Primary breakAT="9xl" as="main">
           <EditorTabs />
