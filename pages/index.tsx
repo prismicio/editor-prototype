@@ -14,6 +14,7 @@ import { Fragment, useEffect } from 'react'
 import { RootDialog } from 'components/dialogs/root-dialog'
 import Form from 'components/form/form'
 import StaticZone from 'components/form/StaticZone'
+import PushPinOutlinedIcon from '@mui/icons-material/PushPinOutlined';
 import { Element } from 'react-scroll'
 import { useRouter } from 'next/router'
 import queryString from 'query-string'
@@ -53,7 +54,7 @@ const Home: NextPage = () => {
                 })
               }
             >
-              <div className={styles.staticCard}>Static zone</div>
+              <div className={styles.staticCard}><PushPinOutlinedIcon />Static zone</div>
             </div>
 
             {!editor.variations.length && (
