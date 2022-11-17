@@ -37,8 +37,8 @@ function Image(props) {
           </div>
         </div>
         <div className={styles.preview}>
-          <div className={styles.tile}>
             {props.value ? (
+              <div className={styles.tile}>
               <img
                 onClick={() =>
                   dispatch.dialog.open({
@@ -50,9 +50,13 @@ function Image(props) {
                 alt="imagze"
                 src={props.value}
               />
+              </div>
             ) : (
-              <div>
+              <div className={styles.emptyStateImage}>
+                <img src='/icons/upload.svg' />
+                <p>Please select an image from the library</p>
                 <button
+                  className={styles.secondary}
                   onClick={() =>
                     dispatch.dialog.open({
                       type: 'SELECT_IMAGE',
@@ -60,11 +64,10 @@ function Image(props) {
                     })
                   }
                 >
-                  Upload image
+                  Select image
                 </button>
               </div>
             )}
-          </div>
         </div>
         <Field
           placeholder={props.child.alt.config.placeholder}

@@ -86,6 +86,9 @@
 .staticZone{
   padding:24px 24px 0 24px;
 }
+.staticZone:hover{
+  cursor: pointer;
+}
 .staticCard{
   padding: 16px;
   background: #FFFFFF;
@@ -95,4 +98,17 @@
   font-size: sm;
   font-weight: 600;
   color: #6F6E77;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.staticCard svg{
+  width: 20px;
+}
+.sideBar{
+  margin-bottom: 0;
+  height: calc(100vh - 75px);
+  position: sticky;
+  top: 75px;
+  overflow: scroll;
 }
