@@ -1,8 +1,7 @@
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import styles from './document-options.module.css'
 import MoreVert from '@mui/icons-material/MoreVert'
-import { toast } from 'react-toastify'
-
+import toast, { Toaster } from 'react-hot-toast';
 export function DocumentOptions() {
   return (
     <DropdownMenu.Root>

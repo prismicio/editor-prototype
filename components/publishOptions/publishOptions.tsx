@@ -7,8 +7,7 @@ import { useDispatch } from 'react-redux'
 import { Dispatch } from 'pages/_app'
 import { PublishingOptions } from 'components/controls/publishing-options/publishing-option'
 import { DocumentOptions } from 'components/controls/document-options/document-options'
-import { toast } from 'react-toastify'
-
+import toast, { Toaster } from 'react-hot-toast';
 interface PublishOptionsProps {}
 
 export default function PublishOptions({
@@ -19,7 +18,7 @@ export default function PublishOptions({
     <div className={styles.root}>
       <button 
         className={styles.buttonSecondary}
-        onClick={() => toast.success('Your changes have been successfully saved')}
+        onClick={() => toast.success('Saved')}
         >
           Save
         </button>
