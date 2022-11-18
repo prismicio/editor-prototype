@@ -5,7 +5,7 @@ import { Box } from 'components/layouts/box'
 import styles from './select-slice.module.css'
 import clsx from 'clsx'
 import { Variation } from 'components/cards/variation'
-import { toast } from 'react-toastify'
+import toast, { Toaster } from 'react-hot-toast';
 
 type SelectSliceProps = {
   isEditing: boolean
@@ -77,7 +77,7 @@ export function SelectSlice(props: SelectSliceProps) {
                             position: props.pos,
                           })
                           dispatch.dialog.close()
-                          toast.success(`${variation.name} added`)
+                          toast.success(`"${variation.name}" successfully added`)
                         }}
                         name={variation.name}
                         image={variation.image}

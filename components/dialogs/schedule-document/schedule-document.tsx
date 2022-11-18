@@ -3,7 +3,7 @@ import styles from './schedule-document.module.css'
 import { Box } from 'components/layouts/box'
 import { Dispatch } from 'pages/_app'
 import { useDispatch } from 'react-redux'
-import { toast } from 'react-toastify'
+import toast, { Toaster } from 'react-hot-toast';
 
 export function ScheduleDocument() {
   const dispatch = useDispatch<Dispatch>()
@@ -42,7 +42,7 @@ export function ScheduleDocument() {
               as="button"
               onClick={() => {
                 dispatch.dialog.close()
-                toast.success(`Scheduled`)
+                toast.success(`Successfully scheduled`)
               }}
             >
               Schedule
