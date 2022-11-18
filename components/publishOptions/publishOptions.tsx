@@ -17,7 +17,12 @@ export default function PublishOptions({
   const dispatch = useDispatch<Dispatch>()
   return (
     <div className={styles.root}>
-      <button className={styles.buttonSecondary}>Save</button>
+      <button 
+        className={styles.buttonSecondary}
+        onClick={() => toast.success('Your changes have been successfully saved')}
+        >
+          Save
+        </button>
 
       <div className={styles.buttonGroup}>
         <button
