@@ -15,6 +15,11 @@ const IMAGES = [
       'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619532e016b9ee57c1b529e6_home-feature-1.svg',
   },
   {
+    name: 'Image02',
+    value:
+      'https://images.prismic.io/findone/1365cc05-e0cb-402c-a070-5d920ae56664_gm-image-removebg-preview.png?auto=compress,format',
+  },
+  {
     name: 'Image03',
     value:
       'https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619578e5eee7c6e8da61a827_home-feature-2.svg',
